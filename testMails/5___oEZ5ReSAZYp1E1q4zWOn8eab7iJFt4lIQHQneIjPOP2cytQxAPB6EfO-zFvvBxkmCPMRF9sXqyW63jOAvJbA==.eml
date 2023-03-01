@@ -1,0 +1,1940 @@
+Authentication-Results: spf=none (sender IP is 216.98.56.129) smtp.mailfrom=news.ubisoft.com; OUTLOOK.DE; dkim=none (message not signed) header.d=none;OUTLOOK.DE; dmarc=fail action=none header.from=news.ubisoft.com;compauth=pass reason=105
+Content-Transfer-Encoding: quoted-printable
+Content-Type: multipart/mixed; boundary=e608cc578c1938b56d0a31955549adb5e9c43c6387eee0a86c1aabeee198753c
+Date: Wed, 04 Mar 2020 18:20:41 GMT
+Delivered-To: maraltez@validmax.tech
+From: "Roller Champions" <news@news.ubisoft.com>
+Message-Id: <NM6627BEE250432941Cprodnlane_mid2@news.ubisoft.com>
+Mime-Version: 1.0
+Received: from VE1EUR01HT040.eop-EUR01.prod.protection.outlook.com (2603:10a6:803:b4::49) by VI1P190MB0253.EURP190.PROD.OUTLOOK.COM with HTTPS via VI1PR07CA0282.EURPRD07.PROD.OUTLOOK.COM; Wed, 4 Mar 2020 18:20:44 +0000
+Received: from VE1EUR01FT045.eop-EUR01.prod.protection.outlook.com (2a01:111:e400:7e19::38) by VE1EUR01HT040.eop-EUR01.prod.protection.outlook.com (2a01:111:e400:7e19::327) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2793.11; Wed, 4 Mar 2020 18:20:43 +0000
+Received: from rev1.news.ubisoft.com (216.98.56.129) by VE1EUR01FT045.mail.protection.outlook.com (10.152.3.125) with Microsoft SMTP Server id 15.20.2793.11 via Frontend Transport; Wed, 4 Mar 2020 18:20:43 +0000
+Received-Spf: None (protection.outlook.com: news.ubisoft.com does not designate permitted sender hosts)
+References: <__oEZ5ReSAZYp1E1q4zWOn8eab7iJFt4lIQHQneIjPOP2cytQxAPB6EfO-zFvvBxkmCPMRF9sXqyW63jOAvJbA==@protonmail.internalid>
+Reply-To: "Ubisoft" <email-support@news.ubisoft.com>
+Return-Path: bounce@news.ubisoft.com
+Subject: =?utf-8?q?Maraltez,_melde_dich_f=C3=BCr_die_Closed_Alpha_an?=
+To: <EZIOGAMING@OUTLOOK.DE>
+X-Eopattributedmessage: 0
+X-Eoptenantattributedmessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-Forefront-Antispam-Report: EFV:NLI;
+X-Incomingheadercount: 10
+X-Incomingtopheadermarker: OriginalChecksum:481F5DC5676B35543EC942DADF4120B30F236CB86508F1D4272623BC21E72A60;UpperCasedChecksum:C7AF5949A5DE9D098471D1FBB31F30DE2CD7EECCE9049CD1290E8AA6276C5CB5;SizeAsReceived:469;Count:10
+X-Mailer: nlserver, Build 6.1.1.8708
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0tMQ==
+X-Message-Info: 5vMbyqxGkddhh69sIkKp9jThlfIEJ4jjt3rrEWZXFw5VkBADP159b9BFkfl5dVu23wY+2sGN7LolEkK92U/ta0zVYN15Wj8jqumyRTqyibkMQl3qWW4HNSZO4jnBsGcG7955c5oAvbyWfudAMutapH7HKrcYFOcAoWwm2wrkRvL965IY21sxK1YOs5Do27zAkEUp5s2ofSyCCf4QYruDQQ==
+X-Microsoft-Antispam: BCL:5;
+X-Microsoft-Antispam-Mailbox-Delivery: abwl:0;wl:1;pcwl:1;rwl:0;ucf:0;jmr:0;ex:0;auth:0;dest:I;OFR:TrustedSenderList;ENG:(5062000261)(5061607266)(5061608174)(4900115)(4920090)(6515079)(4950130)(570107);
+X-Microsoft-Antispam-Message-Info: =?us-ascii?Q?wPckhWX/xQN8TSrVdTLocCfrbcvFSSF71+BpyEE2jfixV1cwIMwbbA++K1LdkBVrJ2ofR02LP13ox8e/hLecdLH9oS/aa1NzXrrpGF/RomK38zUtZGvh9pE1uhqx6beB33P9LCbuKXlKGKkekwF9iux/tCCuRMA+R312UOosV55gdm09K/V4CV/W4ztw9Aw4hArLeC59EZc6vBciRb67Oi091IWtQ9QLIKmG8JzKbQXJIc2q5L4NLRbSLpnLSDxCKxZNFh0K0Nd5MUxySi/Zic0vElxtqnSJO6CfnbAY26lIZqroU4WWxkcttFiccFYLYJL4EfHbzOfxyW7DrGZzJ9QixVy32KmgWW11naGVrXvQMfVomuuPQ+NWlJwHuL8CNj5BNU0qy4Yqmh+LNm3Jhv0PVe6rS+K2IWNi/BY8RVsPPij/BgEvymIv9eEsmE3+WYT+0HuVegvoFK7jhmMIL34Fr9Hc/nqa+0schEwMcrJcw01YyWi6bLi90GBNJDw9bcOYJUz+mPxZZ76QF8ibAsIFXthotHKx0ECPR8MdeFsykRbJhn/PYddKtfpmSd0+d88nEdxElzRtS9bcMN4DSugvZmcoluJmIUOtEJn4iUJYFyHJOkGbmaQsvqwb6EGjo2Vtd5+CZ57RI9jLJuG7VuRKQolMnuiFaQDQKBf70oTAkBIVNoVxXYQA7nJkVvTd+A2QwJwCk+BfMNK2QGxu9b9u1mQo5vw6OyG6TfEQelOyp1etTpe0lwUx5TdPlvouktERzzpcfPlZO/UxxaLzzwNPqOHhbZwzaLkd0iZ6cCZicrvAi4RU9hJSqFaS9N3n+BcHG8JdenqbHqmP/jm3PKOPUFiSeALK+HB2pKDfAorIh7z/pAZMb+7Zi49SODCZyJm1XwQpkfCvkKKn6MHctYPfZ1lp9/A5zNNsM4jl8e9AVw6SLcHtDZt40sYPC7evqlhMOWN+QXh/oyz3psA1kx?= =?us-ascii?Q?DiMX31vR7TOaBvN4OzYcB1l6bm6CYjwoR95YR7dxj0TioEzVMUQo+yqtBaj+mVkhLdI+SsLvHuxlLNVFdsJW9kTTqPkvRaLCTwBe+e7ortdy7Qgb39z7VJniMXgAAQcKEX+10Dkfj3BrbqyeSS7io=3D?=
+X-Ms-Exchange-Atpmessageproperties: SA|SL
+X-Ms-Exchange-Atpsafelinks-Stat: 0
+X-Ms-Exchange-Crosstenant-Fromentityheader: Internet
+X-Ms-Exchange-Crosstenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-Ms-Exchange-Crosstenant-Network-Message-Id: 9ca9fac4-73a8-4cc2-9599-08d7c068c090
+X-Ms-Exchange-Crosstenant-Originalarrivaltime: 04 Mar 2020 18:20:43.4577 (UTC)
+X-Ms-Exchange-Crosstenant-Rms-Persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-Ms-Exchange-Eopdirect: true
+X-Ms-Exchange-Organization-Authas: Anonymous
+X-Ms-Exchange-Organization-Authsource: VE1EUR01FT045.eop-EUR01.prod.protection.outlook.com
+X-Ms-Exchange-Organization-Expirationinterval: 1:00:00:00.0000000
+X-Ms-Exchange-Organization-Expirationintervalreason: OriginalSubmit
+X-Ms-Exchange-Organization-Expirationstarttime: 04 Mar 2020 18:20:43.6047 (UTC)
+X-Ms-Exchange-Organization-Expirationstarttimereason: OriginalSubmit
+X-Ms-Exchange-Organization-Messagedirectionality: Incoming
+X-Ms-Exchange-Organization-Network-Message-Id: 9ca9fac4-73a8-4cc2-9599-08d7c068c090
+X-Ms-Exchange-Organization-Pcl: 2
+X-Ms-Exchange-Processed-By-Bccfoldering: 15.20.2772.017
+X-Ms-Exchange-Safelinks-Url-Keyver: 1
+X-Ms-Exchange-Transport-Crosstenantheadersstamped: VE1EUR01HT040
+X-Ms-Exchange-Transport-Endtoendlatency: 00:00:00.9743591
+X-Ms-Office365-Filtering-Correlation-Id: 9ca9fac4-73a8-4cc2-9599-08d7c068c090
+X-Ms-Publictraffictype: Email
+X-Ms-Traffictypediagnostic: VE1EUR01HT040:
+X-Ms-Userlastlogontime: 3/4/2020 5:17:28 PM
+X-Original-To: maraltez@validmax.tech
+X-Originatororg: outlook.com
+X-Pm-Content-Encryption: on-delivery
+X-Pm-Conversationid-Id: hdZovQsWrIEahAhztMpfLLGQsjJyTLKaFhs-5NHvl-kdxnTjt36wA6MKjI7cSz-IwSmnRbUuOS9tEw8i42vXag==
+X-Pm-Date: Wed, 04 Mar 2020 19:20:41 +0100
+X-Pm-External-Id: <NM6627BEE250432941Cprodnlane_mid2@news.ubisoft.com>
+X-Pm-Internal-Id: __oEZ5ReSAZYp1E1q4zWOn8eab7iJFt4lIQHQneIjPOP2cytQxAPB6EfO-zFvvBxkmCPMRF9sXqyW63jOAvJbA==
+X-Pm-Origin: import
+X-Pm-Spam-Action: dunno
+X-Pm-Spamscore: 0
+X-Sender-Ip: 216.98.56.129
+X-Sid-Pra: NEWS@NEWS.UBISOFT.COM
+X-Sid-Result: NONE
+
+
+--e608cc578c1938b56d0a31955549adb5e9c43c6387eee0a86c1aabeee198753c
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml" xmlns:o=3D"urn:schemas-microsoft-com:office:office" xmlns:v=
+=3D"urn:schemas-microsoft-com:vml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+  <meta content=3D"width=3Ddevice-width; initial-scale=3D1.0; maximum-scale=
+=3D1.0;" name=3D"viewport">
+  <meta content=3D"telephone=3Dno" name=3D"format-detection">
+  <meta content=3D"IE=3Dedge" http-equiv=3D"X-UA-Compatible">
+  <title>
+   Ubisoft
+  </title>
+  <style type=3D"text/css">
+   .ReadMsgBody   {width: 100%; background-color: #ffffff;}
+.ExternalClass {width: 100%; background-color: #ffffff;}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font,=
+ .ExternalClass td, .ExternalClass div { line-height: 100%; }
+body           {width: 100%; background-color: #ffffff; margin:0; padding:0=
+; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust:none; -ms-t=
+ext-size-adjust:none;  }
+html           {width: 100%; }
+
+table td {border-collapse:collapse;}
+
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+sup {font-size:10px;line-height:10px;}
+
+.gmailfix {display:none;display:none!important;}
+
+@media only screen and (max-device-width: 480px) , only screen and (max-wid=
+th: 480px)
+{
+body { width:auto!important; }
+body[yahoo] #container1 {display:block !important}
+
+
+.tableWrapperTemplateWidth { width:100%!important; min-width:100% !importan=
+t;}
+.tableTemplateWidth { width:320px!important; }
+.onlyForSmall { display:block!important;width:auto !important;  max-height:=
+inherit!important; overflow:visible!important; }
+.hideForSmall { width:0; display:none !important; }
+.table2Cols .splitOnSmall { width:100% !important; clear:left !important;}
+.customPaddingTop15px {padding-top:15px ! important;}
+.customPaddingSide10px {padding-left:10px ! important;padding-right:10px ! =
+important;}
+.imageFull { width:100% !important; height:auto!important; }
+}
+  </style>
+  <!--[if lte mso 12]>
+<style type=3D"text/css">
+sup  {font-size:15px;}
+</style>
+<![endif]-->
+  <!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+ </head>
+ <body style=3D"-webkit-font-smoothing: antialiased;width:100% !important;b=
+ackground:#000000;-webkit-text-size-adjust:none; -ms-text-size-adjust:none;=
+ margin:0;padding:0;" yahoo=3D"fix">
+  <!-- Wrapper -->
+  <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+style=3D"width:100% !important;" width=3D"100%">
+   <tbody>
+    <tr>
+     <td bgcolor=3D"#000000" valign=3D"top" width=3D"100%">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"tableWrapperTemplateWidth" style=3D"width:720px; min-width:720=
+px;margin:0 auto;" width=3D"720">
+       <tbody>
+        <tr>
+         <td valign=3D"top">
+          <!--[if !mso ]><!-->
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"hideForSmall" width=3D"720">
+           <!-- android spacer -->
+           <tbody>
+            <tr>
+             <td height=3D"0" style=3D"min-width:720px; font-size:0px;line-=
+height:0px;">
+             </td>
+            </tr>
+            <!-- Close spacer Gmail Android -->
+            <!-- iphone gmail fix -->
+            <tr>
+             <td>
+              <div class=3D"gmailfix" style=3D"white-space:nowrap; font:15p=
+x courier; line-height:0;">
+              </div>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <!--<![endif]-->
+          <!-- FLAPS =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+          <!-- Preheader -->
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+           <tbody>
+            <tr>
+             <td align=3D"center" bgcolor=3D"#000000" style=3D"padding : 10=
+px 20px; vertical-align:middle; color:#ffffff; background-color:#000000; fo=
+nt:12px Arial, sans-serif;">
+              Du hast die Chance vor Release zu spielen!
+
+
+<strong><a href=3D"https://eur01.safelinks.protection.outlook.com/?url=3Dht=
+tps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c0=
+3%26p1%3D%25400uVf%252BZKYpXK2p5y60DeFEVCd2fupJ7bLeQaE1lfdtWE%253D&amp;data=
+=3D02%7C01%7C%7C9ca9fac473a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaa=
+aaaaaaaa%7C1%7C0%7C637189428443584011&amp;sdata=3DIyMHTodxW5%2Fxj%2BsPcGs3y=
+h2Mo5ifF1j7LVvhDCOKHg4%3D&amp;reserved=3D0" originalsrc=3D"https://t.news.u=
+bisoft.com/r/?id=3Dh2e20d312,3ef475c9,e4de7c03&amp;p1=3D%400uVf%2BZKYpXK2p5=
+y60DeFEVCd2fupJ7bLeQaE1lfdtWE%3D" shash=3D"AcePCTJHZNI0KN3g1UMWi8JdZ8n&#43;=
+AzaWScq3s57GvdFi14KfaK4Ou67MSmJ1FSKGH7NVkfOLa6G9HvQIwOOxADIFfYv9TVLzZfLm7WO=
+IFzLt/PLN62dGKiVgYVN68da9DIyc1GdZIdsIhD//Ald6QadXd4/CD3Oxz4nUzi/7hXs=3D" _l=
+abel=3D"Mirror Page" _type=3D"mirrorPage" style=3D"color: #ffffff; text-dec=
+oration:none;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Im Browser anschauen</a=
+></strong>
+
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <!-- Preheader -->
+          <!-- 120 - Ubibar FR -->
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+           <tbody>
+            <tr>
+             <td bgcolor=3D"#000000" width=3D"100%">
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"tableTemplateWidth" width=3D"100%">
+               <tbody>
+                <tr>
+                 <td align=3D"center" class=3D"hideForSmall">
+                  <table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"100%">
+                   <tbody>
+                    <tr>
+                     <td>
+                      <a _label=3D"Ubisoft-Header" href=3D"https://eur01.sa=
+felinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%=
+2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c20&amp;data=3D02%7C01%7C%7C9ca9fac47=
+3a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189=
+428443604026&amp;sdata=3Djzo9OazfI2%2BWeJi1D02MKRpTtxccr0IHnrbAShPDNYU%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d31=
+2,3ef475c9,e4de7c20" shash=3D"r159k4WlDRtVaSFE8Vf&#43;/7IXCXDhEi55hLrCH1XoU=
+7L7mWfpd2meDM8p&#43;H7R0i1S1gCArJ/cWkXxZAUX9oHxKq1NHospxpG5be/uyyvFphpcw1K6=
+vUzll58jynAsnCrGSuiHy8YUVFahJkA5uAIFun9fSL5gCk9Q0X/kC2KuhE0=3D" target=3D"_=
+blank"><img border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/_UBIBAR/20=
+17/Black/desktop/DE_01.jpg" style=3D"display:block;">
+                      </a>
+                     </td>
+                     <td>
+                      <a _label=3D"Account-Header" href=3D"https://eur01.sa=
+felinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%=
+2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c21&amp;data=3D02%7C01%7C%7C9ca9fac47=
+3a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189=
+428443614005&amp;sdata=3DD2uvevTDkID4AV3Ct6UZgM1rZQkOwKwLisUChT5hAvI%3D&amp=
+;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,=
+3ef475c9,e4de7c21" shash=3D"AdFWEmqqZx3TxLWaCDTav113GmUyCxYoKIqwLAJn536Kt47=
+w2KwOA7ZFN750iDYnVNqAosz75QbiHxnP9oACe9LgausCYSEgR4KAfISLHWkq9DWHJFNAv5wYI/=
+a6LFMXwae9PXoUEiTWL2ZathlDPiRkWcJ8QYNIvE4D7XIoMQ8=3D" target=3D"_blank"><im=
+g border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/_UBIBAR/2017/Black/d=
+esktop/DE_02.jpg" style=3D"display:block;">
+                      </a>
+                     </td>
+                     <td>
+                      <a _label=3D"Store-Header" href=3D"https://eur01.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F=
+%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c22&amp;data=3D02%7C01%7C%7C9ca9fac473a=
+84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63718942=
+8443614005&amp;sdata=3Dk13J%2BH%2F9vF9R8bpKUryMSdMz%2F1uDDocuVAf21OaSavA%3D=
+&amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d=
+312,3ef475c9,e4de7c22" shash=3D"qKBD3rHVlVAOnvc9GZA4iMM9E1U6&#43;yA9clFrH7U=
+in4lc8rq/e9f9oSKb6vOen5Gh3K&#43;GgWHwt9maIfU7xmsQwHcKgH887EOIQKKkTq0mrDG3rF=
+bfpVXC&#43;PxnjfctU&#43;arezKhy3XuYwhiq8mIoRTnYRBWXstf2cCfqVWy8CEDBgg=3D" t=
+arget=3D"_blank"><img border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/=
+_UBIBAR/2017/Black/desktop/DE_03.jpg" style=3D"display:block;">
+                      </a>
+                     </td>
+                     <td>
+                      <a _label=3D"Club-Header" href=3D"https://eur01.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%=
+3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c23&amp;data=3D02%7C01%7C%7C9ca9fac473a8=
+4cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189428=
+443623994&amp;sdata=3DgQGKWdaEl2mXlC5WulOo5zlOGdlBJi18AjoKxbp9bmA%3D&amp;re=
+served=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef=
+475c9,e4de7c23" shash=3D"CUtF/hzCbpBsRwamvxwiHKky/reC/atAaWRh0M3GEaehoOocpn=
+o/l7etw2sDHalNys2pOzK8HUM4gVIvh1mfYUWzHA3FAy8xSsfcRg66WcIKytDX2JdWdd13Er6AO=
+kTELD0AB/&#43;nQSbzgYST1r5D2jY4TCzsmhkix8DWKtMv71E=3D" target=3D"_blank"><i=
+mg border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/_UBIBAR/2017/Black/=
+desktop/DE_04.jpg" style=3D"display:block;">
+                      </a>
+                     </td>
+                     <td>
+                      <a _label=3D"Support-Header" href=3D"https://eur01.sa=
+felinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%=
+2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c24&amp;data=3D02%7C01%7C%7C9ca9fac47=
+3a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189=
+428443633988&amp;sdata=3DDFItsSJqEGmNwSvDrYbtBCoTG5MGA7%2FnJIxwao8vsCI%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d31=
+2,3ef475c9,e4de7c24" shash=3D"yLUfm7BtGIAFDF7XBf/B8cf72cZyRI/zNzRHbMzftF7pY=
+qCbxMUT6uIOrIDye9pC0E40rR&#43;jB0WSEiXToky9pvQErRN1XCSM0y6rbhkGh8jze1zQMDe8=
+YKgTy361&#43;roh8O7/H1dhYN4Z9P0cb2VBi5Rq443Wyqbhbac/bEbKFs8=3D" target=3D"_=
+blank"><img border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/_UBIBAR/20=
+17/Black/desktop/DE_05.jpg" style=3D"display:block;">
+                      </a>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%">
+               <tbody>
+                <tr>
+                 <td>
+                  <!--[if !mso 9]><!-->
+                  <div class=3D"onlyForSmall" style=3D"display:none;width:0=
+;overflow:hidden;max-height:0;">
+                   <table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                    <tbody>
+                     <tr>
+                      <td>
+                       <a _label=3D"Ubisoft-Header" href=3D"https://eur01.s=
+afelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr=
+%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c25&amp;data=3D02%7C01%7C%7C9ca9fac4=
+73a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63718=
+9428443643983&amp;sdata=3DZ9bkGG0Ekg0p49QVGx%2Bem8DEabmG82xMxObSF2LIWYA%3D&=
+amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d3=
+12,3ef475c9,e4de7c25" shash=3D"K2QLda5ctXKo1eHz3b&#43;gZVAmGwwcqT7cv1dTIKDk=
+yt9S4GiCfutbYkoLgEPn&#43;SGD0ZvFq3d6fa4e5XEbFAg2sJSpATU61F3VSI/QGvmE0EMBsVe=
+WMtV7ZJbGUHfO1/Cecrt1aPKNk5BfHz6E3oa4vEf&#43;8Amz9AQSiy86/8hE6Ig=3D" target=
+=3D"_blank"><img border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/_UBIB=
+AR/2017/Black/mobile/ubisoft_mobile_black_01.jpg" style=3D"display:block;">
+                       </a>
+                      </td>
+                      <td>
+                       <a _label=3D"Account-Header" href=3D"https://eur01.s=
+afelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr=
+%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c26&amp;data=3D02%7C01%7C%7C9ca9fac4=
+73a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63718=
+9428443653978&amp;sdata=3D4cNlONU1Cq%2B5HdylqpcnvG7wsY5O526f6UBLYlECt3w%3D&=
+amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d3=
+12,3ef475c9,e4de7c26" shash=3D"qfOdNGDhMAArCdaKniqmCUsKTLdCRcHY4dRIHa9j6cYU=
+ZI2lhPL8kq7F4&#43;0Zyb1WtpNzCFahEWJHWq8cJU7oqQ0/IiQUH8zCMb8yyXFQaa/tXsLvlM0=
+VET/elgR2WQwnDj0XggD0sTcVg3pniQLMSXz/JwchZ6vQTOTkNP5Krcc=3D" target=3D"_bla=
+nk"><img border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/_UBIBAR/2017/=
+Black/mobile/ubisoft_mobile_black_02.jpg" style=3D"display:block;">
+                       </a>
+                      </td>
+                      <td>
+                       <a _label=3D"Store-Header" href=3D"https://eur01.saf=
+elinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2=
+F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c27&amp;data=3D02%7C01%7C%7C9ca9fac473=
+a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6371894=
+28443663976&amp;sdata=3DOkyx9KVXMwwAk4gL61VmURbQu3MK%2BFPb6KeN8EaogSQ%3D&am=
+p;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312=
+,3ef475c9,e4de7c27" shash=3D"HtkgHcn9zGZXcniZJp0TxslUwrZJJMjHazxTLU4TXX77KO=
+g0DOGKkeeODsqqY1EZXXxYAUVDffBmwK2MR8aQ6lZK6WfcqWreHsmiihHEqIzKglB8jEct4TVtK=
+eskXt5MwcIBjf7g6eH2Gze7EX/Wd19ZNXINnY3qGw8FiCcmeOw=3D" target=3D"_blank"><i=
+mg border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/_UBIBAR/2017/Black/=
+mobile/ubisoft_mobile_black_03.jpg" style=3D"display:block;">
+                       </a>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </div>
+                  <!--<![endif]-->
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <!-- 120 - Ubibar FR -->
+          <!-- B - Image + URL -->
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+           <tbody>
+            <tr>
+             <td bgcolor=3D"#fff8ea" width=3D"100%">
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"100%">
+               <tbody>
+                <tr>
+                 <td class=3D"hideForSmall" style=3D"padding : 0 ">
+                  <a _label=3D"Beta-Registration" href=3D"https://eur01.saf=
+elinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2=
+F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c28&amp;data=3D02%7C01%7C%7C9ca9fac473=
+a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6371894=
+28443673970&amp;sdata=3DaEt2DNmpbgbh0DTFNCyDroSZnCtng9j4ALpsPICgm9I%3D&amp;=
+reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3=
+ef475c9,e4de7c28" shash=3D"HfEKludXVQ8CfvW&#43;MoI6LUUz8Ne52wnO3JciygZRD5Qt=
+LoESGao1vkRXMbttdYNPiUG42fcRTQ&#43;ielQPr1d0MXCnkNyT98zWg5i4ZxUcldl0HxA&#43=
+;E1ptXqOw02BbQsh/dm5Re2et&#43;cYYBu9cMm2yWmAoDEpwdga1ozxSEa3O2bs=3D" target=
+=3D"_blank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FL=
+APS/RC/LIVEPHASE/2020/02/26_REGISTRATION/DE_01.jpg" style=3D"display:block"=
+>
+                  </a>
+                 </td>
+                 <td>
+                  <!--[if !mso 9]><!-->
+                  <div class=3D"onlyForSmall" style=3D"display:none;width:0=
+;overflow:hidden;max-height:0;">
+                   <table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                    <tbody>
+                     <tr>
+                      <td class=3D"onlyForSmall" style=3D"padding : 0; colo=
+r:#000000;">
+                       <a _label=3D"Beta-Registration" href=3D"https://eur0=
+1.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%=
+2Fr%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c29&amp;data=3D02%7C01%7C%7C9ca9f=
+ac473a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63=
+7189428443683964&amp;sdata=3DH31MLGEGxm1abOT0mcaGA33LDr3j%2BuFVZExQqSpr7kA%=
+3D&amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e2=
+0d312,3ef475c9,e4de7c29" shash=3D"dhr559Fmrv5llRylajTeDb7PjL4WPqjirnlVNJGLN=
+pN8nqaxvGF/&#43;g/ZbLwlvvPUkjXK4hhJ5oVtp0/bYOcd2/5GneyKwukNn1A4oQC9iBo2h742=
+UOzy5sTiC6m8VemRgT0Pr/7l/dgV4sN3SbiTQHeG30fDpiFGvTy7T6ZV9ms=3D" target=3D"_=
+blank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/R=
+C/LIVEPHASE/2020/02/26_REGISTRATION/DE_01.jpg" style=3D"width:100%; height:=
+auto; display:block" width=3D"100%">
+                       </a>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </div>
+                  <!--<![endif]-->
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <!-- E - Image + URL -->
+          <!-- 260 - Text -->
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+           <tbody>
+            <tr>
+             <td>
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%">
+               <tbody>
+                <tr>
+                 <td bgcolor=3D"#fff8ea" class=3D"customPaddingSide10px" st=
+yle=3D"padding:0 40px 20px 40px;">
+                  <table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"100%">
+                   <tbody>
+                    <tr>
+                     <td align=3D"center" style=3D"padding:0px 0px 0px 0px;=
+color:#191919;font-family:Arial,Helvetica,sans-serif;font-size:14px;mso-lin=
+e-height-rule:exactly;font-weight : normal;">
+                      <div style=3D"text-align:center">
+                       <br>
+                       <span style=3D"font-family:Arial,Helvetica,sans-seri=
+f">
+                        <span style=3D"font-size:16px">
+                         Melde dich jetzt an, um die Chance zu haben, unter=
+ den ersten zu sein, die im
+Jahr 2020, beginnend mit der Closed Alpha vom 11. bis 23. M=C3=A4rz, Roller=
+ Champions spielen.
+                        </span>
+                       </span>
+                      </div>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <!-- 260 - Text -->
+          <!-- B - Image + URL -->
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+           <tbody>
+            <tr>
+             <td bgcolor=3D"#fff8ea" width=3D"100%">
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"100%">
+               <tbody>
+                <tr>
+                 <td class=3D"hideForSmall" style=3D"padding : 0 ">
+                  <a _label=3D"Video 1" href=3D"https://eur01.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid%3Dh=
+2e20d312%2C3ef475c9%2Ce4de7c2a&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc29599=
+08d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63718942844369395=
+9&amp;sdata=3DkpB3fVIWjqOrr3JMuwQaAB13tFW6vThL6c2MUiZvrHU%3D&amp;reserved=
+=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef475c9,=
+e4de7c2a" shash=3D"rn8q&#43;DeAkRg3KIjqW9gpc4jsLUrdDWHJo3xw2J2ftwkpFyFIu8y3=
+duwr4KJQOiCx5/LbjUxK09vxXiQEUwu8ZzTaw3DeGShbcvDAJH1tmG3XM0iMOZFNJsiqpWuvv0e=
+zzS2sKC1kQ9jLZR8O8Vj6/vNIu0fb3yGcE2/w&#43;/tuTow=3D" target=3D"_blank"><img=
+ alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/RC/LIVEPHASE=
+/2020/02/26_REGISTRATION/GIF.gif" style=3D"display:block">
+                  </a>
+                 </td>
+                 <td>
+                  <!--[if !mso 9]><!-->
+                  <div class=3D"onlyForSmall" style=3D"display:none;width:0=
+;overflow:hidden;max-height:0;">
+                   <table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                    <tbody>
+                     <tr>
+                      <td class=3D"onlyForSmall" style=3D"padding : 0; colo=
+r:#000000;">
+                       <a _label=3D"Video 1" href=3D"https://eur01.safelink=
+s.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fi=
+d%3Dh2e20d312%2C3ef475c9%2Ce4de7c2b&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc=
+2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189428443=
+703954&amp;sdata=3DZ2uIvvWnPaKWFmz1P%2BBqqMPUAB69CmPaaaY2Xj4I0Jc%3D&amp;res=
+erved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef4=
+75c9,e4de7c2b" shash=3D"GLfRTrjvsAuVTP3vpSUfflE3hNXi&#43;tj8zSSHF7eBiiAdrDL=
+9MdzbRTOufhEwQS7wJvu6W5xPL&#43;TMxNd3fFv8NFwSFl1FgG5sPt6YpiTgklYrZvso4SVWNj=
+rZZOGlotPEK6f3EPOlHMjHoFU&#43;NDGVK92SB&#43;q9ktmQAtw5PBn5ezo=3D" target=3D=
+"_blank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS=
+/RC/LIVEPHASE/2020/02/26_REGISTRATION/GIF.gif" style=3D"width:100%; height:=
+auto; display:block" width=3D"100%">
+                       </a>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </div>
+                  <!--<![endif]-->
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <!-- E - Image + URL -->
+          <!-- 262 - CTA -->
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+           <tbody>
+            <tr>
+             <td bgcolor=3D"#fff8ea" style=3D"" width=3D"100%">
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"100%">
+               <tbody>
+                <tr>
+                 <td class=3D"hideForSmall" style=3D"padding : 0px ">
+                  <table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" class=3D"100%">
+                   <tbody>
+                    <tr>
+                     <td style=3D"padding:20px 0 0px 0;font-family:Arial,He=
+lvetica,sans-serif;font-size:14px;line-height:19px;mso-line-height-rule:exa=
+ctly;font-weight:normal;">
+                      <table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"margin:0 auto;">
+                       <tbody>
+                        <tr>
+                         <td style=3D"border : solid 3px #ff1754;  backgrou=
+nd-color:#ff1754;">
+                          <table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0">
+                           <tbody>
+                            <tr>
+                             <td align=3D"center" style=3D"padding:8px 30px=
+;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;mso-li=
+ne-height-rule:exactly;font-weight:normal;text-transform:uppercase;">
+                              <a _label=3D"Beta-Registration" href=3D"https=
+://eur01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubiso=
+ft.com%2Fr%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c2c&amp;data=3D02%7C01%7C%=
+7C9ca9fac473a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7=
+C0%7C637189428443713949&amp;sdata=3D1YYOn87sTpuI1dSDUP6Storu9UDsI2iQwDUy1Vd=
+atD0%3D&amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=
+=3Dh2e20d312,3ef475c9,e4de7c2c" shash=3D"pfXV0J5f4mlGdOtD0VP3iXEGl&#43;/yhn=
+Ui4C/9ur&#43;OcpmneG0/OYZrC3TfPotczBak/aDC0kRVuvjBYdWfTMmWohJtVsnTXhYpM8mAa=
+NSHlVG6nrVFPJ/ww5NEES2KUPcyA3hgQg6Tw/ATgkJz6T93785Mjyi4wFkYsS8iH&#43;y2a3k=
+=3D" style=3D"color:#ffffff;text-decoration:none;" target=3D"_blank"><span =
+style=3D"font-size:18px">
+                                <span style=3D"font-family:'Arial Black',Ga=
+dget,sans-serif">
+                                 JETZT ANMELDEN
+                                </span>
+                               </span>
+                              </a>
+                             </td>
+                            </tr>
+                           </tbody>
+                          </table>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </td>
+                 <td>
+                  <!--[if !mso 9]><!-->
+                  <div class=3D"onlyForSmall" style=3D"display:none;width:0=
+;overflow:hidden;max-height:0;">
+                   <table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                    <tbody>
+                     <tr>
+                      <td class=3D"onlyForSmall" style=3D"padding : 0px; ">
+                       <table align=3D"center" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" class=3D"100%">
+                        <tbody>
+                         <tr>
+                          <td style=3D"padding:15px 0 0px 0;font-family:Ari=
+al,Helvetica,sans-serif;font-size:14px;line-height:19px;mso-line-height-rul=
+e:exactly;font-weight:normal;">
+                           <table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"margin:0 auto;">
+                            <tbody>
+                             <tr>
+                              <td style=3D"border : solid 3px #ff1754;  bac=
+kground-color:#ff1754;">
+                               <table align=3D"center" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0">
+                                <tbody>
+                                 <tr>
+                                  <td align=3D"center" style=3D"padding:8px=
+ 30px;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;m=
+so-line-height-rule:exactly;font-weight:normal;text-transform:uppercase;">
+                                   <a _label=3D"Beta-Registration" href=3D"=
+https://eur01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.=
+ubisoft.com%2Fr%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c2d&amp;data=3D02%7C0=
+1%7C%7C9ca9fac473a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%=
+7C1%7C0%7C637189428443723948&amp;sdata=3DmH0hp7YXPXtyoV4oHd2dMogZUEArXDOSCV=
+4%2BiCEmEFM%3D&amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/=
+r/?id=3Dh2e20d312,3ef475c9,e4de7c2d" shash=3D"uYzcisxAbgCSNJIUESZUyb&#43;1A=
+3pzDq48Roap848RdTaD93y&#43;OIL7il0&#43;ozzE/poJwGTT7APe7MpLv1UbkG27p3BreKB4=
+tcbCx6Vq8TrmOIAiUUWdZ651Rmh9BLB1y75aDYcp1xPPlnhkYt08D2j6iyrAonwT/PwuNlHYYIg=
+ShzY=3D" style=3D"color:#ffffff;text-decoration:none;" target=3D"_blank"><s=
+pan style=3D"font-size:18px">
+                                     <span style=3D"font-family:'Arial Blac=
+k',Gadget,sans-serif">
+                                      JETZT ANMELDEN
+                                     </span>
+                                    </span>
+                                   </a>
+                                  </td>
+                                 </tr>
+                                </tbody>
+                               </table>
+                              </td>
+                             </tr>
+                            </tbody>
+                           </table>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </div>
+                  <!--<![endif]-->
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <!-- 262 - CTA -->
+      <!-- 500 - separateur stats -->
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+       <tbody>
+        <tr>
+         <td bgcolor=3D"#fff8ea" class=3D"hideForSmall" height=3D"12">
+          <img alt=3D"" border=3D"0" height=3D"1" src=3D"http://static2.cdn=
+.ubi.com/newsletters/2016/BionicJohn/blank.gif" style=3D"display:block" wid=
+th=3D"1">
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <!--[if !mso ]><!-->
+          <div class=3D"onlyForSmall" style=3D"display:none;width:0;overflo=
+w:hidden;max-height:0;">
+           <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%">
+            <tbody>
+             <tr>
+              <td bgcolor=3D"#fff8ea" height=3D"12">
+               <img alt=3D"" border=3D"0" height=3D"1" src=3D"http://static=
+2.cdn.ubi.com/newsletters/2016/BionicJohn/blank.gif" style=3D"display:block=
+" width=3D"1">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!--<![endif]-->
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <!-- 500 - separateur stats -->
+      <!-- B - Image sans URL -->
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+       <tbody>
+        <tr>
+         <td bgcolor=3D"#fff8ea" width=3D"100%">
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"100%">
+           <tbody>
+            <tr>
+             <td class=3D"hideForSmall" style=3D"padding : 0 ">
+              <img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/=
+FLAPS/RC/TEMPLATE/SEP_05.jpg" style=3D"display:block">
+             </td>
+             <td>
+              <!--[if !mso 9]><!-->
+              <div class=3D"onlyForSmall" style=3D"display:none;width:0;ove=
+rflow:hidden;max-height:0;">
+               <table align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%">
+                <tbody>
+                 <tr>
+                  <td class=3D"onlyForSmall" style=3D"padding : 0; color:#0=
+00000;">
+                   <img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi=
+.com/FLAPS/RC/TEMPLATE/SEP_05.jpg" style=3D"display:block" width=3D"100%">
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+              <!--<![endif]-->
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <!-- E - Image sans URL -->
+      <!-- 250 - img =C3=A0 gauche + texte + cta -->
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+       <tbody>
+        <tr>
+         <td bgcolor=3D"#fff8ea" class=3D"customPadding40" style=3D"padding=
+:0px 0;">
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%">
+           <tbody>
+            <tr>
+             <td class=3D"hideForSmall">
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%">
+               <tbody>
+                <tr>
+                 <td valign=3D"top">
+                  <table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" style=3D"margin:0 auto;">
+                   <tbody>
+                    <tr>
+                     <td valign=3D"top">
+                      <a _label=3D"Reward" href=3D"https://eur01.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid%=
+3Dh2e20d312%2C3ef475c9%2Ce4de7c2e&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc29=
+59908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63718942844372=
+3948&amp;sdata=3DZV5nuprkXuB07q7msoBmXyLZ9a9qfOgD3L8uf1nAtXo%3D&amp;reserve=
+d=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef475c9=
+,e4de7c2e" shash=3D"K&#43;fvN0ZmFfeG9YppHA5uitCM36USH04TuBXO1&#43;kO/yr8l9l=
+BnktYyZIWGpfS5h&#43;I1o5lGxBZaXbYTdPWEffq&#43;0oZdWaqIWS0xBpXyg4V66MKfx7j88=
+CI/RJwgW/a/41KyPzSr9DlB9bdnBQdUUnEiSrMY81l4KgjRelnIW9CiEc=3D" target=3D"_bl=
+ank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/RC/=
+LIVEPHASE/2020/02/26_REGISTRATION/REWARD.jpg" style=3D"display:block" width=
+=3D"360">
+                      </a>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </td>
+                 <td style=3D"vertical-align:middle;">
+                  <table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"360">
+                   <tbody>
+                    <tr>
+                     <td style=3D"padding:0 30px;">
+                      <table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"margin:0 auto;">
+                       <tbody>
+                        <tr>
+                         <td style=3D"padding:0px 0px 0 0px;color:#191919;f=
+ont-family:Arial,Helvetica,sans-serif;font-size:14px;mso-line-height-rule:e=
+xactly;font-weight : normal;">
+                          <div style=3D"text-align:center">
+                           <strong>
+                            <span style=3D"color:#ff1754">
+                             <span style=3D"font-family:Arial Black,Gadget,=
+sans-serif">
+                              <span style=3D"font-size:20px; text-transform=
+:uppercase">
+                               ERHALTE DEINE
+BELOHNUNG
+                              </span>
+                             </span>
+                            </span>
+                           </strong>
+                           <br>
+                           <br>
+                           <span style=3D"font-family:Arial,Helvetica,sans-=
+serif">
+                            <span style=3D"font-size:16px">
+                             Registriere dich jetzt und erhalte eine exklus=
+ive Belohnung, die du
+im Spiel ausstatten kannst!
+                            </span>
+                           </span>
+                          </div>
+                         </td>
+                        </tr>
+                        <tr>
+                         <td style=3D"padding:20px 0 0 0;font-family:Arial,=
+Helvetica,sans-serif;font-size:14px;mso-line-height-rule:exactly;font-weigh=
+t:normal;">
+                          <table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"margin:0 auto;">
+                           <tbody>
+                            <tr>
+                             <td style=3D"border : solid 3px #ff1754;  back=
+ground-color:#ff1754;">
+                              <table align=3D"center" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+                               <tbody>
+                                <tr>
+                                 <td align=3D"center" style=3D"padding:8px =
+30px;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;ms=
+o-line-height-rule:exactly;font-weight:normal;text-transform:uppercase;">
+                                  <a _label=3D"Reward" href=3D"https://eur0=
+1.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%=
+2Fr%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c2f&amp;data=3D02%7C01%7C%7C9ca9f=
+ac473a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63=
+7189428443733943&amp;sdata=3DMLfhktidR2P1MqqdSYpKsQvqI5jfs30cYwiJdKc%2F10g%=
+3D&amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e2=
+0d312,3ef475c9,e4de7c2f" shash=3D"IecSlzzHdZiNK2a3MBj&#43;rZXUIIhy42iHciwxR=
+nIlL8mcqMTw1HpkzGcITZFBbDIOCcyd6bTKisS3GmDTtTNdto549GaWcl7AfL8LRCe4P&#43;M9=
+61cr5Qf8FrzYAkL3BdMogLqYTZB5vnV2NW98A&#43;Xo6jXNszT4MgOqTSbxZEqf5Pc=3D" sty=
+le=3D"color:#ffffff;text-decoration:none;" target=3D"_blank"><span style=3D=
+"font-family:'Arial Black',Gadget,sans-serif">
+                                    <span style=3D"font-size:18px">
+                                     <strong>
+                                      MEHR ERFAHREN
+                                     </strong>
+                                    </span>
+                                   </span>
+                                  </a>
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                             </td>
+                            </tr>
+                           </tbody>
+                          </table>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <!--[if !mso ]><!-->
+              <div class=3D"onlyForSmall" style=3D"display:none;width:0;ove=
+rflow:hidden;max-height:0;">
+               <table align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%">
+                <tbody>
+                 <tr>
+                  <td valign=3D"top">
+                   <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"100%">
+                    <tbody>
+                     <tr>
+                      <td valign=3D"top">
+                       <a _label=3D"Reward" href=3D"https://eur01.safelinks=
+.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid=
+%3Dh2e20d312%2C3ef475c9%2Ce4de7c30&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc2=
+959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6371894284437=
+43936&amp;sdata=3DEG1Zco135%2FnPt3ZZz6pU%2FNi4Czy471loXTpB10UydSI%3D&amp;re=
+served=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef=
+475c9,e4de7c30" shash=3D"fF5/ZIgNVmmt4WCLyc&#43;bm4r7ZuXnSmgHQRQVwK0B12wPa0=
+4&#43;oeT/Oyhg&#43;DCfm7v84dagx3UL4sn/7iD4vwB3HaG/luBZg8CK1RUQzgwZJRH7Dz5E4=
+JUU3FTCHRivHMencV/bBym7&#43;A8FVZs73QYPl4oNp1S3y6uFU5u4PEgfrgI=3D" style=3D=
+"color:#ffffff;text-decoration:none;" target=3D"_blank"><img border=3D"0" s=
+rc=3D"http://static2.cdn.ubi.com/FLAPS/RC/LIVEPHASE/2020/02/26_REGISTRATION=
+/REWARD.jpg" style=3D"display:block;" width=3D"320">
+                       </a>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0">
+                    <tbody>
+                     <tr>
+                      <td style=3D"padding:30px 20px;">
+                       <table align=3D"center" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0">
+                        <tbody>
+                         <tr>
+                          <td align=3D"center" style=3D"padding:0px 0px 0 0=
+px;color:#191919;font-family:Arial,Helvetica,sans-serif;font-size:14px;mso-=
+line-height-rule:exactly;font-weight : normal;" valign=3D"top">
+                           <div style=3D"text-align:center">
+                            <strong>
+                             <span style=3D"color:#ff1754">
+                              <span style=3D"font-family:Arial Black,Gadget=
+,sans-serif">
+                               <span style=3D"font-size:20px; text-transfor=
+m:uppercase">
+                                ERHALTE DEINE
+BELOHNUNG
+                               </span>
+                              </span>
+                             </span>
+                            </strong>
+                            <br>
+                            <br>
+                            <span style=3D"font-family:Arial,Helvetica,sans=
+-serif">
+                             <span style=3D"font-size:16px">
+                              Registriere dich jetzt und erhalte eine exklu=
+sive Belohnung, die du
+im Spiel ausstatten kannst!
+                             </span>
+                            </span>
+                           </div>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td style=3D"padding:15px 0 0px 0;font-family:Ari=
+al,Helvetica,sans-serif;font-size:14px;mso-line-height-rule:exactly;font-we=
+ight:normal;">
+                           <table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0">
+                            <tbody>
+                             <tr>
+                              <td style=3D"border : solid 3px #ff1754;  bac=
+kground-color:#ff1754;">
+                               <table align=3D"center" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0">
+                                <tbody>
+                                 <tr>
+                                  <td align=3D"center" style=3D"padding:8px=
+ 30px;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;m=
+so-line-height-rule:exactly;font-weight:normal;text-transform:uppercase;">
+                                   <a _label=3D"Reward" href=3D"https://eur=
+01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com=
+%2Fr%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c31&amp;data=3D02%7C01%7C%7C9ca9=
+fac473a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6=
+37189428443753930&amp;sdata=3DGiOsGNaOaLvyRgvnY9n4OTu89VRgD7oWBUaZOAuMpKQ%3=
+D&amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20=
+d312,3ef475c9,e4de7c31" shash=3D"uICKtxa8K723PXbIKeDwZ0TMpZxfwcXntId/cDHXgR=
+DRdofmDSVFlOCoCAfwbd3seBE1w0Ipzja6S1VHSF0rLG7X2WT0gCgY1AwxfZLlSPMMhcpGzxnoj=
+94ohBsQOdHZtg2TzOgo6WeWxcI6yL8AU6frDJHM2im1DPT7eugxIaQ=3D" style=3D"color:#=
+ffffff;text-decoration:none;" target=3D"_blank"><span style=3D"font-family:=
+'Arial Black',Gadget,sans-serif">
+                                     <span style=3D"font-size:18px">
+                                      <strong>
+                                       MEHR ERFAHREN
+                                      </strong>
+                                     </span>
+                                    </span>
+                                   </a>
+                                  </td>
+                                 </tr>
+                                </tbody>
+                               </table>
+                              </td>
+                             </tr>
+                            </tbody>
+                           </table>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+              <!--<![endif]-->
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <!-- 250 - img =C3=A0 gauche + texte + cta -->
+      <!-- B - Image sans URL -->
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+       <tbody>
+        <tr>
+         <td bgcolor=3D"#fff8ea" width=3D"100%">
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"100%">
+           <tbody>
+            <tr>
+             <td class=3D"hideForSmall" style=3D"padding : 0 ">
+              <img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/=
+FLAPS/RC/TEMPLATE/SEP_05.jpg" style=3D"display:block">
+             </td>
+             <td>
+              <!--[if !mso 9]><!-->
+              <div class=3D"onlyForSmall" style=3D"display:none;width:0;ove=
+rflow:hidden;max-height:0;">
+               <table align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%">
+                <tbody>
+                 <tr>
+                  <td class=3D"onlyForSmall" style=3D"padding : 0; color:#0=
+00000;">
+                   <img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi=
+.com/FLAPS/RC/TEMPLATE/SEP_05.jpg" style=3D"display:block" width=3D"100%">
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+              <!--<![endif]-->
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <!-- E - Image sans URL -->
+      <!-- 250 - img =C3=A0 gauche + texte + cta -->
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+       <tbody>
+        <tr>
+         <td bgcolor=3D"#fff8ea" class=3D"customPadding40" style=3D"padding=
+:0px 0;">
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%">
+           <tbody>
+            <tr>
+             <td class=3D"hideForSmall">
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%">
+               <tbody>
+                <tr>
+                 <td style=3D"vertical-align:middle;">
+                  <table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"360">
+                   <tbody>
+                    <tr>
+                     <td style=3D"padding:0 30px;">
+                      <table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"margin:0 auto;">
+                       <tbody>
+                        <tr>
+                         <td style=3D"padding:0px 0px 0 0px;color:#191919;f=
+ont-family:Arial,Helvetica,sans-serif;font-size:14px;mso-line-height-rule:e=
+xactly;font-weight : normal;">
+                          <div style=3D"text-align:center">
+                           <strong>
+                            <span style=3D"color:#ff1754">
+                             <span style=3D"font-family:Arial Black,Gadget,=
+sans-serif">
+                              <span style=3D"font-size:20px; text-transform=
+:uppercase">
+                               WEITERE FRAGEN?
+                              </span>
+                             </span>
+                            </span>
+                           </strong>
+                           <br>
+                           <br>
+                           <span style=3D"font-family:Arial,Helvetica,sans-=
+serif">
+                            <span style=3D"font-size:16px">
+                             Sieh dir die FAQ zur Closed Alpha an!
+                            </span>
+                           </span>
+                          </div>
+                         </td>
+                        </tr>
+                        <tr>
+                         <td style=3D"padding:20px 0 0 0;font-family:Arial,=
+Helvetica,sans-serif;font-size:14px;mso-line-height-rule:exactly;font-weigh=
+t:normal;">
+                          <table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"margin:0 auto;">
+                           <tbody>
+                            <tr>
+                             <td style=3D"border : solid 3px #ff1754;  back=
+ground-color:#ff1754;">
+                              <table align=3D"center" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+                               <tbody>
+                                <tr>
+                                 <td align=3D"center" style=3D"padding:8px =
+30px;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;ms=
+o-line-height-rule:exactly;font-weight:normal;text-transform:uppercase;">
+                                  <a _label=3D"Forums" href=3D"https://eur0=
+1.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%=
+2Fr%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c32&amp;data=3D02%7C01%7C%7C9ca9f=
+ac473a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63=
+7189428443763924&amp;sdata=3DGeLzo3gq7D0VX3KKH0Jv5JNATtdF3MEOTb3gGzg%2FaIw%=
+3D&amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e2=
+0d312,3ef475c9,e4de7c32" shash=3D"al2WvUiYAJzqiL0YO/&#43;kZqYoKyBwCOpmLqr7D=
+FtKBMr56vBrDXz1s/O0n52/M4A7PKhpYnqPxS4RiHRZu4jHO5nZ22rMNVfw&#43;Q2p6SLX6QDn=
+hmEnb5ggLEblBc0ZLYGzzc9C1EGtBZuzXTS3k49B2YlNGgNPkSmeeYkxRaEA4v0=3D" style=
+=3D"color:#ffffff;text-decoration:none;" target=3D"_blank"><span style=3D"f=
+ont-family:'Arial Black',Gadget,sans-serif">
+                                    <span style=3D"font-size:18px">
+                                     <strong>
+                                      Sieh dir die FAQ an
+                                     </strong>
+                                    </span>
+                                   </span>
+                                  </a>
+                                 </td>
+                                </tr>
+                               </tbody>
+                              </table>
+                             </td>
+                            </tr>
+                           </tbody>
+                          </table>
+                         </td>
+                        </tr>
+                       </tbody>
+                      </table>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </td>
+                 <td valign=3D"top">
+                  <table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" style=3D"margin:0 auto;">
+                   <tbody>
+                    <tr>
+                     <td valign=3D"top">
+                      <a _label=3D"Forums" href=3D"https://eur01.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid%=
+3Dh2e20d312%2C3ef475c9%2Ce4de7c33&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc29=
+59908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63718942844377=
+3920&amp;sdata=3D%2Bo66Dph3VbwoTXhdgI0yCwVGHPWC6ZsqwB7qM8PZqAE%3D&amp;reser=
+ved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef475=
+c9,e4de7c33" shash=3D"HmlWcmwB7Fa&#43;mD/5IE4vupn&#43;KjmIsHX3SXKuEW2wet1Fd=
+YZNfL59ZBX&#43;5tDYPj1qV3Ip4qP72tLVOZSh7GZeobBOUh8FXKTOi1osjTBXXQhRKrsFYfwJ=
+Orzea3qdAlnxoyGLVBH4FSWT3mBM2BpeJu380pdKR5YZbCHKt2aLeuE=3D" target=3D"_blan=
+k"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/RC/LI=
+VEPHASE/2020/02/26_REGISTRATION/DEV.jpg" style=3D"display:block" width=3D"3=
+60">
+                      </a>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <!--[if !mso ]><!-->
+              <div class=3D"onlyForSmall" style=3D"display:none;width:0;ove=
+rflow:hidden;max-height:0;">
+               <table align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%">
+                <tbody>
+                 <tr>
+                  <td valign=3D"top">
+                   <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+width=3D"100%">
+                    <tbody>
+                     <tr>
+                      <td valign=3D"top">
+                       <a _label=3D"Forums" href=3D"https://eur01.safelinks=
+.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid=
+%3Dh2e20d312%2C3ef475c9%2Ce4de7c34&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc2=
+959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6371894284437=
+83916&amp;sdata=3DSQdlF6Zi8WC6eM3VF8xZkbf9%2Frwc%2Bokb73Hw4ThHpLQ%3D&amp;re=
+served=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef=
+475c9,e4de7c34" shash=3D"wbv46gLBRkBPXrX8d6ojuZWSGvd&#43;5kBrfF64iUb1S6Q2Zy=
+6avqTWM01wAep3XtN1alS7zc2kLuQXeNnjQeQtsuiw8hj943TTW9gxg1T2stLltskazVRpFIDi5=
+sayVwGWMcGxJRdgfff1ocFifuNB30SXJA2AYi3N1ogn1/Hurb8=3D" style=3D"color:#ffff=
+ff;text-decoration:none;" target=3D"_blank"><img border=3D"0" src=3D"http:/=
+/static2.cdn.ubi.com/FLAPS/RC/LIVEPHASE/2020/02/26_REGISTRATION/DEV.jpg" st=
+yle=3D"display:block;" width=3D"320">
+                       </a>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0">
+                    <tbody>
+                     <tr>
+                      <td style=3D"padding:30px 20px;">
+                       <table align=3D"center" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0">
+                        <tbody>
+                         <tr>
+                          <td align=3D"center" style=3D"padding:0px 0px 0 0=
+px;color:#191919;font-family:Arial,Helvetica,sans-serif;font-size:14px;mso-=
+line-height-rule:exactly;font-weight : normal;" valign=3D"top">
+                           <div style=3D"text-align:center">
+                            <strong>
+                             <span style=3D"color:#ff1754">
+                              <span style=3D"font-family:Arial Black,Gadget=
+,sans-serif">
+                               <span style=3D"font-size:20px; text-transfor=
+m:uppercase">
+                                WEITERE FRAGEN?
+                               </span>
+                              </span>
+                             </span>
+                            </strong>
+                            <br>
+                            <br>
+                            <span style=3D"font-family:Arial,Helvetica,sans=
+-serif">
+                             <span style=3D"font-size:16px">
+                              Sieh dir die FAQ zur Closed Alpha an!
+                             </span>
+                            </span>
+                           </div>
+                          </td>
+                         </tr>
+                         <tr>
+                          <td style=3D"padding:15px 0 0px 0;font-family:Ari=
+al,Helvetica,sans-serif;font-size:14px;mso-line-height-rule:exactly;font-we=
+ight:normal;">
+                           <table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0">
+                            <tbody>
+                             <tr>
+                              <td style=3D"border : solid 3px #ff1754;  bac=
+kground-color:#ff1754;">
+                               <table align=3D"center" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0">
+                                <tbody>
+                                 <tr>
+                                  <td align=3D"center" style=3D"padding:8px=
+ 30px;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;m=
+so-line-height-rule:exactly;font-weight:normal;text-transform:uppercase;">
+                                   <a _label=3D"Forums" href=3D"https://eur=
+01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com=
+%2Fr%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c35&amp;data=3D02%7C01%7C%7C9ca9=
+fac473a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6=
+37189428443793911&amp;sdata=3DA8ziwQxi2P2PKqUFL0BsgTG8BUL%2BOWbloJ2bNwUdt4w=
+%3D&amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e=
+20d312,3ef475c9,e4de7c35" shash=3D"kjsu1oHd&#43;q6AI3LUkRQLdmd37pKoXlQ9EWcQ=
+YhEMiW9GX3WInz/9Eb5i6v&#43;OXUUj&#43;E0Lw5nF2sc9dUR4tWMwJq9M&#43;GidcIDbs81=
+NPAMrUbWF9TbofAFF8/9f28XfaqH4krx3jc9ISol/T1sA5FDcNIt1WEo8xK5yXYl2c&#43;dmU8=
+s=3D" style=3D"color:#ffffff;text-decoration:none;" target=3D"_blank"><span=
+ style=3D"font-family:'Arial Black',Gadget,sans-serif">
+                                     <span style=3D"font-size:18px">
+                                      <strong>
+                                       Sieh dir die FAQ an
+                                      </strong>
+                                     </span>
+                                    </span>
+                                   </a>
+                                  </td>
+                                 </tr>
+                                </tbody>
+                               </table>
+                              </td>
+                             </tr>
+                            </tbody>
+                           </table>
+                          </td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+              <!--<![endif]-->
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <!-- 250 - img =C3=A0 gauche + texte + cta -->
+      <!-- B - Image + URL -->
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+       <tbody>
+        <tr>
+         <td bgcolor=3D"#fff8ea" width=3D"100%">
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"100%">
+           <tbody>
+            <tr>
+             <td class=3D"hideForSmall" style=3D"padding : 0 ">
+              <a _label=3D"Newsletter Link" href=3D"https://eur01.safelinks=
+.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid=
+%3Dh2e20d312%2C3ef475c9%2Ce4de7c36&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc2=
+959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6371894284438=
+03907&amp;sdata=3DxagYZLDgmOPtGbHcUJzjD5xqTNqD%2BAj8visk4YEmTFE%3D&amp;rese=
+rved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef47=
+5c9,e4de7c36" shash=3D"iSBknUaI5Z1VfPNzN&#43;K8LhC&#43;WlUR0RsIg5bFBKSAzXVs=
+cFSCh3NqQwXn7vNGOBjBUTHdE1SEM7tCu9DkbjL/745yKALzBKxpHIiIfakmkyz1BjlwP9SL9rY=
+QE7oQC8eLF56EMXONaWpmgBJVyYeLtC6KV5jQr7sdMEkGjgyoRYc=3D" target=3D"_blank">=
+<img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/RC/TEMPL=
+ATE/DESKTOP/SITE.jpg" style=3D"display:block">
+              </a>
+             </td>
+             <td>
+              <!--[if !mso 9]><!-->
+              <div class=3D"onlyForSmall" style=3D"display:none;width:0;ove=
+rflow:hidden;max-height:0;">
+               <table align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%">
+                <tbody>
+                 <tr>
+                  <td class=3D"onlyForSmall" style=3D"padding : 0; color:#0=
+00000;">
+                   <a _label=3D"Newsletter Link" href=3D"https://eur01.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F=
+%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c37&amp;data=3D02%7C01%7C%7C9ca9fac473a=
+84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63718942=
+8443813901&amp;sdata=3DYr6p60MDA1hdcT9szsOYIplrWSZtGQg%2FT33f3BhuoxE%3D&amp=
+;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,=
+3ef475c9,e4de7c37" shash=3D"PnCe&#43;VRIU0&#43;DqMSGmb&#43;h01AqCS9KZO8xnM&=
+#43;Mg27O6BFPfr8h6cH4&#43;yqyBDL63Nym0JmTxR7ArRQMYjxR&#43;7zTebLXO8ixeSZz7o=
+/CDeVQqqW6z/U&#43;vx0Tv4LP7tIq2&#43;oxMxTGVrFeXh6tmcqXsslEjQGHMW8upwXIPnbmA=
+0j1/8U=3D" target=3D"_blank"><img alt=3D"" border=3D"0" src=3D"http://stati=
+c2.cdn.ubi.com/FLAPS/RC/TEMPLATE/MOBILE/SITE.jpg" style=3D"width:100%; heig=
+ht:auto; display:block" width=3D"100%">
+                   </a>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+              <!--<![endif]-->
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <!-- E - Image + URL -->
+      <!-- B - 3 videos -->
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+       <tbody>
+        <tr>
+         <td bgcolor=3D"#4a4b68" width=3D"100%">
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"100%">
+           <tbody>
+            <tr>
+             <td class=3D"hideForSmall" style=3D"padding : 0px ">
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"100%">
+               <tbody>
+                <tr>
+                 <td>
+                  <a _label=3D"Twitter-Footer" href=3D"https://eur01.safeli=
+nks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3=
+Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c38&amp;data=3D02%7C01%7C%7C9ca9fac473a84=
+cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6371894284=
+43823897&amp;sdata=3DulEV4lhwacM5a6IZUDKRGegMnnmg0dXA2roauW%2B9hZQ%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3e=
+f475c9,e4de7c38" shash=3D"CY9m2iZGE&#43;OYnQhshQEBJv5vAQw7PnVsaizxko6LoNOGQ=
+DcPz8fxHhYVEBRTTnhfoXflqDmhG5Vr6amb1bEN9Sa&#43;CFovbUYp1z1E2r9m4EqYRvginbpZ=
+4ZtyeuYtFaRLbWxsoFgerlGAzA4RqXm3n6LfFj6BRqLpHa83wZw8GMQ=3D" target=3D"_blan=
+k"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/RC/TE=
+MPLATE/DESKTOP/FB.jpg" style=3D"display:block">
+                  </a>
+                 </td>
+                 <td>
+                  <a _label=3D"Twitter-Footer" href=3D"https://eur01.safeli=
+nks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3=
+Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c39&amp;data=3D02%7C01%7C%7C9ca9fac473a84=
+cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6371894284=
+43823897&amp;sdata=3DrfmLaKxiCAnkg4R3IyjhpukyUODhj%2F3HwaDKacVnhvs%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3e=
+f475c9,e4de7c39" shash=3D"db12Kftr8ySjkJ8lXgQSGFGNWI2FVwSLbVIwzn5yR4gx/h8In=
+aIcBolz75G10M7ym8iQI7bdw7CO1fzdpAtmuYA1&#43;mwj9rIUuCrGavKnC97nAcPZPeCLv2kp=
+iAx6jtyUcZbf3NcFcpmMeXeD6vJqMvQNiNlbc1CCGTAjSQJ9rag=3D" target=3D"_blank"><=
+img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/RC/TEMPLA=
+TE/DESKTOP/TW.jpg" style=3D"display:block">
+                  </a>
+                 </td>
+                 <td>
+                  <a _label=3D"Instagram-Footer" href=3D"https://eur01.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F=
+%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c3a&amp;data=3D02%7C01%7C%7C9ca9fac473a=
+84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63718942=
+8443833893&amp;sdata=3DSkxuZYmQtIqyUz6sS%2FtjlUoh4mEQbMjZfRjeFbKm%2BWA%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d31=
+2,3ef475c9,e4de7c3a" shash=3D"iSzJXMHhlYQcuWtHZl&#43;4ZluPzjdYvsvQEVrxXMBgv=
+PIBilwp8KH4JHgxO4xvuf6nfAelAbvbz5xkkAfhrKYRsw42xCL1rzOOfUcEWvQqXaOhleb9rZLd=
+GFi0qteZDZp9M8rJRAXNic0/4Yu1NdmndM8yge/Bn31GNjXqjFvJjX0=3D" target=3D"_blan=
+k"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/RC/TE=
+MPLATE/DESKTOP/IG.jpg" style=3D"display:block">
+                  </a>
+                 </td>
+                 <td>
+                  <a _label=3D"Community-Platform" href=3D"https://eur01.sa=
+felinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%=
+2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c3b&amp;data=3D02%7C01%7C%7C9ca9fac47=
+3a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189=
+428443843891&amp;sdata=3DFx4ltJ3mbg3lY9lgaAKaW4LULFevxio7G8axW0ITkBA%3D&amp=
+;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,=
+3ef475c9,e4de7c3b" shash=3D"Swmkhc9Utz8D7pVxJL/YXZ0/cpUsRkPrFSmikWGVbVoIr&#=
+43;EsqNV/BtcaA7wJXki&#43;S0f1A0DUhVlt0lnH5gHxwvB&#43;j1FrQyB8PjcZ16VXgqRqq4=
+HAGeCu9gbjyepAhNSlr4GMz6B4zJexTCnEjDq0takYgFzLHnmluhpfOIh1Ctc=3D" target=3D=
+"_blank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS=
+/RC/TEMPLATE/DESKTOP/DISCORD.jpg" style=3D"display:block">
+                  </a>
+                 </td>
+                 <td>
+                  <a _label=3D"Twitch-Footer" href=3D"https://eur01.safelin=
+ks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3F=
+id%3Dh2e20d312%2C3ef475c9%2Ce4de7c3c&amp;data=3D02%7C01%7C%7C9ca9fac473a84c=
+c2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63718942844=
+3853883&amp;sdata=3DHGtHOMQTgiFLv4430CnsR3HlmEYIy6y%2F6LPIpgdqQKU%3D&amp;re=
+served=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef=
+475c9,e4de7c3c" shash=3D"LUL&#43;clRAHTOSwY2JCgHM6Djd8afFxkoNXkv6aV3qQlmh9o=
+GZ1eNwgTvRfbF50/mw/Z00XPjm4o2UyitfuBjQfEblACoBfr8BX0HjLqmqb/Ds9sJ&#43;&#43;=
+&#43;KAgGqtmBtvryRDJuDMfok5bFVVkdLAHcmstbzw7xjiPUzs30ktYr1QrBw=3D" target=
+=3D"_blank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FL=
+APS/RC/TEMPLATE/DESKTOP/TWITCH.jpg" style=3D"display:block">
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+             <td>
+              <!--[if !mso 9]><!-->
+              <div class=3D"onlyForSmall" style=3D"display:none;width:0;ove=
+rflow:hidden;max-height:0;">
+               <table align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%">
+                <tbody>
+                 <tr>
+                  <td class=3D"onlyForSmall" style=3D"padding : 0px; ">
+                   <table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" class=3D"100%">
+                    <tbody>
+                     <tr>
+                      <td>
+                       <a _label=3D"Twitter-Footer" href=3D"https://eur01.s=
+afelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr=
+%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c3d&amp;data=3D02%7C01%7C%7C9ca9fac4=
+73a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63718=
+9428443863879&amp;sdata=3DfbYwtCTs8cPFfE8VxqyGhFLzKXZ6xYNjE5bsTEnl31U%3D&am=
+p;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312=
+,3ef475c9,e4de7c3d" shash=3D"IgGGOhDRJs3&#43;uVsWNDFYtc9qlo5UrHnrbwoR00fdv8=
+Fru8KAubRk7/KvBl&#43;ZZoxjlMTBm550opepqcAyXduIZVeCubEpNAjRHBeotlznBqibYtZwO=
+w/0iAhu4wqxnggsiU5De2WUf8qvvL/O59Ou15oG2SkLMgDVsCdtKPejRZo=3D" target=3D"_b=
+lank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/RC=
+/TEMPLATE/MOBILE/FB.jpg" style=3D"display:block">
+                       </a>
+                      </td>
+                      <td>
+                       <a _label=3D"Twitter-Footer" href=3D"https://eur01.s=
+afelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr=
+%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c3e&amp;data=3D02%7C01%7C%7C9ca9fac4=
+73a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63718=
+9428443873874&amp;sdata=3DvVsEIm0MxpGxr%2F%2FB8w5%2Fz5sVIjjGORsvWdxmSQ3eHmU=
+%3D&amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e=
+20d312,3ef475c9,e4de7c3e" shash=3D"Chn7ZXvZFjS88&#43;aghB9wTBiIWcHeSrUBqUUQ=
+xzqI4sTyOGSjbVt77k188UquHOATFPE6CZy/GFH2e8o3bRYK9w97zQQ1JB7mWoX66vVbksTs5kx=
+ZrKVeCitJutvyduSW0IxeSkeMRgczBCGdd8CW/fdZWSSw1HM32TqwP6qD&#43;FE=3D" target=
+=3D"_blank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FL=
+APS/RC/TEMPLATE/MOBILE/TW.jpg" style=3D"display:block">
+                       </a>
+                      </td>
+                      <td>
+                       <a _label=3D"Instagram-Footer" href=3D"https://eur01=
+.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2=
+Fr%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c3f&amp;data=3D02%7C01%7C%7C9ca9fa=
+c473a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637=
+189428443883870&amp;sdata=3DZb2d0U7bsmxTfu5yB0oCcH%2F49hdkuA0FfaNSj4wgyG8%3=
+D&amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20=
+d312,3ef475c9,e4de7c3f" shash=3D"zvvtRFPDhD62k3iKw66C6r&#43;JDjCEwFhkfOnnR5=
+7Grs3o9Z9I4icUvokDVsaLfM&#43;uGw0HcVPv2dFNAkCtl8&#43;HJckxYup1sb4YtTOYSIz5n=
+3SEATbpVEVXAIdz5ls4M9s/zgAbJFfotavRzp9JxN3IGzfE3Q05EzPy7JmxHoftlLU=3D" targ=
+et=3D"_blank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/=
+FLAPS/RC/TEMPLATE/MOBILE/IG.jpg" style=3D"display:block">
+                       </a>
+                      </td>
+                      <td>
+                       <a _label=3D"Community-Platform" href=3D"https://eur=
+01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com=
+%2Fr%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c40&amp;data=3D02%7C01%7C%7C9ca9=
+fac473a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6=
+37189428443893864&amp;sdata=3D0WaxH2WSayD7Ki5wrN1RK4SI6OPsd8%2FVKaxH8TjPNeQ=
+%3D&amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e=
+20d312,3ef475c9,e4de7c40" shash=3D"uwSzg2&#43;bFSE4U1JCrVg9GQQ8RUGsX60&#43;=
+sZyibahEKG4PB37BaYH6/vNpMZpDbzGII2FKUOBaRabEMu1TJWM11JfeB5vlpeQqc/fiFBeLhT8=
+69ypOA9mMumwh7tDuculQOcPzLp3LLbLNjyzenHDh6Sv2Nr5&#43;6tdgMXMPg6s1btQ=3D" ta=
+rget=3D"_blank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.co=
+m/FLAPS/RC/TEMPLATE/MOBILE/DISCORD.jpg" style=3D"display:block">
+                       </a>
+                      </td>
+                      <td>
+                       <a _label=3D"Twitch-Footer" href=3D"https://eur01.sa=
+felinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%=
+2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c41&amp;data=3D02%7C01%7C%7C9ca9fac47=
+3a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189=
+428443903859&amp;sdata=3DntgYSHB7VsyzP%2BM7LHU%2BqCfr6BYo3lgKZ2vXhp44ehE%3D=
+&amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d=
+312,3ef475c9,e4de7c41" shash=3D"bJVd5yKtL93Xl5RP6dkhTGFszhfVlvIwG1xYrTdQVbg=
+VTVcwVfrgZnZPXbDD0lU0vIOytXGLeQpsHYkW1lhGYtbNSYADxw0Yr&#43;73RDN67MHANPGCPg=
+KrlLlbjqDj/lqVbbRopVxC1tErxuh347a2cCf5rVd3UvU7T9oqezKlDC0=3D" target=3D"_bl=
+ank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/RC/=
+TEMPLATE/MOBILE/TWITCH.jpg" style=3D"display:block">
+                       </a>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+              <!--<![endif]-->
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <!-- E - 3 videos -->
+      <!-- B - 3 videos -->
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+       <tbody>
+        <tr>
+         <td bgcolor=3D"#4a4b68" width=3D"100%">
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"100%">
+           <tbody>
+            <tr>
+             <td class=3D"hideForSmall" style=3D"padding : 0px ">
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"100%">
+               <tbody>
+                <tr>
+                 <td>
+                  <a _label=3D"Newsletter Link" href=3D"" target=3D"_blank"=
+>
+                   <img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi=
+.com/FLAPS/Root/2018/FOOTER_NEW/BLACK/DESKTOP/DE.jpg" style=3D"display:bloc=
+k">
+                  </a>
+                 </td>
+                 <td>
+                  <a _label=3D"Newsletter Link" href=3D"https://eur01.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%=
+3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c42&amp;data=3D02%7C01%7C%7C9ca9fac473a8=
+4cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189428=
+443913854&amp;sdata=3DJFX6aL%2BUA2qzqT7otBSbdHxV7o%2B0tgDFZuC7T7VjVuU%3D&am=
+p;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312=
+,3ef475c9,e4de7c42" shash=3D"SRPqxelnA5d8wd/zfPIZuhx&#43;dPQ0LXa9pffTzIFqXx=
+6CSG70LqLDMLPxK09ecqoWimSmwCwZDCHIacqTsNmBjP9eKrBdh&#43;OtxyaxReugX1tACguOQ=
+ryBAwtCI0ejRjzGTh6x0S/irzqnxddTlC7LfeobDioysgXb5vFPPDdnXNQ=3D" target=3D"_b=
+lank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/Ro=
+ot/2018/FOOTER_NEW/BLACK/DESKTOP/CLUB.jpg" style=3D"display:block">
+                  </a>
+                 </td>
+                 <td>
+                  <a _label=3D"Newsletter Link" href=3D"https://eur01.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%=
+3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c43&amp;data=3D02%7C01%7C%7C9ca9fac473a8=
+4cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189428=
+443913854&amp;sdata=3Dx4dn8d09DVWI9rogdfzXqGZk0WQfP842lEexm%2BJxXbk%3D&amp;=
+reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3=
+ef475c9,e4de7c43" shash=3D"hD/XzjxIlaMcQrccZoMg8Vvsk84WNeDddTM7psgFBm8aPoWB=
+t25RjJZC/b9L0OuEMVa28EpV3aJiNAMww37n/kzcpNwSX&#43;Ax6pKmGjBWaFyzLsB8kGL6nD1=
+COnh&#43;MX1thvKfK&#43;XhVHY8iPo7Slt4Gx7CmSvWLPjOAubq8hHCYRo=3D" target=3D"=
+_blank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/=
+Root/2018/FOOTER_NEW/BLACK/DESKTOP/UPLAYNEW.jpg" style=3D"display:block">
+                  </a>
+                 </td>
+                 <td>
+                  <a _label=3D"Newsletter Link" href=3D"https://eur01.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%=
+3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c44&amp;data=3D02%7C01%7C%7C9ca9fac473a8=
+4cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189428=
+443923849&amp;sdata=3DqKsxfF4YmNv%2BwXyB97rd2VowGREcGIqNuOA6U3zbMJA%3D&amp;=
+reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3=
+ef475c9,e4de7c44" shash=3D"m5tYRrGyo9r&#43;Y9pG7TGDS&#43;M97YkOBTzCTQ0RpIaf=
+hwLJ&#43;zdaFyEYTVb4E&#43;7P7fxxdbg12YJelDu68HFZnbvY7o1ae9gyv3h394w0NxQ4hhJ=
+K0wyEl9GY39CXVGMKK4GPVHQs1hZXSzn59&#43;lLo5ZJPNmEAJT5c0e05FbcSEdDh/s=3D" ta=
+rget=3D"_blank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.co=
+m/FLAPS/Root/2018/FOOTER_NEW/BLACK/DESKTOP/UBISOFT.jpg" style=3D"display:bl=
+ock">
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+             <td>
+              <!--[if !mso 9]><!-->
+              <div class=3D"onlyForSmall" style=3D"display:none;width:0;ove=
+rflow:hidden;max-height:0;">
+               <table align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%">
+                <tbody>
+                 <tr>
+                  <td class=3D"onlyForSmall" style=3D"padding : 0px; ">
+                   <table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" class=3D"100%">
+                    <tbody>
+                     <tr>
+                      <td>
+                       <a _label=3D"Newsletter Link" href=3D"" target=3D"_b=
+lank">
+                        <img alt=3D"" border=3D"0" src=3D"http://static2.cd=
+n.ubi.com/FLAPS/Root/2018/FOOTER_NEW/BLACK/MOBILE/DE.jpg" style=3D"display:=
+block">
+                       </a>
+                      </td>
+                      <td>
+                       <a _label=3D"Newsletter Link" href=3D"https://eur01.=
+safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2F=
+r%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c45&amp;data=3D02%7C01%7C%7C9ca9fac=
+473a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6371=
+89428443933844&amp;sdata=3D%2BMaFxI89gx6r0DH5L1bCWR9df0CBaCHg2ulQYAP4IPE%3D=
+&amp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d=
+312,3ef475c9,e4de7c45" shash=3D"pIgFJcI2vO3XLweL9wWM/o&#43;ZxVZ5YQb1Ku3jEIW=
+CunbfZ7SdVnMIEbDwTvdXBfWSGRR6FGDD/7dO9Jqvoqx79bVm0MVZaZ05/D3UmenywpLBC/7RJR=
+B6J4xXjXRksnRmoQO/bTIevPO/KKzxPUSrhoNNjCzvPmnN77BRy6uiOKs=3D" target=3D"_bl=
+ank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com/FLAPS/Roo=
+t/2018/FOOTER_NEW/BLACK/MOBILE/CLUB.jpg" style=3D"display:block">
+                       </a>
+                      </td>
+                      <td>
+                       <a _label=3D"Newsletter Link" href=3D"https://eur01.=
+safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2F=
+r%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c46&amp;data=3D02%7C01%7C%7C9ca9fac=
+473a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6371=
+89428443943842&amp;sdata=3DXnVZV3pQMIvE2bvDEjN7Gr5tVDBTEHl6nHeU9KnLJD8%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d31=
+2,3ef475c9,e4de7c46" shash=3D"E9LyFRv3nGWn&#43;e&#43;4aOwQLodbu6RDCqxry&#43=
+;K6d7gdCjOWgehiv5iK&#43;pUkKuW/SMLu71gp0BJpu7fK8I2yLNDTYlm5pWWHxGk7GAocA4vn=
+fare0L&#43;cDNP6pYTQJKJ8LylwTLGM98TDP6CRdmrwnr995IqgUEBXf1Mf96TVnHQ97PE=3D"=
+ target=3D"_blank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi=
+.com/FLAPS/Root/2018/FOOTER_NEW/BLACK/MOBILE/UPLAYNEW.jpg" style=3D"display=
+:block">
+                       </a>
+                      </td>
+                      <td>
+                       <a _label=3D"Newsletter Link" href=3D"https://eur01.=
+safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2F=
+r%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4de7c47&amp;data=3D02%7C01%7C%7C9ca9fac=
+473a84cc2959908d7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6371=
+89428443953836&amp;sdata=3Dt8fReFaNGQCRek7pcPCMjPHRGcBQWFDqItS6ZzUV1WQ%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d31=
+2,3ef475c9,e4de7c47" shash=3D"X16H02Tdot8Zt9BpECyNbckiAaQSpLmCljB4Oe2qrZuf7=
+qWkEar9udBv2uRx15itjwPe63fO&#43;bSqt&#43;1hSO3mry72crGqbGT4vUjwgeLVpfl&#43;=
+76vUxAaNbR7wLFx4/5UWI/ZaqbozQdw0DjccObzbhttajLGPt27OFwW&#43;KgR8ZWc=3D" tar=
+get=3D"_blank"><img alt=3D"" border=3D"0" src=3D"http://static2.cdn.ubi.com=
+/FLAPS/Root/2018/FOOTER_NEW/BLACK/MOBILE/UBISOFT.jpg" style=3D"display:bloc=
+k">
+                       </a>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+              <!--<![endif]-->
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <!-- E - 3 videos -->
+      <!-- Preheader -->
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+       <tbody>
+        <tr>
+         <td align=3D"center" bgcolor=3D"#000000" style=3D"padding : 10px 2=
+0px; vertical-align:middle; color:#ffffff; background-color:#000000; font:1=
+2px Arial, sans-serif;">
+          =C2=A9 2020 Ubisoft Entertainment. All Rights Reserved. The Rolle=
+r Champions logo, Ubisoft and the Ubisoft logo are registered or unregister=
+ed trademarks of Ubisoft Entertainment in the U.S. and/or
+other countries.
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <!-- Preheader -->
+      <!-- 972 -  Desabo - texte blanc -->
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"tableTemplateWidth" style=3D"width:720px;" width=3D"720">
+       <tbody>
+        <tr>
+         <td>
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%">
+           <tbody>
+            <tr>
+             <td bgcolor=3D"#000000" class=3D"customPaddingSide10px" style=
+=3D"padding:30px;">
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%">
+               <tbody>
+                <tr>
+                 <td align=3D"center" style=3D"padding:0px 0px 0px 0px;font=
+-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;mso-line=
+-height-rule:exactly;font-weight : normal;">
+                     <a style=3D"FONT-SIZE: 12px; TEXT-DECORATION: none; ba=
+ckground-color: black; COLOR: white" href=3D"https://eur01.safelinks.protec=
+tion.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid%3Dh2e2=
+0d312%2C3ef475c9%2Ce4de7c4a&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc2959908d=
+7c068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189428443963830&a=
+mp;sdata=3DexCqlhUwtknLJtRE%2FPEkYKwtqVNPzIAG0%2BzSXZazQNQ%3D&amp;reserved=
+=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef475c9,=
+e4de7c4a" shash=3D"dxZCHJ8gZTIPVqtvaiPrZFEqVHBr0JikbDBT1CRehVlhwRT8tSQRjChC=
+K8gTcG6z4Apsud2OPdqqJ4yhVmwsSgLjMy3&#43;mNjx9kc21SC19Er/87kJ/LxVK4ny9eNkzpK=
+Kvp3FXE/nstllg9RNwVmBkbFRZsIA7NRH/e7EoUpJ2lE=3D" _type=3D"CS" _label=3D"CS =
+link"><u>Datenschutz</u></a> <span style=3D"FONT-SIZE: 12px; background-col=
+or: black; COLOR: white">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<=
+/span> <a style=3D"FONT-SIZE: 12px; TEXT-DECORATION: none; background-color=
+: black; COLOR: white" href=3D"https://eur01.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid%3Dh2e20d312%2C3ef475=
+c9%2Ce4de7c4b&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc2959908d7c068c090%7C84=
+df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189428443973829&amp;sdata=3Do4Q=
+mpP4C1KXk7Ru%2BdAHPRKpnZjoMbpo3F%2FFuSu6MdZQ%3D&amp;reserved=3D0" originals=
+rc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef475c9,e4de7c4b" shash=
+=3D"YOQeWPtZ0d3cc9RkqSY07wlDc9aUeEfZm9MA7GClONbqFu65bI27L&#43;/CrHZdlaB&#43=
+;&#43;PfpmL/0hcklo2CxQNxYPXaL3BebrbFI4JgUjksxCn8YOZQDKd1JPnhuMxHMyHvVBfSRFI=
+2yHiZlz2sLuBy7A1HaYr4Y4EohJ4vrKL40F8A=3D" _type=3D"CS" _label=3D"CS link"><=
+u>Nutzungsbedingungen</u></a> <span style=3D"FONT-SIZE: 12px; background-co=
+lor: black; COLOR: white">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;=
+</span> <a style=3D"FONT-SIZE: 12px; TEXT-DECORATION: none; background-colo=
+r: black; COLOR: white" href=3D"https://eur01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid%3Dh2e20d312%2C3ef47=
+5c9%2Ce4de7c4c&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc2959908d7c068c090%7C8=
+4df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189428443983821&amp;sdata=3D0f=
+PcJC0BFchk6dKBbOyQlbJ9iJSdywG0Sq5RlXcOcyg%3D&amp;reserved=3D0" originalsrc=
+=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef475c9,e4de7c4c" shash=
+=3D"oGfX6rT8Ah2/f&#43;mGvYAaermZTvhr&#43;PjQ7BM4zLZoNvhidRCDvNhE7k523&#43;u=
+n1IZ/sO8cod1RE&#43;T3rEhfMG7n62ZnPqg0P6LQRK6DQ/MkvBhPKf6VCwQ2z5NRytf8Hif5F3=
+hPWZrZFWgr7&#43;73GkWYQ80pBOpFvq19Ww&#43;dg9RlJVw=3D" _type=3D"CS" _label=
+=3D"CS link"><u>Impressum</u></a> <span style=3D"FONT-SIZE: 12px; backgroun=
+d-color: black; COLOR: white">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&n=
+bsp;</span> <a style=3D"FONT-SIZE: 12px; TEXT-DECORATION: none; background-=
+color: black; COLOR: white" href=3D"https://eur01.safelinks.protection.outl=
+ook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid%3Dh2e20d312%2C3=
+ef475c9%2Ce4de7c4d&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc2959908d7c068c090=
+%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189428443993820&amp;sdata=
+=3DM2ri1bdQBfzWbWchnSTgKwI3Le8Krw%2F9OqLslAc%2BX3U%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef475c9,e4de7c4d"=
+ shash=3D"QQetwGK8Np2iBfmKNFF4CVghI6tGwGmpiebyWONX8Feji62/&#43;4ZpnIsZ0FsPd=
+25al0&#43;v96NCC9CXG7j7rROgVo39jBi86acXI2GfcqgBN1v5L7s9Y1/tVlPyHsoIsjkgyass=
+IwZAIo8wkGrBpLCe4ZSdG9LCAornY23rkcY6JTA=3D" _type=3D"CS" _label=3D"CS link"=
+><u>Kontakt</u></a> <span style=3D"FONT-SIZE: 12px; background-color: black=
+; COLOR: white">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span> <a=
+ style=3D"FONT-SIZE: 12px; TEXT-DECORATION: none; background-color: black; =
+COLOR: white" href=3D"https://eur01.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4=
+de7c4e&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc2959908d7c068c090%7C84df9e7fe=
+9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189428444003810&amp;sdata=3Da6MAukqCNk=
+zck4aLiL%2B6h%2FXSg2BYhsbDauUBZHE6u4I%3D&amp;reserved=3D0" originalsrc=3D"h=
+ttps://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef475c9,e4de7c4e" shash=3D"Rpm=
+c5xWITt1cfKzJBa&#43;emvq2An26Kod2He68zDqPEiu/KMKji66qpgPQ941JpdkgEWBOKXATy2=
+1pt1P5SAzAH&#43;6ZR88l5Z/anxRB2mwgyR&#43;0hY7Yp2xDJy2VAqlCMVRlVFw2vxV5IQ94Y=
+jVsP&#43;/scZHJX5/01FRwSZiZpFsv2gw=3D" _type=3D"CS" _label=3D"CS link"><u>K=
+undendienst</u></a> <span style=3D"FONT-SIZE: 12px; background-color: black=
+; COLOR: white">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span> <a=
+ style=3D"FONT-SIZE: 12px; TEXT-DECORATION: none; background-color: black; =
+COLOR: white" href=3D"https://eur01.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid%3Dh2e20d312%2C3ef475c9%2Ce4=
+de7c4f%26p1%3DU2FsdGVkX18BEHPL2785zKM6ugbLw4n-Iv8-jmIpWMzNYnVzZfsAlk7GMUnym=
+uxyeAZKf2VtpCKjhlv6-A1o4bxNbp7ZNXOnDGT060HNZh5MeIQofDMN_w5E0PB2g9OhzDmZfyEk=
+tcS74RyUj4j4U7qhChK68zfuPiuBVKUnS-9AYRW0OR2VvUiVDR_w-UfA9QpNrBg41j9GktXPA8H=
+17w%3D%3D&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc2959908d7c068c090%7C84df9e=
+7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189428444003810&amp;sdata=3D8tdqTDC=
+U4fC0Zk38h7UOMEMXRauyaCxYpT550NHWXV8%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef475c9,e4de7c4f&amp;p1=3DU2Fsd=
+GVkX18BEHPL2785zKM6ugbLw4n-Iv8-jmIpWMzNYnVzZfsAlk7GMUnymuxyeAZKf2VtpCKjhlv6=
+-A1o4bxNbp7ZNXOnDGT060HNZh5MeIQofDMN_w5E0PB2g9OhzDmZfyEktcS74RyUj4j4U7qhChK=
+68zfuPiuBVKUnS-9AYRW0OR2VvUiVDR_w-UfA9QpNrBg41j9GktXPA8H17w=3D=3D" shash=3D=
+"ZyzKCdByepAr&#43;Iwd1eEkN573NuSbX9GOUTMpJyeUNWGHxwW5P1jC8FUVuYFn2Ld1My0WGb=
+vJvkZApVfnTokN7&#43;9qJWQ/PjauAKdqGfALZudvVqiGONOIwDO2LxFMTuDcQw2mkFu&#43;p=
+Hzd&#43;yzy/JfAOabI60gNkSR1FyUGNeCvT8Q=3D" _type=3D"optout" _label=3D"Opt-o=
+ut link"><u>Abmelden</u></a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <!-- 972 -  Desabo - texte blanc -->
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"tableTemplateWidth" style=3D"width:720px; background-color: bl=
+ack; color :white;" width=3D"720">
+       <tbody>
+        <tr>
+         <td width=3D"100%">
+             <!-- 280 - 2 Image Mobile seulement + URL -->
+<table class=3D"tableTemplateWidth" style=3D"WIDTH: 720px" cellspacing=3D"0=
+" cellpadding=3D"0" width=3D"720" align=3D"center" border=3D"0">
+<tbody>
+<tr>
+<td width=3D"100%">
+<table class=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" =
+border=3D"0">
+<tbody>
+<tr>
+<td><!--[if !mso 9]><!-->
+<div class=3D"onlyForSmall" style=3D"OVERFLOW: hidden; WIDTH: 0px; DISPLAY:=
+ none; MAX-HEIGHT: 0px">
+<table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" align=3D"center" =
+border=3D"0">
+<tbody>
+<tr>
+<td style=3D"COLOR: #000000; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING=
+-LEFT: 0px; PADDING-RIGHT: 0px"><a href=3D"https://eur01.safelinks.protecti=
+on.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid%3Dh2e20d=
+312%2C3ef475c9%2Ce4de7c86&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc2959908d7c=
+068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189428444013807&amp=
+;sdata=3D48cGiX8Z1Rl2Tfg6yquswt8Vm2mQCVN4YvFpc8Uxk1s%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef475c9,e4de7c8=
+6" shash=3D"b8uSxIuxuFBXLGBrNt1GUyJK/hRRuVNx/lu5gsgR7tl&#43;1R4V1Czcv3wS8H&=
+#43;yf7fuDdyfmxR&#43;WfHN66nxIiquOmAOthCAwtKZjRL6Gu3PTNkh/3W1&#43;eUeIS9TsY=
+GwX1Lt4WfS9IFMmWhdxgLbu9g7mR&#43;yNufDynIPAnSSc0CCTwc=3D" target=3D"_blank"=
+ alt=3D"ItunesClubApp" _label=3D"itunes"><img style=3D"HEIGHT: auto; DISPLA=
+Y: block" border=3D"0" alt=3D"" src=3D"http://static2.cdn.ubi.com/FLAPS/UPL=
+AY_APP/MobileOnlyBanner/DE_01.jpg"> </a></td>
+<td style=3D"COLOR: #000000; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING=
+-LEFT: 0px; PADDING-RIGHT: 0px"><a href=3D"https://eur01.safelinks.protecti=
+on.outlook.com/?url=3Dhttps%3A%2F%2Ft.news.ubisoft.com%2Fr%2F%3Fid%3Dh2e20d=
+312%2C3ef475c9%2Ce4de7c87&amp;data=3D02%7C01%7C%7C9ca9fac473a84cc2959908d7c=
+068c090%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637189428444023802&amp=
+;sdata=3DTO%2BtiQ8vb2VqOZa57pUKi4iSm3cwo20%2BWamWr0d%2FFWM%3D&amp;reserved=
+=3D0" originalsrc=3D"https://t.news.ubisoft.com/r/?id=3Dh2e20d312,3ef475c9,=
+e4de7c87" shash=3D"r1ReAriiSezQCO6jaJhcZYTQOGd9v4T&#43;eh4A0NcTALC0FuhjMR4l=
+n6yQr81SHlh89/kavvFRl4gTIw/KnZNPeaF6CFh5c4IAcNUau77QaKbIqmUMvimwDATtqGBS5DI=
+j6z3Atb4Vb1z3Vhy5GtQ21K0Ktg6Tt4SIiapEK99ZdPg=3D" target=3D"_blank" alt=3D"P=
+layStoreMobileApp" _label=3D"android"><img style=3D"HEIGHT: auto; DISPLAY: =
+block" border=3D"0" alt=3D"" src=3D"http://static2.cdn.ubi.com/FLAPS/UPLAY_=
+APP/MobileOnlyBanner/DE_02.jpg"> </a></td></tr></tbody></table></div><!--<!=
+[endif]--></td></tr></tbody></table></td></tr></tbody></table><!-- 280 - 2 =
+Image Mobile seulement + URL -->
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <!-- FIN FLAPS =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <!-- End Wrapper -->
+ </body>
+</html>
+<img height=3D"0" width=3D"0" alt=3D"" src=3D"https://t.news.ubisoft.com/r/=
+?id=3Dh2e20d312,3ef475c9,1">
+
+
+
+
+--e608cc578c1938b56d0a31955549adb5e9c43c6387eee0a86c1aabeee198753c--

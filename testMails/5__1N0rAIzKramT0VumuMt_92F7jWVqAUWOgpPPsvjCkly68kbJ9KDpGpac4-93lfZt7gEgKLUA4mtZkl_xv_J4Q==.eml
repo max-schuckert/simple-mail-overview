@@ -1,0 +1,324 @@
+Authentication-Results: spf=pass (sender IP is 208.64.202.53) smtp.mailfrom=steampowered.com; outlook.de; dkim=pass (signature was verified) header.d=steampowered.com;outlook.de; dmarc=bestguesspass action=none header.from=steampowered.com;
+Content-Type: multipart/mixed; boundary=8a6b1bac86671615f37da26c9a7f69c75acd3c7d29777790d7383f94dd8e6293
+Date: Tue, 05 Nov 2019 04:34:26 -0800
+Delivered-To: maraltez@validmax.tech
+Dkim-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=steampowered.com; s=smtp; h=Date:Message-Id:Content-Type:Subject: MIME-Version:Reply-To:From:To:Sender:Cc:Content-Transfer-Encoding:Content-ID: Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe: List-Subscribe:List-Post:List-Owner:List-Archive; bh=9xfSkAS7O364ojRy0J6bNft2+45UdQ9dc26kMA6vAa0=; b=XTc3R7Icme2iMAvd2dHXS2YlHG ujnTvxavwG7oOM37s0N2J7N3nyAiu51Gc1ofA/6SVTcHpHCkfk0m6n5vYVdLqSfnhO2DHhvrl7OJk x+IJgio8IYP/MpPC+4xdlPHRw33fn0CgiuhSUrZLlItZKlZS9VhBDpA/3vbNEC7GzRqE=;
+Errors-To: <noreply@steampowered.com>
+From: "Steam" <noreply@steampowered.com>
+Message-Id: <E1iRy2U-0005Xq-Sy@smtp-04-tuk1.steampowered.com>
+Mime-Version: 1.0
+Received: from HE1EUR04HT122.eop-eur04.prod.protection.outlook.com (2603:10a6:209:3e::46) by AM6PR09MB3538.eurprd09.prod.outlook.com with HTTPS via AM6P193CA0033.EURP193.PROD.OUTLOOK.COM; Tue, 5 Nov 2019 12:34:29 +0000
+Received: from HE1EUR04FT029.eop-eur04.prod.protection.outlook.com (10.152.26.57) by HE1EUR04HT122.eop-eur04.prod.protection.outlook.com (10.152.27.106) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.2387.20; Tue, 5 Nov 2019 12:34:28 +0000
+Received: from smtp-53.steampowered.com (208.64.202.53) by HE1EUR04FT029.mail.protection.outlook.com (10.152.27.32) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2387.20 via Frontend Transport; Tue, 5 Nov 2019 12:34:28 +0000
+Received: from [208.64.202.21] (helo=valvesoftware.com) by smtp-04-tuk1.steampowered.com with smtp (Exim 4.90_1) (envelope-from <noreply@steampowered.com>) id 1iRy2U-0005Xq-Sy for eziogaming@outlook.de; Tue, 05 Nov 2019 04:34:26 -0800
+Received-Spf: Pass (protection.outlook.com: domain of steampowered.com designates 208.64.202.53 as permitted sender) receiver=protection.outlook.com; client-ip=208.64.202.53; helo=smtp-53.steampowered.com;
+References: <_1N0rAIzKramT0VumuMt_92F7jWVqAUWOgpPPsvjCkly68kbJ9KDpGpac4-93lfZt7gEgKLUA4mtZkl_xv_J4Q==@protonmail.internalid>
+Reply-To: <noreply@steampowered.com>
+Return-Path: noreply@steampowered.com
+Subject: =?utf-8?q?Planet_Zoo_ist_jetzt_auf_Steam_verf=C3=BCgbar!?=
+To: <eziogaming@outlook.de>
+X-Eopattributedmessage: 0
+X-Eoptenantattributedmessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-Forefront-Antispam-Report: EFV:NLI;
+X-Incomingheadercount: 12
+X-Incomingtopheadermarker: OriginalChecksum:0D565A5E7CB30FF89EAE7D8E799057F40253D345E52EEEE1E6D8D7BD16401389;UpperCasedChecksum:BC784D2C19F570442620039A8B3F3986EE4999118B3CA366D0BAC52A0BBEB506;SizeAsReceived:1359;Count:12
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0tMQ==
+X-Message-Info: 5vMbyqxGkddhh69sIkKp9pLi3PfvO4Ny18wihVylw+Ba0/j3V9f/n97/e6Vc0GsZDZU1UEmzJdHwbTCb1E9YcCsWLOa+LwAIDYzpAko1VEEV3cLqXkmRg9HB2PWH/UBwD5g07Lq3Fyn25EUdNF0mfAF89ROeu/WLYYOU+67/wj3gfozt6S37SuRX1lBZwtW3b5q/OBa5hZYF6b86Q2cOQQ==
+X-Microsoft-Antispam: BCL:1;
+X-Microsoft-Antispam-Mailbox-Delivery: abwl:0;wl:1;pcwl:1;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;OFR:TrustedSenderList;ENG:(5062000261)(5061607266)(5061608174)(4900115)(4920090)(6515079)(4950130)(530108);
+X-Microsoft-Antispam-Message-Info: DXpftYcUY5geVH75TafqR07LN0mP3w1UnJ/KfXf4aIvaM3i+0FpLlmRGnlGEnFwRMRq8vQ2Ag+vsOTpCXnxXp8MUN6+ok0y8JYdIaZzmJhJaosQWLP76Jt0DXnV41Ny+KSxHv1L9s6DPc1Lk+D5TqOao3b1HNyp07WBvCbL9uy/0AVZEUnPYjoKVfCN6YPsfURw/C0d42NlcPHhKxRKnir3GrhwSIf32NTcv3tJ8ECMh22KhqTPIHFOcgd88cVuB3SF0afg2hK1xT1ttAc+K7E4ek4d2N2DfAufZ+DWVG4xEs8XM+my2e/a1anaV/j5Vz0LCvgolti27RcH5MqX3Lwx551qzt7DUc178Z9eKtwz8sgM/Q1+4efEn63gJnmOjikRGW+vvkYMkelg7IsA/+yQLgUun3zu6h2G4g0sKU0gh9khz8vzS16eXKvOtGGV/KokoV9lgA2uC6GSRWX0176EjkE9LvAsb0F5E3ry1KbswdeWlqsxqPXZaae72Kn00jW+F/UztKjhPUGAN9tHQPY33k3G1/32ivgOlSTvXrtVV3junCecbSf6mX/UUJLSNqcPsAf0VrN2UNFDK1b9qw2uDwGX/DodfutyiP3Uwgit6BxOiCh/7aru6RlKBcYSu1IalYxLSb1st2yWXnCHK+22GehZ8MoL4q5RQ5jehj76WnFAhLts3Q/EKuLjpQr8PsHrEeb1J4acyUO00amBUMBtcJcvLhiRWYvUThd4sQBMOdgAWdFUhOszkaLrbIFnxK1XEQ+NOh1Prsbik8zYfGkVnbWj19bHfwlSlDAl8ar2y5aGfuJh9flJKjVP65xRaXxhBJUGujCVKDphJNgrjvEJhwpAyErbAgSaE9b5NhWqy5BDYT3esH0Li3Ndgogbrov0+mte8UpglRunBpmMBRvT+XRhOO7n+5JDPB3DsUfU=
+X-Ms-Exchange-Atpmessageproperties: SA|SL
+X-Ms-Exchange-Atpsafelinks-Stat: 0
+X-Ms-Exchange-Crosstenant-Fromentityheader: Internet
+X-Ms-Exchange-Crosstenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-Ms-Exchange-Crosstenant-Network-Message-Id: 12e99e86-2e89-407b-986c-08d761ec7ff7
+X-Ms-Exchange-Crosstenant-Originalarrivaltime: 05 Nov 2019 12:34:28.3063 (UTC)
+X-Ms-Exchange-Crosstenant-Rms-Persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-Ms-Exchange-Eopdirect: true
+X-Ms-Exchange-Organization-Authas: Anonymous
+X-Ms-Exchange-Organization-Authsource: HE1EUR04FT029.eop-eur04.prod.protection.outlook.com
+X-Ms-Exchange-Organization-Expirationinterval: 1:00:00:00.0000000
+X-Ms-Exchange-Organization-Expirationintervalreason: OriginalSubmit
+X-Ms-Exchange-Organization-Expirationstarttime: 05 Nov 2019 12:34:28.3323 (UTC)
+X-Ms-Exchange-Organization-Expirationstarttimereason: OriginalSubmit
+X-Ms-Exchange-Organization-Messagedirectionality: Incoming
+X-Ms-Exchange-Organization-Network-Message-Id: 12e99e86-2e89-407b-986c-08d761ec7ff7
+X-Ms-Exchange-Organization-Pcl: 2
+X-Ms-Exchange-Processed-By-Bccfoldering: 15.20.2408.019
+X-Ms-Exchange-Purlcount: 8
+X-Ms-Exchange-Safelinks-Url-Keyver: 1
+X-Ms-Exchange-Safelinks-Url-Keyver: 1
+X-Ms-Exchange-Transport-Crosstenantheadersstamped: HE1EUR04HT122
+X-Ms-Exchange-Transport-Endtoendlatency: 00:00:01.0448243
+X-Ms-Office365-Filtering-Correlation-Id: 12e99e86-2e89-407b-986c-08d761ec7ff7
+X-Ms-Publictraffictype: Email
+X-Ms-Traffictypediagnostic: HE1EUR04HT122:
+X-Ms-Userlastlogontime: 11/5/2019 12:11:31 PM
+X-Original-To: maraltez@validmax.tech
+X-Originatororg: outlook.com
+X-Pm-Content-Encryption: on-delivery
+X-Pm-Conversationid-Id: a8gF1jNlzXF43A0TLV1rUWps0JfUlMpw7M_kXDjV_dGpQL0vrtC9XDdwUbGFYgmGXm9LkHu3ue3XXXknXwbgxw==
+X-Pm-Date: Tue, 05 Nov 2019 13:34:26 +0100
+X-Pm-External-Id: <E1iRy2U-0005Xq-Sy@smtp-04-tuk1.steampowered.com>
+X-Pm-Internal-Id: _1N0rAIzKramT0VumuMt_92F7jWVqAUWOgpPPsvjCkly68kbJ9KDpGpac4-93lfZt7gEgKLUA4mtZkl_xv_J4Q==
+X-Pm-Origin: import
+X-Pm-Spam-Action: dunno
+X-Pm-Spamscore: 0
+X-Sender-Ip: 208.64.202.53
+X-Sid-Pra: NOREPLY@STEAMPOWERED.COM
+X-Sid-Result: PASS
+X-Steam-Message-Type: CEmailWishlistNewRelease
+
+
+--8a6b1bac86671615f37da26c9a7f69c75acd3c7d29777790d7383f94dd8e6293
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+	<title>Planet Zoo ist jetzt auf Steam verf=C3=BCgbar!</title>
+		<style media=3D"all" type=3D"text/css">
+		td, p, h1, h3, a {
+			font-family: Helvetica, Arial, sans-serif;
+		}
+		a.bodylink {
+			color: #8f98a0;		}
+		a.bodylink:hover {
+			color: #ffffff;
+		}
+	</style>
+</head>
+<body bgcolor=3D"" link=3D"#8f98a0" alink=3D"#8f98a0" vlink=3D"#8f98a0" tex=
+t=3D"#61686d" style=3D"font-family: Helvetica, Arial, sans-serif; font-size=
+: 14px; color: #61686d;">
+	<center style=3D"color: #000000; font-size: 11px; margin-bottom: 4px;">Pro=
+bleme beim Anzeigen dieser Nachricht? <a href=3D"https://eur04.safelinks.pr=
+otection.outlook.com/?url=3Dhttps%3A%2F%2Fstore.steampowered.com%2Femail%2F=
+WishlistNewRelease%3Fsparams%3DeJwtkEtuwzAMRO_idRFI1s_qKovmBD0BTVGpEVsUJBlF=
+WvTulQMvuOC8ATnk77DCnvCLSntmGt4HMbwNuXDYsSXYDuWzEWxdrXvOXBptsKxdPttrPXDmbyo=
+ULsiH8zRVSm1v2L3SuNH3srbTxi8KIRSqtVP6WfgO25LuV97byvy4BDpiUKmc4Ixx6y6vrO6Ac-=
+vGxg9Kx3A3ickKbZ20RketZm3ihGJEnMlIF3EOTkYzC6fATFL4YL0yKD2h0B7BjdIrCXb0cRSIy=
+kZvCbQjKc0kYl-IvKdWnn3Zx623r_z9xrxCoyWcX4Ocl3Dc44QSkxj-_gH2q23r&amp;data=3D=
+02%7C01%7C%7C12e99e862e89407b986c08d761ec7ff7%7C84df9e7fe9f640afb435aaaaaaa=
+aaaaa%7C1%7C0%7C637085540692048491&amp;sdata=3DkFCNxS7cxyCJpqM7l%2BQh9Zg8BH=
+AZ3fdewwz1Oo16GOU%3D&amp;reserved=3D0" originalsrc=3D"https://store.steampo=
+wered.com/email/WishlistNewRelease?sparams=3DeJwtkEtuwzAMRO_idRFI1s_qKovmBD=
+0BTVGpEVsUJBlFWvTulQMvuOC8ATnk77DCnvCLSntmGt4HMbwNuXDYsSXYDuWzEWxdrXvOXBpts=
+KxdPttrPXDmbyoULsiH8zRVSm1v2L3SuNH3srbTxi8KIRSqtVP6WfgO25LuV97byvy4BDpiUKmc=
+4Ixx6y6vrO6Ac-vGxg9Kx3A3ickKbZ20RketZm3ihGJEnMlIF3EOTkYzC6fATFL4YL0yKD2h0B7=
+BjdIrCXb0cRSIykZvCbQjKc0kYl-IvKdWnn3Zx623r_z9xrxCoyWcX4Ocl3Dc44QSkxj-_gH2q2=
+3r" shash=3D"nbec3smIpYrBChXDSxIDWJ/HgWQ6g3lYloJEYmywQB3Ras1yITUT9fGjpTKMVY=
+uSHqpxBK3e4DLGIlBy36s0yCVTn2FqDJWT9jIAkdbLRgkSeEJqd1tizDvEu36aSnzvn89hKShhk=
+ZrP6mjEjDzUdB1Jq3XTudqDifFwyaR35x0=3D">Hier klicken</a></center>
+<table style=3D"width: 538px; background-color: #393836;" align=3D"center" =
+cellspacing=3D"0" cellpadding=3D"0">
+	<tr>
+		<td style=3D" height: 65px; background-color: #171a21;">
+			<img src=3D"https://steamstore-a.akamaihd.net/public/images/email/email_=
+header_logo.png?v=3D1" width=3D"538" height=3D"65" alt=3D"Steam">
+		</td>
+	</tr>
+	<tr>
+	<td bgcolor=3D"#17212e">
+		<table width=3D"470" border=3D"0" align=3D"center" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"padding-left: 5px; padding-right: 5px;">
+
+
+			<tr bgcolor=3D"#17212e">
+				<td style=3D"padding-top: 32px;">
+					<span style=3D"font-size: 24px; color: #ffffff; font-family: Arial, He=
+lvetica, sans-serif; font-weight: normal;">
+						Hallo Ezio9364,					</span><br>
+					<span style=3D"font-size: 18px; color: #acb2b8; font-family: Arial, He=
+lvetica, sans-serif; font-weight: normal; ">
+						Ein Produkt auf Ihrer Wunschliste wurde ver=C3=B6ffentlicht!					</sp=
+an>
+				</td>
+			</tr>
+
+
+						<tr>
+				<td valign=3D"top" bgcolor=3D"#17212e" style=3D"padding-top: 10px;">
+					<span style=3D"font-size: 10px; color: #CCC8BF; font-family: Arial, He=
+lvetica, sans-serif; text-transform: uppercase">
+						<a href=3D"https://eur04.safelinks.protection.outlook.com/?url=3Dhttp=
+s%3A%2F%2Fstore.steampowered.com%2Fapp%2F703080%2FPlanet_Zoo%2F%3Fsnr%3D1_6=
+20_4_1401_45&amp;data=3D02%7C01%7C%7C12e99e862e89407b986c08d761ec7ff7%7C84d=
+f9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637085540692058499&amp;sdata=3DdFru=
+9vMas8ufllrVVOY7wZqtEqsHS6nY9wDYIOaM3SY%3D&amp;reserved=3D0" originalsrc=3D=
+"https://store.steampowered.com/app/703080/Planet_Zoo/?snr=3D1_620_4_1401_4=
+5" shash=3D"EZcEi1ocvgseZS7yKBYDOW8AMv62l9TsGAvNDwL35oVbpuFNMWtiZL2dA0cYKuB=
+723ps4VDoNLtV34qjd&#43;3vQlUB4DqoPyrrKKM7iua4Iuwuom/8/Cx/AETsfhNgeRBwra9nHf=
+FhBsuFXwPHjuupdOIvqjjB2YGbVSAkukY3KSo=3D"><img src=3D"https://steamcdn-a.ak=
+amaihd.net/steam/apps/703080/header.jpg?t=3D1572956606" alt=3D"Planet Zoo" =
+border=3D"0" style=3D"margin: 0; padding: 0;"></a>
+					</span>
+				</td>
+			</tr>
+
+
+
+			<tr valign=3D"top" bgcolor=3D"17212e" style=3D"margin: 0; padding: 0;">
+				<td>
+					<table style=3D"background-color: #121a25; width: 100%;">
+						<tr>
+							<td style=3D"padding-top: 13px; padding-left: 17px; padding-bottom: =
+2px;">
+								<p style=3D"font-size: 20px; color: #e1e1e1; font-family: Arial, He=
+lvetica, sans-serif; margin:0; padding:0;">
+									<a href=3D"https://eur04.safelinks.protection.outlook.com/?url=3Dh=
+ttps%3A%2F%2Fstore.steampowered.com%2Fapp%2F703080%2FPlanet_Zoo%2F%3Fsnr%3D=
+1_620_4_1401_46&amp;data=3D02%7C01%7C%7C12e99e862e89407b986c08d761ec7ff7%7C=
+84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637085540692068508&amp;sdata=3DW=
+kfwUVwTXL03s%2FAEcRm2w8aVaPx0RAm4NWE%2BoTAW6Lo%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://store.steampowered.com/app/703080/Planet_Zoo/?snr=3D1_620_4=
+_1401_46" shash=3D"o/of5QBUFlaN4hGeEBoCxICIzTCJNzIFG0wCPURcCmvxj91AXbm/HIFf=
+RNkqr7cUFYjbDyFcB9AmpTythmozKGmq3Pv/ZPRG5TJnDtyOJ2tNVn&#43;qh9D2QfYOpg3EHX1=
+3vr5i7x/&#43;XtZPGUv5zDE&#43;ylG708IgXKDO&#43;71i0iRAmKE=3D" style=3D"text-=
+decoration:none; color: #ffffff;">
+										Planet Zoo									</a>
+								</p>
+																	<p style=3D"margin: 0; font-size: 12px;">
+										Besuchen Sie den <a href=3D"https://eur04.safelinks.protection.ou=
+tlook.com/?url=3Dhttps%3A%2F%2Fstore.steampowered.com%2Fapp%2F703080%2FPlan=
+et_Zoo%2F%3Fsnr%3D1_620_4_1401_47&amp;data=3D02%7C01%7C%7C12e99e862e89407b9=
+86c08d761ec7ff7%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63708554069206=
+8508&amp;sdata=3DN9zNFxUOX3fqbxBswi9qg%2B5BCAiNwyNKp3N2tmlni30%3D&amp;reser=
+ved=3D0" originalsrc=3D"https://store.steampowered.com/app/703080/Planet_Zo=
+o/?snr=3D1_620_4_1401_47" shash=3D"uAu9qvN5SgrHm/Z2BlfN3CjsBEGRycig8hEPUhAV=
+GfjKsLw/HmjjJ3KNtnXEg1lOwcAOnSu0wd&#43;ghoVNcjWrDTuxE6Mhytu6WzwulOxKQG7uswN=
+/PwUMAQ8VExXYm8x9sfbjZdCadvKRgRdyePa1nMC5PbN8L1apMaIJSXQ8QkQ=3D">Steam-Shop=
+</a>, um weitere Informationen zu erhalten.									</p>
+															</td>
+						</tr>
+					</table>
+					<table style=3D"width: 100%" cellpadding=3D"0" cellspacing=3D"0">
+						<tr height=3D"14" style=3D"background-color: #121a25; line-height: 14=
+px;">
+							<td width=3D"1" style=3D"background-color: #0b1017;"></td>
+							<td height=3D"14" style=3D"height: 14px; overflow: hidden;">
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp;
+							</td>
+																								<td width=3D"88" height=3D"40" rowspan=3D"3">
+										<table width=3D"100%" style=3D"border-radius: 3px; background-col=
+or: #3c3d3e;" cellpadding=3D"0" cellspacing=3D"0">
+											<tr>
+												<td style=3D"padding: 3px;">
+													<table width=3D"100%" height=3D"34" cellpadding=3D"0" cellspac=
+ing=3D"0">
+														<tr height=3D"34" style=3D"background-color: #000000;">
+															<td height=3D"34" width=3D"" style=3D"text-align: center; wh=
+ite-space: nowrap; overflow: hidden;">
+																<span style=3D"color: #D6D7D8; font-size: 14px;">44,99=E2=
+=82=AC</span>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+																						<td width=3D"12"></td>
+							<td width=3D"1" style=3D"background-color: #0b1017;"></td>
+						</tr>
+						<tr height=3D"1" style=3D"background-color: #0b1017;">
+							<td width=3D"1"></td>
+							<td style=3D"background-color: #0b1017;"></td>
+							<td width=3D"12"></td>
+							<td width=3D"1" style=3D"background-color: #0b1017;"></td>
+						</tr>
+						<tr height=3D"25" style=3D"background-color: #17212e;">
+							<td width=3D"1"></td>
+							<td></td>
+							<td width=3D"12"></td>
+							<td width=3D"1"></td>
+						</tr>
+
+					</table>
+
+				</td>
+			</tr>
+
+
+			<tr>
+				<td style=3D"padding-top: 40px; padding-bottom: 32px">
+					<p style=3D"font-size: 12px; color: #61686d; font-family: Arial, Helve=
+tica, sans-serif; padding:0;">
+						Preise und Rabatte k=C3=B6nnen sich jederzeit =C3=A4ndern. Bitte rufe=
+n Sie die Steam-Shopseite auf, um aktuelle Informationen zu erhalten.<br>
+													Sie erhalten diese E-Mail, weil sich die oben genannten Artike=
+l auf Ihrer <a class=3D"bodylink" href=3D"https://eur04.safelinks.protectio=
+n.outlook.com/?url=3Dhttps%3A%2F%2Fsteamcommunity.com%2Fmy%2Fwishlist&amp;d=
+ata=3D02%7C01%7C%7C12e99e862e89407b986c08d761ec7ff7%7C84df9e7fe9f640afb435a=
+aaaaaaaaaaa%7C1%7C0%7C637085540692078525&amp;sdata=3D%2BUxOqAu0n0e1b8C6JyQ3=
+JT7AD6j%2Bt2aXMTU2b14PhrY%3D&amp;reserved=3D0" originalsrc=3D"https://steam=
+community.com/my/wishlist" shash=3D"uhstWWavAkB6J3fWQOpPGqPFdMoh31wpLSFp38k=
+dbcP&#43;6R3yhZEdUVu1SqnAdVKpe3ALxABF84bdzlJe3PNrheMa8b1C9kPGm1AfM8GtbeglhF=
+sCCBEGGc4yyvEPqNQbCxtoLjH/S&#43;LfEtto2JYMi6myRwgoYWGEwRRKdxLTnyY=3D">Steam=
+-Wunschliste</a> befinden.<br>
+							Wenn Sie k=C3=BCnftig keine E-Mail-Benachrichtigungen mehr zu Ihrer =
+Wunschliste erhalten m=C3=B6chten, k=C3=B6nnen Sie Ihre <a class=3D"bodylin=
+k" href=3D"https://eur04.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fstore.steampowered.com%2Faccount%2Femailoptout%3Ftoken%3D17808604671654=
+f43b45f8c02ccbe517fcbd71f5b073a58109d6935c19ec049ca721931a629f20cc36f96ea47=
+e11580f%26snr%3D1_620_4_1401&amp;data=3D02%7C01%7C%7C12e99e862e89407b986c08=
+d761ec7ff7%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637085540692088529&=
+amp;sdata=3DRTTNR6UqC6XrOldgJ1ZoAjHeACAgVVUfeQwPuE3XuUw%3D&amp;reserved=3D0=
+" originalsrc=3D"https://store.steampowered.com/account/emailoptout?token=
+=3D17808604671654f43b45f8c02ccbe517fcbd71f5b073a58109d6935c19ec049ca721931a=
+629f20cc36f96ea47e11580f&amp;snr=3D1_620_4_1401" shash=3D"zOWYArBaqMcbvfa6B=
+XRH2fsXW2OCktuUUc2&#43;9nQS9891D&#43;hzNViG0u&#43;h/cncXr4Gg5IfoU8MZBBEoPKs=
+k0J7N05AbhdvcQ97mNUsqhHOkltI&#43;cHcvxJtJjRepIOuRJiCjW4djqUdBAXprM9Jvf0VHPk=
+rf8SyfZjyk6Lo2j&#43;maQM=3D">E-Mail-Einstellungen =C3=A4ndern oder sich aus=
+tragen lassen</a>.<br>
+											</p>
+				</td>
+			</tr>
+
+		</table>
+	</td>
+	</tr>
+	<tr style=3D"background-color: #000000;">
+		<td style=3D"padding: 12px 24px;">
+			<table cellpadding=3D"0" cellspacing=3D"0">
+				<tr>
+					<td width=3D"92">
+						<img src=3D"https://steamstore-a.akamaihd.net/public/images/logo_valv=
+e_footer.jpg" width=3D"92" height=3D"26" alt=3D"Valve=C2=AE">
+					</td>
+					<td style=3D" font-size: 11px; color: #595959; padding-left: 12px;">
+						=C2=A9 Valve Corporation<br>PO Box 1688 Bellevue, WA 98009.<br>
+						Alle Rechte vorbehalten. Alle Marken sind Eigentum ihrer jeweiligen B=
+esitzer in den USA und anderen L=C3=A4ndern.					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+	<center style=3D"color: #000000; font-size: 11px; margin-bottom: 4px;">Pro=
+bleme beim Anzeigen dieser Nachricht? <a href=3D"https://eur04.safelinks.pr=
+otection.outlook.com/?url=3Dhttps%3A%2F%2Fstore.steampowered.com%2Femail%2F=
+WishlistNewRelease%3Fsparams%3DeJwtkEtuwzAMRO_idRFI1s_qKovmBD0BTVGpEVsUJBlF=
+WvTulQMvuOC8ATnk77DCnvCLSntmGt4HMbwNuXDYsSXYDuWzEWxdrXvOXBptsKxdPttrPXDmbyo=
+ULsiH8zRVSm1v2L3SuNH3srbTxi8KIRSqtVP6WfgO25LuV97byvy4BDpiUKmc4Ixx6y6vrO6Ac-=
+vGxg9Kx3A3ickKbZ20RketZm3ihGJEnMlIF3EOTkYzC6fATFL4YL0yKD2h0B7BjdIrCXb0cRSIy=
+kZvCbQjKc0kYl-IvKdWnn3Zx623r_z9xrxCoyWcX4Ocl3Dc44QSkxj-_gH2q23r&amp;data=3D=
+02%7C01%7C%7C12e99e862e89407b986c08d761ec7ff7%7C84df9e7fe9f640afb435aaaaaaa=
+aaaaa%7C1%7C0%7C637085540692088529&amp;sdata=3DW0ENi2ei5nJAnTwbn03i8JH%2FMS=
+jsBzos0lMr%2FkKnCVU%3D&amp;reserved=3D0" originalsrc=3D"https://store.steam=
+powered.com/email/WishlistNewRelease?sparams=3DeJwtkEtuwzAMRO_idRFI1s_qKovm=
+BD0BTVGpEVsUJBlFWvTulQMvuOC8ATnk77DCnvCLSntmGt4HMbwNuXDYsSXYDuWzEWxdrXvOXBp=
+tsKxdPttrPXDmbyoULsiH8zRVSm1v2L3SuNH3srbTxi8KIRSqtVP6WfgO25LuV97byvy4BDpiUK=
+mc4Ixx6y6vrO6Ac-vGxg9Kx3A3ickKbZ20RketZm3ihGJEnMlIF3EOTkYzC6fATFL4YL0yKD2h0=
+B7BjdIrCXb0cRSIykZvCbQjKc0kYl-IvKdWnn3Zx623r_z9xrxCoyWcX4Ocl3Dc44QSkxj-_gH2=
+q23r" shash=3D"aZ/rW/494/PuOiGSbmcwwNw0MyqiZ67mj4hZW/MsAQLIygoRCTF6RZJmLCox=
+DYIYPTNktpQqerwKjGWXq5ONzx36Od7TP3LTV4j0Lit&#43;TVZ/EeOoNmJWHErZRnNzY4EPfg0=
+ez6IDOWJj8EV4TP06iiOqjVNdkD6gfiCMosTmsOA=3D">Hier klicken</a></center>
+
+</body>
+</html>
+
+
+--8a6b1bac86671615f37da26c9a7f69c75acd3c7d29777790d7383f94dd8e6293--

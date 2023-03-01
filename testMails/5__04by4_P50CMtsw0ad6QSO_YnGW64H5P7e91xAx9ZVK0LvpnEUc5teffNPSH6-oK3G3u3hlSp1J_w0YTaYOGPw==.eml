@@ -1,0 +1,604 @@
+Authentication-Results: spf=pass (sender IP is 195.167.152.52) smtp.mailfrom=email.gog.com; outlook.de; dkim=pass (signature was verified) header.d=email.gog.com;outlook.de; dmarc=pass action=none header.from=email.gog.com;
+Authentication-Results-Original: email.gog.com; dmarc=none header.from=email.gog.com
+Content-Type: multipart/mixed; boundary=4a900993396d6a3a8799c25c090c6364347368379fce2317480126ac15f352e1
+Date: Tue, 01 May 2018 23:06:39 +0300
+Delivered-To: maraltez@validmax.tech
+Dkim-Filter: OpenDKIM Filter v2.9.2 gogcom-smtp-out-6.email.gog.com 0A107208E9
+Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=email.gog.com; s=email; t=1525205199; bh=Xmi7qmsMg3IoslnznnBlsy5Ls7U7OvIZd71aPAAmh3A=; h=Date:Subject:From:To:Sender:From; z=Date:=20Tue,=2001=20May=202018=2023:06:39=20+0300|Subject:=20Wir= 20stellen=20vor:=20Dein=20Profil|From:=20"GOG.com=20Team"=20<newsl etter@email.gog.com>|To:=20""=20<eziogaming@outlook.de>; b=vToVAr7rsJmSkq0ZZFiJKeuJNesYT1ppAxNCyrypEEVsng9sCTnXP7rMeKsk6DYKQ hvNdp0AngARw4yLqiWWHWsDijCdqeTogSxIPucK+HaOzVuRU33soraV+/lHoWzIuJL VemkYaK+dBAaMQ18vtI5xOLkgPFygAPF1kbNwIdG4UQ0lrc77vq2uigQiI+Y5dbrVJ PbvlFWhHC+ZJe+Q2Cr+r+rO0JZ5jQL21EQ+ipS7LOT++8e8s3RI53U4atq/N0popXj Of5xOvN4j0+UXJ3hFfgFTB1j4dFpzWwsU4lD7GEZ+Z5sxtNNAxrPbIHRq5v4ytcQEf UNjaeGyvmxG0g==
+From: "GOG.com Team" <newsletter@email.gog.com>
+Message-Id: <1525205199.5ae8c8cf08686@swift.generated>
+Mime-Version: 1.0
+Received: from HE1EUR02HT132.eop-EUR02.prod.protection.outlook.com (2603:10a6:802:28::18) by VI1PR0902MB1982.eurprd09.prod.outlook.com with HTTPS via VI1PR09CA0050.EURPRD09.PROD.OUTLOOK.COM; Tue, 1 May 2018 20:06:42 +0000
+Received: from HE1EUR02FT053.eop-EUR02.prod.protection.outlook.com (10.152.10.55) by HE1EUR02HT132.eop-EUR02.prod.protection.outlook.com (10.152.11.127) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.20.715.13; Tue, 1 May 2018 20:06:39 +0000
+Received: from gogcom-smtp-out-6.email.gog.com (195.167.152.52) by HE1EUR02FT053.mail.protection.outlook.com (10.152.11.109) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.20.715.13 via Frontend Transport; Tue, 1 May 2018 20:06:39 +0000
+Received: from [127.0.0.1] (gogcom3-batch-3.atm [172.16.200.81]) by gogcom-smtp-out-6.email.gog.com (Postfix) with ESMTP id 0A107208E9 for <eziogaming@outlook.de>; Tue, 1 May 2018 22:06:39 +0200 (CEST)
+Received-Spf: Pass (protection.outlook.com: domain of email.gog.com designates 195.167.152.52 as permitted sender) receiver=protection.outlook.com; client-ip=195.167.152.52; helo=gogcom-smtp-out-6.email.gog.com;
+References: <_04by4_P50CMtsw0ad6QSO_YnGW64H5P7e91xAx9ZVK0LvpnEUc5teffNPSH6-oK3G3u3hlSp1J_w0YTaYOGPw==@protonmail.internalid>
+Reply-To: "GOG.com Team" <newsletter@email.gog.com>
+Return-Path: newsletter@email.gog.com
+Subject: Wir stellen vor: Dein Profil
+To: <eziogaming@outlook.de>
+X-Eopattributedmessage: 0
+X-Eoptenantattributedmessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-Exchange-Antispam-Report-Cfa-Test: BCL:3;PCL:0;RULEID:(444111676)(52401190)(52505095)(52406095)(82015058);SRVR:HE1EUR02HT132;BCL:3;PCL:0;RULEID:;SRVR:HE1EUR02HT132;
+X-Exchange-Antispam-Report-Test: UriScan:(34683901250469)(166606640393650)(209352067349851)(168664307471820);
+X-Forefront-Antispam-Report: EFV:NLI;
+X-Incomingheadercount: 11
+X-Incomingtopheadermarker: OriginalChecksum:FF885A06C33FAA5DB2AC6A2DB9FCDB3541E4751A2EB46B2429D068B3807C9DA9;UpperCasedChecksum:CD71F6E3EFB32D166F5F9F0E07E5F3517A568039C5979B6E846C6E3CF24DE62C;SizeAsReceived:1446;Count:11
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0z
+X-Message-Info: 5vMbyqxGkdenmZ+H4/XvcsVTAe9L5cQF1zp9OnvLlmQJMpKUKlnp8f0JoTbAOH/aYhPcKFavdvtv9SNzJJoa1X88WpgR/A0AUaHFvkvHEVNoqMq5yRBC9DLw8j+qBKA1eJohrziKbD4ps/xaAnCJzx+qaXBDG1PNKAYvFxiY5QsaT50M3wbs454xZmsHY6HWW8NmjsGPWl2bROgAfUahJA==
+X-Microsoft-Antispam: BCL:3;PCL:0;RULEID:(5000109)(4605076)(610169)(650170)(651021)(8291501071);SRVR:HE1EUR02HT132;
+X-Microsoft-Antispam-Mailbox-Delivery: abwl:0;wl:0;pcwl:0;kl:0;iwl:0;ijl:0;dwl:0;dkl:0;rwl:0;ex:0;auth:1;dest:I;ENG:(400001000128)(400125000095)(5062000261)(5061607266)(5061608174)(4900095)(4920089)(6515079)(4950130)(4990090)(400001001318)(400125100095)(61617190)(400001002128)(400125200095);
+X-Microsoft-Antispam-Message-Info: GchWOC/HKJViJQGnzPfubilmWLLBz+oOWKDfJJ2OMKBL/qvi9BKZ0LpkcKQD2Dm+kyZJieUA2H2AFo8svHOgv/t9TTN1haGE4X1u+abWcph2XT7PmvGolOUFtDgzPhLaqb++8YXAqhFylj7l++5rxVvdc3eDUAl3frWocA/jEqKmfMFs8VUnj8CAzmiLO/0c141SuqeT3Z+t1adgNF/60Q==
+X-Microsoft-Antispam-Message-Info: YZQsdVQtGchGS1spUq2hZYDMlx30jvM9svFhkewYhvLYoKs22/pE9g7UOcBfCeWCQaMZ0KXUtiWv+0El6CxTP5NQBPeZfUiTMeDhIN2hxwaOKrTmiJdM4psMNtnAB9davlBbW/k3zxcEDNXO77qQ2m8ntDT4Qvd/9NSAp6jvUL+p/zXj6yOKfuUDv/gNAaGYuIOKPu4ntl6pKm8BKuWJMqvsApp7xY6Nw7/VqqzzMVNYsLo9hJwE2rg0I794B0iRywob64srlUNsgYDXLvwJAo2j3SZKloGxQtrMOrTbLU3lh3M2K1zaqzbEZj3HSPKJ/enKzOw4ttCR515iKQ33Y10xXTN2auWvOqc3ZuD6ptLf0P/UJHWKy70uGW1H/E/6
+X-Microsoft-Exchange-Diagnostics: 1;HE1EUR02FT053;1:UOCJQ5d8BbRfLDU+5qReAdloBw/PcaVnRLJVF8Wk5NSwfPmbTAi+uTgwTWMs3YBXMwkJE18/ppJBlc1pvhBLDKajvddEroepeBnVVk/d+Sxb10CFD/D3bZZdc6usYkHb
+X-Microsoft-Exchange-Diagnostics: 1;HE1EUR02HT132;3:0vTbd4ueYcOmCzALH2efhJRYHzDyrW59iD85eiDwBW3PGqVUYSL3Texmou4cd//XT7ukSLRK30feYt4RzuyUdaOZlEPzG8KCpQHLVIkG5PE4PPiFpL2ACWkD4NZemwmM0iIsA5BzdmCoUo973T1GgadqOs4eOWV7Isc+3+TZVCuV0wdKYUnhWDuLR0WX6uwx/baINL9dhJ7g+/N31ZpRshZ7E4HycfltanbGMpDGmMl/qBzXc5DxXLaajkNJKKXpPcUf+RR0aA+jr6Axsr+Ibbf9BxyR2M9mtgdAAb57M4byvRxAmiS7TN46r5BOFrGH;25:/ypOg3a5Tw5jBoqeX7AhB4V45iQUL2Wx0bq3LZM1X2cMOKplNwTwy9pqE7EjEsDHzhPQbs2NiYNpkS/WIJUaK8yx7cIQgpH11yiKXbvMn3EwvduYTVi/bXHrAzzatMEQXB0vul20uA4+7aHsYjEZqHJXzQlBCk9+P5LQgkGzymJLqdtb+MyFKLWpP0MXF+ndZ64GNbJauxF2h+56kqCrlZ17zhHrYWseNCdZXgyZBr/CmiNO9vBYC+1t/+G03STjBpTd4k6q61ix0RWWCSK8st4zqlxRcP4FTm3prTxkA9phKFNygI9rxt21p+yFWr7OdTunbqip2wNF6jsyofGUIg==;31:jhtHKoTEVJ8Hsn83+nNhjj+U+r3qeoDAtD49EdQwlj/W88Znlhr+jDPKjCjl2wHRmCT/YvDYmWOmhusSLTQYmZR8OOjBZs32huOVe0h5gCgE0vsVHM56PLY3s3m/TcVCpNd8mTWhUQcA08G1xOXv98Urqyvh6ar2rFwCanQ6z3Z7dlujMZOSL8nweLe3TuoUb9AaIYI3iLkty9iv6pXC3cjrhsH0+40CAueYR/XTDQo=
+X-Microsoft-Exchange-Diagnostics: 1;HE1EUR02HT132;4:LrevcOxyV48EPsrNcrmNYDpFvwp0m0Ds+TYzHXMV334dQKosNx42ISjxfCZChBJbkDwbI/PPlikLbBtwUuv97ILbzzhmGvE3n/Taded0Es3yVFRh/Xibj3o4tsHpTrAfHH4mqvt1l9zU6wjNY2OqntG5PkfUC6Aail/hY/k6Or/2RyIwmG0k0RlUqlQS3tGw0YM0yOW4TurVWOGQz/bAQKmQ2lsriHzdFUs+UrZuPMVxoUboTfWBMtpL+KEZwj3pqnbuf26IP/VDsxSSvrPJznWiTHjM1MjyxJjgVvWmsMxf6IxtrkQx9HVjBBjFM+TxX3B107hJRMTqJOqvVk52kl0L6TrLXG4zMbIYYhByt4q2BJiCg1KfRQ5LprWjo7YI2lXZvJimzH8jErWYgfEbZNiS3F5DFoxOVBHffvg1axE=;6:hexuNSLf+96vp/2XhTnt5J/monomLo1o9nYcy7VWAO7jhJK9n2a0TV+x9gjvDvVHFvqOTnyXaMQbVvLSstKAcFxESrHt3IPO06H67wQEojS0Fq6ByX2Jjm6NGEjwAYvuEvsnnvb3C0Ej0RqrWRGHIKGRZaEJ2b9nOyKVdBsEk5M/jCzz7zAOHhHNC3/pfOpTTCZ7/CoLai2iDjFZU2ko+x7GbxifMD1PHGqoUMynEUQ64f3XkhKmDXAuxDGjafzcjiJGPUzy4VBbTpegs9y1rnLcQwhhLW/bSTTfVQ3s9uTSE4pqSdiGs6Hqzoo0U0gyfCUnq7PclRsD5vrWq3gLBxAD82gvHam+fztl2A3kjhWl/8I4DtvYbAJDBB1ewUItTc6F8OD6py0jQxagoXsECbklFkpiS+P3vKlBe77AJ3edG3Nii4rN9YfMaR/VVmJ/4IW5tv3087WztHCtCWNEWw==
+X-Microsoft-Exchange-Diagnostics: 1;HE1EUR02HT132;5:0U1QNuL3YvJMtoGLdPfyDn+YhpG12c6hPoPemqYfyicoGyOS+HhAbEh8QLKo3IDRizlCoxYToRBrUxF0K84zRXsUahhYHTGublqvQhxScvwrNhTJ88qI9K3dvTXOrrcWGJW3vzHCWv6HzUzbpf9awO3hlXBgQ/yWwW1fmZrKOqk=;7:4c1RWXQ4vwr6bgY7+DEa1mdeWPYfsT6kt/dxV/5SLs+HXyXgnAnCwihQq3Ly5JO0UvJ4kqG0pyc8oqTHLRPudfTttrNQ7vtKtxjhLtUpOkhqZEvGTjqDS44X35Zn6lKalvy3Ue2qLyrkNOCk6wsgU2QJINp17zeZFVnIK8coDAOZGMI+br66KIURNZ+9lnJmd3ciZm6AuVm2H2Rsq0ek+MIfYnt5X1v9POfY5qKH9b3Tjdx03UkLeLr1F6ZwIWhI
+X-Ms-Exchange-Crosstenant-Fromentityheader: Internet
+X-Ms-Exchange-Crosstenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-Ms-Exchange-Crosstenant-Network-Message-Id: d575efb2-7256-4d8f-0edc-08d5af9f0d0b
+X-Ms-Exchange-Crosstenant-Originalarrivaltime: 01 May 2018 20:06:39.5188 (UTC)
+X-Ms-Exchange-Crosstenant-Rms-Persistedconsumerorg: d4d70346-2c10-4f39-8c00-e767963926d9
+X-Ms-Exchange-Eopdirect: true
+X-Ms-Exchange-Organization-Authas: Anonymous
+X-Ms-Exchange-Organization-Authsource: HE1EUR02FT053.eop-EUR02.prod.protection.outlook.com
+X-Ms-Exchange-Organization-Expirationinterval: 2:00:00:00.0000000
+X-Ms-Exchange-Organization-Expirationintervalreason: Original Submit
+X-Ms-Exchange-Organization-Expirationstarttime: 01 May 2018 20:06:39.6282 (UTC)
+X-Ms-Exchange-Organization-Expirationstarttimereason: Original Submit
+X-Ms-Exchange-Organization-Messagedirectionality: Incoming
+X-Ms-Exchange-Organization-Network-Message-Id: d575efb2-7256-4d8f-0edc-08d5af9f0d0b
+X-Ms-Exchange-Organization-Pcl: 2
+X-Ms-Exchange-Processed-By-Bccfoldering: 15.20.0715.014
+X-Ms-Exchange-Safelinks-Url-Keyver: 1
+X-Ms-Exchange-Safelinks-Url-Keyver: 1
+X-Ms-Exchange-Transport-Crosstenantheadersstamped: HE1EUR02HT132
+X-Ms-Exchange-Transport-Endtoendlatency: 00:00:03.3808473
+X-Ms-Office365-Filtering-Correlation-Id: d575efb2-7256-4d8f-0edc-08d5af9f0d0b
+X-Ms-Publictraffictype: Email
+X-Ms-Traffictypediagnostic: HE1EUR02HT132:
+X-Original-To: maraltez@validmax.tech
+X-Originatororg: outlook.com
+X-Pm-Content-Encryption: on-delivery
+X-Pm-Conversationid-Id: HSeHF5FPUnVDMnQQPI95KNz05w0P2JThonPaQyzXsw8Tah6CWfqWONtUJ_yZiA2IgLKtn1brIl7CZIccJpGDGg==
+X-Pm-Date: Tue, 01 May 2018 22:06:39 +0200
+X-Pm-External-Id: <1525205199.5ae8c8cf08686@swift.generated>
+X-Pm-Internal-Id: _04by4_P50CMtsw0ad6QSO_YnGW64H5P7e91xAx9ZVK0LvpnEUc5teffNPSH6-oK3G3u3hlSp1J_w0YTaYOGPw==
+X-Pm-Origin: import
+X-Pm-Spam-Action: dunno
+X-Pm-Spamscore: 0
+X-Sender-Ip: 195.167.152.52
+X-Sid-Pra: NEWSLETTER@EMAIL.GOG.COM
+X-Sid-Result: PASS
+
+
+--4a900993396d6a3a8799c25c090c6364347368379fce2317480126ac15f352e1
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www=
+.w3.org/TR/html4/loose.dtd"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"> <=
+meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1">=
+ <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"> <meta name=3D"=
+format-detection" content=3D"telephone=3Dno"> <style type=3D"text/css">
+/* RESET (general) */ body { height:100% !important; width:100% !important;=
+ margin:0px !important; padding:0px !important; } #emBodyTable { height:aut=
+o !important; width:100% !important; margin:0px !important; padding:0px !im=
+portant; } table, td { border-collapse:collapse; } img, a img { border-styl=
+e:none; border-width:0px; outline:none; text-decoration:none; }
+/* RESET (client-specific) */ .ReadMsgBody { width:100%; } .ExternalClass {=
+ width:100%; } .ExternalClass, .ExternalClass p, .ExternalClass span, .Exte=
+rnalClass font, .ExternalClass td, .ExternalClass div { line-height:100%; }=
+ table, td { mso-table-lspace:0pt; mso-table-rspace:0pt; } img { -ms-interp=
+olation-mode:bicubic; } body, table, td, p, a, li, blockquote { -ms-text-si=
+ze-adjust:100%; -webkit-text-size-adjust:100%; }
+/* BASIC STYLE */ table a, table a:link, table a:visited { color:#9fbf00; b=
+order:none; cursor:pointer; text-decoration:none; font-weight:100; } td[cla=
+ss~=3D"em_button"] a:link, td[class~=3D"em_button"] a:visited, td[class~=3D=
+"em_tag"] a:link, td[class~=3D"em_tag"] a:visited { color:#ffffff; font-wei=
+ght:600; text-decoration:none; text-transform:uppercase; } span[class~=3D"e=
+m_link_fix_808080"] a { color:#808080 !important; text-decoration:none !imp=
+ortant; } span[class~=3D"em_link_fix_262626"] a { color:#262626 !important;=
+ text-decoration:none !important; } span[class~=3D"em_link_fix_ffffff"] a {=
+ color:#ffffff !important; text-decoration:none !important; } img[class~=3D=
+"em_image_fix"] { display:block; }
+/* RESPONSIVENESS */ @media only screen and (max-width: 480px) { td[class~=
+=3D"em_main_section"] { padding-left:6px !important; padding-right:6px !imp=
+ortant; } table[class~=3D"em_content_wrapper"], td[class~=3D"em_content_600=
+"] { width:100% !important; max-width:480px !important; } td[class~=3D"em_c=
+ontent_297"] { width:49% !important; max-width:237px !important; } td[class=
+~=3D"em_content_196"] { width:32% !important; max-width:156px !important; }=
+ td[class~=3D"em_tile_space_col"] { width:2% !important; } td[class~=3D"em_=
+bg_image"] { background-size: 150% !important; } img[class~=3D"em_image"] {=
+ height:auto !important; width:100% !important; } img[class~=3D"em_image_60=
+0"] { max-width:600px !important; } img[class~=3D"em_image_297"] { max-widt=
+h:297px !important; } img[class~=3D"em_image_196"] { max-width:196px !impor=
+tant; } div[class~=3D"em_text_12"], p[class~=3D"em_text_12"], a[class~=3D"e=
+m_text_12"], li[class~=3D"em_text_12"], td[class~=3D"em_text_12"] { -webkit=
+-text-size-adjust:none; } } </style> </head> <body topmargin=3D"0" rightmar=
+gin=3D"0" bottommargin=3D"0" leftmargin=3D"0" marginwidth=3D"0" marginheigh=
+t=3D"0">
+<!-- preview text --> <div class=3D"em_preview_text" style=3D"color:#ffffff=
+;display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;op=
+acity:0;overflow:hidden;"> Dein GOG.COM-Benutzerprofil ist jetzt online =E2=
+=80=93 sieh dir an, was deine Freunde machen, vergleiche Statistiken, verle=
+ihe deinem Profil einen individuellen Touch und mehr! </div>
+<!-- /preview text -->
+<!-- WRAPPER --> <table bgcolor=3D"#262626" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" height=3D"100%" width=3D"100%" id=3D"emBodyTable" class=
+=3D"em_main_wrapper em_bg_141931" style=3D"border-style:none;border-width:0=
+px;min-width:100%;width:100%;background-color:#262626;">
+<!-- logo/language selection --> <tr class=3D"wwwno"> <td bgcolor=3D"#26262=
+6" align=3D"center" valign=3D"top" class=3D"em_main_section em_bg_262626" s=
+tyle=3D"border-style:none;border-width:0px;margin-top:0px;margin-bottom:0px=
+;margin-right:0px;margin-left:0px;padding-top:0px;padding-right:12px;paddin=
+g-bottom:0px;padding-left:12px;background-color:#262626;"> <table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"em_content_wrapper" style=
+=3D"border-style:none;border-width:0px;margin-top:0px;margin-bottom:0px;mar=
+gin-right:0px;margin-left:0px;padding-top:0px;padding-bottom:0px;padding-ri=
+ght:0px;padding-left:0px;"> <tr> <td align=3D"center" valign=3D"top" width=
+=3D"600" class=3D"em_content_600 em_padding_6" style=3D"width:600px;max-wid=
+th:600px;vertical-align:top;padding-top:6px;padding-right:0px;padding-botto=
+m:6px;padding-left:0px;"> <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" class=3D"em_content_wrapper" style=3D"border-style:no=
+ne;border-width:0px;margin-top:0px;margin-bottom:0px;margin-right:0px;margi=
+n-left:0px;padding-top:0px;padding-bottom:0px;padding-right:0px;padding-lef=
+t:0px;"> <tr>
+<!-- logo --> <td align=3D"left" valign=3D"middle" height=3D"32" width=3D"3=
+4" class=3D"em_image_wrapper" style=3D"font-size:0px;line-height:0px;margin=
+-top:0px;margin-bottom:0px;margin-right:0px;margin-left:0px;padding-top:0px=
+;padding-bottom:0px;padding-right:0px;padding-left:0px;"> <a href=3D"https:=
+//eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.gog.com%2=
+F&amp;data=3D02%7C01%7C%7Cd575efb272564d8f0edc08d5af9f0d0b%7C84df9e7fe9f640=
+afb435aaaaaaaaaaaa%7C1%7C0%7C636608020026799648&amp;sdata=3D9a2UzDRqZVOtZIG=
+xCX%2B9clSlLksUt%2BpWFUACf9vCW%2B4%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://www.gog.com/" shash=3D"NK9Gp8nDbEHz&#43;9GzUm4ioLeKhhCxoUbkYfW3NN6YZgez=
+sDfqhvEb2nz8v0L0ligCjdLglycHG5CsbnpePBx5rZ06sIHyKOVgQt6Olgnro9Gr4VZA9mfmW2C=
+zCCtflnDCPWjLlm5wmCW0Ilpj4MZiQAiU0/mXw&#43;sjkiva&#43;qMjXqA=3D" class=3D"e=
+m_image_wrapper" style=3D"font-size:0px;line-height:0px;margin-top:0px;marg=
+in-bottom:0px;margin-right:0px;margin-left:0px;padding-top:0px;padding-bott=
+om:0px;padding-right:0px;padding-left:0px;"> <img border=3D"0" hspace=3D"0"=
+ vspace=3D"0" height=3D"32" width=3D"34" class=3D"em_image em_image_fix" sr=
+c=3D"https://static.gog.com/upload/newsletters/img_common/logo_gogcom_white=
+_2x.png" alt=3D"GOG.com" style=3D"margin-top:0px;margin-bottom:0px;margin-r=
+ight:0px;margin-left:0px;padding-top:0px;padding-bottom:0px;padding-right:0=
+px;padding-left:0px;"> </a> </td>
+<!-- /logo -->
+<!-- view in browser --> <td align=3D"right" valign=3D"middle"> <div class=
+=3D"em_text_wrapper em_text_808080 em_text_12" style=3D"font-family:Helveti=
+ca, Lato, sans-serif;font-style:normal;font-weight:100;margin-top:0px;margi=
+n-bottom:0px;margin-right:0px;margin-left:0px;padding-top:0px;padding-botto=
+m:0px;padding-right:0px;padding-left:0px;color:#838689;font-size:12px;line-=
+height:16px;"> Im Browser =C3=B6ffnen: <a href=3D"https://eur02.safelinks.p=
+rotection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.gog.com%2Fnewsletter%2F20180=
+430_info_feed_en&amp;data=3D02%7C01%7C%7Cd575efb272564d8f0edc08d5af9f0d0b%7=
+C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C636608020026799648&amp;sdata=3D=
+l1SMmg6RQvHMHESVzz%2Fzk%2F70rQUhIDUYpz7ZvPzw2ro%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://www.gog.com/newsletter/20180430_info_feed_en" shash=3D"Fv6=
+L3TW3EXSz0bTiy/RIvL4yun4&#43;ax0AvcYtN5nzxbIEbVFAw1v343BgtWTUHrwf8&#43;0bHm=
+JDNMEWXPLQYpb21KIoe2jehyvwnSHEsNA&#43;Y5OjgY2zJrgEqn6zHgDGFsHfBIK6ZlQUMldJG=
+IGi&#43;KvPrBtwgERcV1&#43;MfFZfBo61nFs=3D" class=3D"em_text_9fbf00" style=
+=3D"color:#9fbf00;">EN</a> =E2=80=A2 <a href=3D"https://eur02.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.gog.com%2Fnewsletter%2F2018043=
+0_info_feed_de&amp;data=3D02%7C01%7C%7Cd575efb272564d8f0edc08d5af9f0d0b%7C8=
+4df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C636608020026799648&amp;sdata=3DJu=
+FkC1xlULHYUgkAIq9P3kZKeB5R56%2FjnWbsBfITnBU%3D&amp;reserved=3D0" originalsr=
+c=3D"https://www.gog.com/newsletter/20180430_info_feed_de" shash=3D"Gv3qIOC=
+odbQn6pE27gkJfSqkwp7XNdHmgl6A&#43;mDgyTYHGE9fkx3oJp80NqMwlYUzZsXGA0nzSwoujl=
+ofKcIMenLOoJjxNqiBZVpMq/&#43;9ZpZxqHsF6G8xZVHh5rYcs3ydDUiDoTGESZd3aVQbajSIp=
+61q24jqfM1o9IQ45JNRuBk=3D" class=3D"em_text_9fbf00" style=3D"color:#9fbf00;=
+">DE</a> =E2=80=A2 <a href=3D"https://eur02.safelinks.protection.outlook.co=
+m/?url=3Dhttps%3A%2F%2Fwww.gog.com%2Fnewsletter%2F20180430_info_feed_fr&amp=
+;data=3D02%7C01%7C%7Cd575efb272564d8f0edc08d5af9f0d0b%7C84df9e7fe9f640afb43=
+5aaaaaaaaaaaa%7C1%7C0%7C636608020026799648&amp;sdata=3DEAQWfrxOhPKHNY7GSdJw=
+26FNND1n0E%2B5NL7WnD2PZxk%3D&amp;reserved=3D0" originalsrc=3D"https://www.g=
+og.com/newsletter/20180430_info_feed_fr" shash=3D"MGG73/Ycsj56MC32dC2LLnk2G=
+ml8dMqEfXAoZKF7efAkFYb75Q4v4mIx1hqAIJBzrgKtDfQjUET5bv8tekaNT&#43;Pwq7p4qSpN=
+dnNHOODwT0uul2XIU0jDr6Veq/wPPInM3ZTcM&#43;CDig0Egw8G/FOwgFAC/humlGO1b8&#43;=
+Cy8Cp3iw=3D" class=3D"em_text_9fbf00" style=3D"color:#9fbf00;">FR</a> =E2=
+=80=A2 <a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhtt=
+ps%3A%2F%2Fwww.gog.com%2Fnewsletter%2F20180430_info_feed_ru&amp;data=3D02%7=
+C01%7C%7Cd575efb272564d8f0edc08d5af9f0d0b%7C84df9e7fe9f640afb435aaaaaaaaaaa=
+a%7C1%7C0%7C636608020026955895&amp;sdata=3DvXtOVN0ViAx%2B5hXEFnxtvdCAxHPYmO=
+xzONgpz3IpTVc%3D&amp;reserved=3D0" originalsrc=3D"https://www.gog.com/newsl=
+etter/20180430_info_feed_ru" shash=3D"srLk11FC&#43;el&#43;zUjG8RuF7stz5Goc6=
+SZMWEAYEkUvvHha3&#43;fzbAOOR5mvNPg1CJnZeBXVxrMm4HiyWgvk&#43;DiGTN6ReXHaXGsB=
+CbiCr5BZqi7Wtvd1PHbox6VY&#43;JkjL6sgS5nq3UKq02vKrUzYNnZwRTXbAw8rYe9jLcamz/p=
+h8ac=3D" class=3D"em_text_9fbf00" style=3D"color:#9fbf00;">RU</a> =E2=80=A2=
+ <a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%=
+2F%2Fwww.gog.com%2Fnewsletter%2F20180430_info_feed_br&amp;data=3D02%7C01%7C=
+%7Cd575efb272564d8f0edc08d5af9f0d0b%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%=
+7C0%7C636608020026955895&amp;sdata=3DPV593yo%2FqrzcqolbYldCnM46bTKJhfFwFXvc=
+bPO40cM%3D&amp;reserved=3D0" originalsrc=3D"https://www.gog.com/newsletter/=
+20180430_info_feed_br" shash=3D"xztr7hFs3bkfD3pT3Gs71DYvthwTW08FP8XBWJOvqdJ=
+O6A1qyn9SfM&#43;CXVq2mBkNPh10GxZBE1AVKqgtWWv5osvaWjRaaj5HHfGurJRms8fm/4Nkp1=
+KU&#43;vTrxhm7WszxT9P/wIu4oEm561L9x5t78O2EoU4LpVoddsTQVUUbveU=3D" class=3D"=
+em_text_9fbf00" style=3D"color:#9fbf00;">PT-BR</a> =E2=80=A2 <a href=3D"htt=
+ps://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.gog.co=
+m%2Fnewsletter%2F20180430_info_feed_cn&amp;data=3D02%7C01%7C%7Cd575efb27256=
+4d8f0edc08d5af9f0d0b%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C636608020=
+026955895&amp;sdata=3DNn9VOl%2FaqEHAWoDoixkLDQh0TRr1HDYbHeAHj35W%2FJU%3D&am=
+p;reserved=3D0" originalsrc=3D"https://www.gog.com/newsletter/20180430_info=
+_feed_cn" shash=3D"bI6P/80p2IiHSElw0l4oH5vl&#43;BxxzVqinry/mkj9ghiS28LzYmri=
+w7bZ9DA2A5WmXlW6LIcADBbPil0/AXDVLwP&#43;&#43;dXXCyl&#43;5BCWJMgTVWbwphemiSF=
+cCdRB7J9rsZWQEU8tY5Nhg2eAH9IVwTvazWPOcRS7cpTbvPhKet1hILw=3D" class=3D"em_te=
+xt_9fbf00" style=3D"color:#9fbf00;">CN</a> =E2=80=A2 <a href=3D"https://eur=
+02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.gog.com%2Fnews=
+letter%2F20180430_info_feed_pl&amp;data=3D02%7C01%7C%7Cd575efb272564d8f0edc=
+08d5af9f0d0b%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63660802002695589=
+5&amp;sdata=3DePtENqH7HtPFLTaJZIyyow8ecSVRRAJLDl%2F4CNT9rmo%3D&amp;reserved=
+=3D0" originalsrc=3D"https://www.gog.com/newsletter/20180430_info_feed_pl" =
+shash=3D"GkWw5DC4q7rDvJZmp5dCQ3Q7sKjBkaZBw6VjESfDRGyxwo1Y42GblLT9a9i78B8q47=
+pIbMuVgsfcda&#43;xiQjmIAI16N0dyCH3jGX9RRpmOXUDjaNCXIc&#43;RTlakrEW5fJeGVjUx=
+UX5R4w6hxJu/ykwPnvsC9H5usrkTsfjv22WEek=3D" class=3D"em_text_9fbf00" style=
+=3D"color:#9fbf00;">PL</a> </div> </td>
+<!-- view in browser --> </tr> </table> </td> </tr> </table> </td> </tr>
+<!-- /logo/language selection -->
+<!-- BODY (actual content) --> <tr> <td bgcolor=3D"#262626" align=3D"center=
+" valign=3D"top" class=3D"em_main_section em_bg_141931 em_bg_image em_bg_im=
+age_winter_2016" style=3D"border-style:none;border-width:0px;margin-top:0px=
+;margin-bottom:0px;margin-right:0px;margin-left:0px;padding-top:0px;padding=
+-right:12px;padding-bottom:0px;padding-left:12px;background-position:center=
+ top;background-repeat:no-repeat;background-attachment:scroll;background-si=
+ze:100%;background-image:url('http://images.gog.com/7695b9dca1d2f8fc0d4c6a8=
+cc5f14850b80c4d526aef1e005371d11f87116317.png');background-color:#2e104a;">=
+ <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"em_conten=
+t_wrapper" style=3D"border-style:none;border-width:0px;margin-top:0px;margi=
+n-bottom:0px;margin-right:0px;margin-left:0px;padding-top:0px;padding-botto=
+m:0px;padding-right:0px;padding-left:0px;">
+<!-- HEADER (main content) --> <tr> <td align=3D"center" valign=3D"top" wid=
+th=3D"600" class=3D"em_content_600 em_padding_48_12" style=3D"width:600px;m=
+ax-width:600px;vertical-align:top;padding-top:48px;padding-right:0px;paddin=
+g-bottom:12px;padding-left:0px;"> <div class=3D"em_text_wrapper em_text_000=
+000 em_text_24 em_header" style=3D"font-family:Helvetica, Lato, sans-serif;=
+font-style:normal;font-weight:100;margin-top:0px;margin-bottom:0px;margin-r=
+ight:0px;margin-left:0px;padding-top:0px;padding-bottom:0px;padding-right:0=
+px;padding-left:0px;color:#ffffff;font-size:28px;line-height:38px;text-tran=
+sform:uppercase;"> <span class=3D"em_link_fix_000000"> Dein Profil <br> ist=
+ jetzt online </span> </td> </tr>
+<tr> <td align=3D"center" valign=3D"top"> <div class=3D"em_text_wrapper em_=
+text_808080 em_text_14" style=3D"font-family:Helvetica, Lato, sans-serif;fo=
+nt-style:normal;font-weight:100;margin-top:0px;margin-bottom:0px;margin-rig=
+ht:0px;margin-left:0px;padding-top:0px;padding-bottom:20px;padding-right:0p=
+x;padding-left:0px;color:#ffffff;font-size:14px;line-height:20px;"> <span c=
+lass=3D"em_link_fix_808080"> </span> </div> </td> </tr>
+<!-- /HEADER -->
+<!-- SECTION (giveaway) -->
+<!-- tiles --> <!-- medium tiles --> <tr> <td align=3D"center" valign=3D"to=
+p" width=3D"600" class=3D"em_content_600 em_padding_0_6" style=3D"width:600=
+px;max-width:600px;vertical-align:top;padding-top:0px;padding-right:0px;pad=
+ding-bottom:6px;padding-left:0px;"> <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" class=3D"em_content_wrapper" style=3D"borde=
+r-style:none;border-width:0px;margin-top:0px;margin-bottom:0px;margin-right=
+:0px;margin-left:0px;padding-top:0px;padding-bottom:0px;padding-right:0px;p=
+adding-left:0px;"> <tr> <td align=3D"center" valign=3D"top" width=3D"600" c=
+lass=3D"em_content_600 em_border_bottom_2 em_border_808080 em_image_wrapper=
+" style=3D"width:600px;max-width:600px;vertical-align:top;font-size:0px;lin=
+e-height:0px;margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:=
+0px;padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;b=
+order-color:#808080;border-bottom-style:solid;border-bottom-width:0px;"> <a=
+ href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fwww.gog.com%2Ffeed%3Futm_medium%3Demail%26utm_source%3Dnewsletter%26utm_c=
+ampaign%3D20180430_info_feed%26utm_term%3DDE&amp;data=3D02%7C01%7C%7Cd575ef=
+b272564d8f0edc08d5af9f0d0b%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C636=
+608020026955895&amp;sdata=3DygGwBhmTAvpwGva3YhpLIR0C3psOQQZisBOvSUemE7g%3D&=
+amp;reserved=3D0" originalsrc=3D"https://www.gog.com/feed?utm_medium=3Demai=
+l&amp;utm_source=3Dnewsletter&amp;utm_campaign=3D20180430_info_feed&amp;utm=
+_term=3DDE" shash=3D"oeTJRXYlAu8MFYF77&#43;VQXlflLh5GwXRElzDKUvh30/Luz0&#43=
+;tqwoi5J8qRuQp4qno55arRYdP9toTJXdiPe0p6y5eGAfIYR7c7/sKI/4&#43;FgGQOr3ZltIUx=
+SQXGpYX3JBEp54DTwlLlW7a/xbAPmUT1t32ZpAatdw9U&#43;/xVwvBeKM=3D" class=3D"em_=
+image_wrapper" style=3D"font-size:0px;line-height:0px;margin-top:0px;margin=
+-bottom:0px;margin-right:0px;margin-left:0px;padding-top:0px;padding-bottom=
+:0px;padding-right:0px;padding-left:0px;"> <img border=3D"0" hspace=3D"0" v=
+space=3D"0" height=3D"400" class=3D"em_image em_image_600 em_image_fix" src=
+=3D"https://items.gog.com/PROFILES_INFO-3.png" alt=3D"PROFILE" style=3D"mar=
+gin-top:0px;margin-bottom:30px;margin-right:0px;margin-left:0px;padding-top=
+:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;"> </a> </td> </=
+tr> <!-- tile caption --> <tr> <td align=3D"center" valign=3D"top" width=3D=
+"600" class=3D"em_content_600 em_padding_0_48" style=3D"width:600px;max-wid=
+th:600px;vertical-align:top;padding-top:0px;padding-right:0px;padding-botto=
+m:10px;padding-left:0px;"> <table border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0"> <tr> <td align=3D"center" bgcolor=3D"#9fbf00" class=3D"em_button e=
+m_bg_9fbf00" style=3D"background-color:#9fbf00;-webkit-border-radius:3px;-m=
+oz-border-radius:3px;border-radius:3px;"> <a href=3D"https://eur02.safelink=
+s.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.gog.com%2Ffeed%3Futm_medi=
+um%3Demail%26utm_source%3Dnewsletter%26utm_campaign%3D20180430_info_feed%26=
+utm_term%3DDE&amp;data=3D02%7C01%7C%7Cd575efb272564d8f0edc08d5af9f0d0b%7C84=
+df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C636608020026955895&amp;sdata=3DygG=
+wBhmTAvpwGva3YhpLIR0C3psOQQZisBOvSUemE7g%3D&amp;reserved=3D0" originalsrc=
+=3D"https://www.gog.com/feed?utm_medium=3Demail&amp;utm_source=3Dnewsletter=
+&amp;utm_campaign=3D20180430_info_feed&amp;utm_term=3DDE" shash=3D"oeTJRXYl=
+Au8MFYF77&#43;VQXlflLh5GwXRElzDKUvh30/Luz0&#43;tqwoi5J8qRuQp4qno55arRYdP9to=
+TJXdiPe0p6y5eGAfIYR7c7/sKI/4&#43;FgGQOr3ZltIUxSQXGpYX3JBEp54DTwlLlW7a/xbAPm=
+UT1t32ZpAatdw9U&#43;/xVwvBeKM=3D" class=3D"em_button_a em_text_14 em_text_f=
+fffff em_border_9fbf00" style=3D"border-color:#9fbf00;font-size:14px;line-h=
+eight:20px;color:#ffffff;font-family:Helvetica, Lato, sans-serif;font-weigh=
+t:bold;text-decoration:none;text-transform:uppercase;-webkit-border-radius:=
+3px;-moz-border-radius:3px;border-radius:3px;border-width:1px;border-style:=
+solid;padding-left:14px;padding-right:14px;padding-top:13px;padding-bottom:=
+12px;display:inline-block;"> PROFIL ANSEHEN </a> </td> </tr> </table> </td>=
+ </tr> <tr> <td align=3D"center" valign=3D"center" width=3D"600" class=3D"e=
+m_content_600 em_padding_6" style=3D"width:600px;max-width:600px;vertical-a=
+lign:top;padding-top:6px;padding-right:0px;padding-bottom:6px;padding-left:=
+0px;"> <div class=3D"em_text_wrapper em_text_000000 em_text_18" style=3D"fo=
+nt-family:Helvetica, Lato, sans-serif;font-style:normal;font-weight:100;mar=
+gin-top:10px;margin-bottom:10px;margin-right:0px;margin-left:0px;padding-to=
+p:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;color:#ffffff;f=
+ont-size:18px;line-height:26px;"> <span class=3D"em_link_fix_000000"> Aktiv=
+it=C3=A4ts-Feed </span> </div> <tr> <td align=3D"center" valign=3D"top"> <d=
+iv class=3D"em_text_wrapper em_text_808080 em_text_14" style=3D"font-family=
+:Helvetica, Lato, sans-serif;font-style:normal;font-weight:100;margin-top:0=
+px;margin-bottom:0px;margin-right:0px;margin-left:0px;padding-top:0px;paddi=
+ng-bottom:0px;padding-right:0px;padding-left:0px;color:#808080;font-size:14=
+px;line-height:20px;"> <span class=3D"em_link_fix_808080"> Die soziale L=C3=
+=B6sung, um deine Aktivit=C3=A4ten mit deinen GOG.COM-Freunden zu teilen. <=
+/span> </div> </td> </tr> <tr> <td align=3D"center" valign=3D"center" width=
+=3D"600" class=3D"em_content_600 em_padding_6" style=3D"width:600px;max-wid=
+th:600px;vertical-align:top;padding-top:6px;padding-right:0px;padding-botto=
+m:6px;padding-left:0px;"> <div class=3D"em_text_wrapper em_text_000000 em_t=
+ext_18" style=3D"font-family:Helvetica, Lato, sans-serif;font-style:normal;=
+font-weight:100;margin-top:10px;margin-bottom:10px;margin-right:0px;margin-=
+left:0px;padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:=
+0px;color:#ffffff;font-size:18px;line-height:26px;"> <span class=3D"em_link=
+_fix_000000"> Spielstatistiken </span> </div> <tr> <td align=3D"center" val=
+ign=3D"top"> <div class=3D"em_text_wrapper em_text_808080 em_text_14" style=
+=3D"font-family:Helvetica, Lato, sans-serif;font-style:normal;font-weight:1=
+00;margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:0px;paddin=
+g-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;color:#8080=
+80;font-size:14px;line-height:20px;"> <span class=3D"em_link_fix_808080"> V=
+ergleiche gespielte Zeit, Erfolge und Meilensteine. <br>Finde heraus, wen d=
+u =C3=BCberfl=C3=BCgelst, und k=C3=BCndige allen anderen die Freundschaft. =
+</span> </div> </td> </tr> <tr> <td align=3D"center" valign=3D"center" widt=
+h=3D"600" class=3D"em_content_600 em_padding_6" style=3D"width:600px;max-wi=
+dth:600px;vertical-align:top;padding-top:6px;padding-right:0px;padding-bott=
+om:6px;padding-left:0px;"> <div class=3D"em_text_wrapper em_text_000000 em_=
+text_18" style=3D"font-family:Helvetica, Lato, sans-serif;font-style:normal=
+;font-weight:100;margin-top:10px;margin-bottom:10px;margin-right:0px;margin=
+-left:0px;padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left=
+:0px;color:#ffffff;font-size:18px;line-height:26px;"> <span class=3D"em_lin=
+k_fix_000000"> Personalisierung </span> </div> <tr> <td align=3D"center" va=
+lign=3D"top"> <div class=3D"em_text_wrapper em_text_808080 em_text_14" styl=
+e=3D"font-family:Helvetica, Lato, sans-serif;font-style:normal;font-weight:=
+100;margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:0px;paddi=
+ng-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;color:#808=
+080;font-size:14px;line-height:20px;"> <span class=3D"em_link_fix_808080"> =
+Passe dein Profil an und erz=C3=A4hl ein bisschen was =C3=BCber dich. Wie b=
+ist du als Gamer? Wie sprichst du GIF aus? </span> </div> </td> </tr> <tr> =
+<td align=3D"center" valign=3D"center" width=3D"600" class=3D"em_content_60=
+0 em_padding_6" style=3D"width:600px;max-width:600px;vertical-align:top;pad=
+ding-top:6px;padding-right:0px;padding-bottom:6px;padding-left:0px;"> <div =
+class=3D"em_text_wrapper em_text_000000 em_text_18" style=3D"font-family:He=
+lvetica, Lato, sans-serif;font-style:normal;font-weight:100;margin-top:10px=
+;margin-bottom:10px;margin-right:0px;margin-left:0px;padding-top:0px;paddin=
+g-bottom:0px;padding-right:0px;padding-left:0px;color:#ffffff;font-size:18p=
+x;line-height:26px;"> <span class=3D"em_link_fix_000000"> Privatsph=C3=A4re=
+ </span> </div> <tr> <td align=3D"center" valign=3D"top"> <div class=3D"em_=
+text_wrapper em_text_808080 em_text_14" style=3D"font-family:Helvetica, Lat=
+o, sans-serif;font-style:normal;font-weight:100;margin-top:0px;margin-botto=
+m:25px;margin-right:0px;margin-left:0px;padding-top:0px;padding-bottom:0px;=
+padding-right:0px;padding-left:0px;color:#808080;font-size:14px;line-height=
+:20px;"> <span class=3D"em_link_fix_808080"> Deine Privatsph=C3=A4re ist un=
+s wichtig =E2=80=93 =C3=BCbernimm die Kontrolle dar=C3=BCber, wer auf welch=
+e deiner Information Zugriff hat. </span> </div> </td> </tr> </td> </tr> <!=
+-- /tile caption --> </table> </td> </tr> <tr> <td align=3D"center" valign=
+=3D"top" width=3D"600" class=3D"em_content_600 em_padding_0_48" style=3D"wi=
+dth:600px;max-width:600px;vertical-align:top;padding-top:0px;padding-right:=
+0px;padding-bottom:30px;padding-left:0px;"> <table border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0"> <tr> <td align=3D"center" bgcolor=3D"#9fbf00" cla=
+ss=3D"em_button em_bg_9fbf00" style=3D"background-color:#9fbf00;-webkit-bor=
+der-radius:3px;-moz-border-radius:3px;border-radius:3px;"> <a href=3D"https=
+://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.gog.com%=
+2Faccount%2Fsettings%2Fprivacy%3Futm_medium%3Demail%26utm_source%3Dnewslett=
+er%26utm_campaign%3D20180430_info_feed%26utm_term%3DDE&amp;data=3D02%7C01%7=
+C%7Cd575efb272564d8f0edc08d5af9f0d0b%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1=
+%7C0%7C636608020026955895&amp;sdata=3DDOi1B2pi7XPQNrNWvnhpH5D0g49TXerbToUpp=
+4mpoyU%3D&amp;reserved=3D0" originalsrc=3D"https://www.gog.com/account/sett=
+ings/privacy?utm_medium=3Demail&amp;utm_source=3Dnewsletter&amp;utm_campaig=
+n=3D20180430_info_feed&amp;utm_term=3DDE" shash=3D"TiFtccHk2fiE0lJKiv8jCCB9=
+8JLk2xnaHffXNnFvNbzwr42HJza&#43;hepRxWXZ26tU87861RYNBnm3seEax/U/XGXmVtCzIIO=
+oIJENjxv38PwdlLhI0k7cgFs8x93MJqbhAYBZWDsZSk0m1qeQi6Bc5sB&#43;jw8SEdpcx7/WVH=
+IghrU=3D" class=3D"em_button_a em_text_14 em_text_ffffff em_border_9fbf00" =
+style=3D"border-color:#9fbf00;font-size:14px;line-height:20px;color:#ffffff=
+;font-family:Helvetica, Lato, sans-serif;font-weight:bold;text-decoration:n=
+one;text-transform:uppercase;-webkit-border-radius:3px;-moz-border-radius:3=
+px;border-radius:3px;border-width:1px;border-style:solid;padding-left:14px;=
+padding-right:14px;padding-top:13px;padding-bottom:12px;display:inline-bloc=
+k;"> ZU DEN PRIVATSPH=C3=84RE-EINSTELLUNGEN </a> </td> </tr> </table> </td>=
+ </tr> <!-- /big tile --> <!-- /tiles -->
+<!-- footer --> <!-- /footer -->
+<!-- /SECTION -->
+<!-- SECTION (unlockables) -->
+<!-- header --> <tr> <td align=3D"center" valign=3D"top" width=3D"600" clas=
+s=3D"em_content_600 em_padding_24_12" style=3D"width:600px;max-width:600px;=
+vertical-align:top;padding-top:12px;padding-right:0px;padding-bottom:12px;p=
+adding-left:0px;"> <div class=3D"em_text_wrapper em_text_ffffff em_text_18 =
+em_header" style=3D"font-family:Helvetica, Lato, sans-serif;font-style:norm=
+al;font-weight:100;margin-top:0px;margin-bottom:0px;margin-right:0px;margin=
+-left:0px;padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left=
+:0px;color:#ffffff;font-size:28px;line-height:38px;text-transform:uppercase=
+;"> <span class=3D"em_link_fix_ffffff"> Vielleicht gef=C3=A4llt dir auch ..=
+. </span> </div> <div class=3D"em_text_wrapper em_text_808080 em_text_14" s=
+tyle=3D"font-family:Helvetica, Lato, sans-serif;font-style:normal;font-weig=
+ht:100;margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:0px;pa=
+dding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;color:#=
+ffffff;font-size:16px;line-height:26px;"> <span class=3D"em_link_fix_808080=
+"> Die aktuellen Angebote der Woche </span> </div> </td> </tr> <!-- /header=
+ -->
+<!-- tiles --> <!-- medium tiles --> <tr> <td align=3D"center" valign=3D"to=
+p" width=3D"600" class=3D"em_content_600 em_padding_0_6" style=3D"width:600=
+px;max-width:600px;vertical-align:top;padding-top:0px;padding-right:0px;pad=
+ding-bottom:6px;padding-left:0px;"> <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" class=3D"em_content_wrapper" style=3D"borde=
+r-style:none;border-width:0px;margin-top:0px;margin-bottom:0px;margin-right=
+:0px;margin-left:0px;padding-top:0px;padding-bottom:0px;padding-right:0px;p=
+adding-left:0px;"> <tr> <td align=3D"center" valign=3D"top" width=3D"600" c=
+lass=3D"em_content_600 em_border_bottom_2 em_border_9fbf00 em_image_wrapper=
+" style=3D"width:600px;max-width:600px;vertical-align:top;font-size:0px;lin=
+e-height:0px;margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:=
+0px;padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;b=
+order-color:#9fbf00;border-bottom-style:solid;border-bottom-width:2px;"> <a=
+ href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fwww.gog.com%2Fpromo%2F20180430_weekly_sale%3Futm_medium%3Demail%26utm_sou=
+rce%3Dnewsletter%26utm_campaign%3D20180430_info_feed%26utm_term%3DDE&amp;da=
+ta=3D02%7C01%7C%7Cd575efb272564d8f0edc08d5af9f0d0b%7C84df9e7fe9f640afb435aa=
+aaaaaaaaaa%7C1%7C0%7C636608020026955895&amp;sdata=3D0k8JsnDe9bHf9Bvp6ECKpu1=
+LWrA8IySqOHWQx4pxJzE%3D&amp;reserved=3D0" originalsrc=3D"https://www.gog.co=
+m/promo/20180430_weekly_sale?utm_medium=3Demail&amp;utm_source=3Dnewsletter=
+&amp;utm_campaign=3D20180430_info_feed&amp;utm_term=3DDE" shash=3D"QF0drnl3=
+ncFKT3Ml1Zfbd6pS2ycA5NkXFaR&#43;AE/YB4MuiniqGqALubKyUKims73bFKqT6EKBPokvgqt=
+jhFSVYo64EaoiGNx7hASlZPNvCTOLdnLVjuuQsYM7Il5gryEFK3tMykBQY1enDHyBVL5JgixCtZ=
+gt/z5/A&#43;Q6emK198M=3D" class=3D"em_image_wrapper" style=3D"font-size:0px=
+;line-height:0px;margin-top:0px;margin-bottom:0px;margin-right:0px;margin-l=
+eft:0px;padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0=
+px;"> <img border=3D"0" hspace=3D"0" vspace=3D"0" height=3D"278" class=3D"e=
+m_image em_image_600 em_image_fix" src=3D"https://images.gog.com/07b50ea722=
+50ff9cef86c4ed9a22a861e4001824873952e0e06b4a97c6915e3f_email_600_2x.jpg" al=
+t=3D"newsletter_RU" style=3D"margin-top:0px;margin-bottom:0px;margin-right:=
+0px;margin-left:0px;padding-top:0px;padding-bottom:0px;padding-right:0px;pa=
+dding-left:0px;"> </a> </td> </tr> <!-- tile caption --> <tr> <td align=3D"=
+center" valign=3D"top" width=3D"600" class=3D"em_content_600" style=3D"widt=
+h:600px;max-width:600px;vertical-align:top;"> <table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"em_content_wrapper" styl=
+e=3D"border-style:none;border-width:0px;margin-top:0px;margin-bottom:0px;ma=
+rgin-right:0px;margin-left:0px;padding-top:0px;padding-bottom:0px;padding-r=
+ight:0px;padding-left:0px;"> <tr> <td align=3D"left" valign=3D"top"> <!-- t=
+ile description --> <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+> <tr> <td align=3D"left" class=3D"em_padding_6" style=3D"padding-top:6px;p=
+adding-right:0px;padding-bottom:6px;padding-left:0px;"> <div class=3D"em_te=
+xt_wrapper em_text_808080 em_text_12" style=3D"font-family:Helvetica, Lato,=
+ sans-serif;font-style:normal;font-weight:100;margin-top:0px;margin-bottom:=
+0px;margin-right:0px;margin-left:0px;padding-top:0px;padding-bottom:10px;pa=
+dding-right:0px;padding-left:0px;color:#ffffff;font-size:18px;line-height:2=
+0px;"> Angebote der Woche </div> <div class=3D"em_text_wrapper em_text_8080=
+80 em_text_12" style=3D"font-family:Helvetica, Lato, sans-serif;font-style:=
+normal;font-weight:100;margin-top:0px;margin-bottom:0px;margin-right:0px;ma=
+rgin-left:0px;padding-top:0px;padding-bottom:0px;padding-right:0px;padding-=
+left:0px;color:#808080;font-size:14px;line-height:16px;"><p>Expeditions: Co=
+nquistador, We are the Dwarves, Halcyon 6 und viele mehr!</p> </div> </td> =
+</tr> </table> <!-- /tile description --> </td> <td align=3D"right" valign=
+=3D"top"> <!-- price tag --> <table border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0"> <tr> <td align=3D"center" bgcolor=3D"#9fbf00" class=3D"em_tag em=
+_bg_9fbf00" style=3D"background-color:#9fbf00;"> <a href=3D"https://eur02.s=
+afelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.gog.com%2Fpromo%2F=
+20180430_weekly_sale%3Futm_medium%3Demail%26utm_source%3Dnewsletter%26utm_c=
+ampaign%3D20180430_info_feed%26utm_term%3DDE&amp;data=3D02%7C01%7C%7Cd575ef=
+b272564d8f0edc08d5af9f0d0b%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C636=
+608020026955895&amp;sdata=3D0k8JsnDe9bHf9Bvp6ECKpu1LWrA8IySqOHWQx4pxJzE%3D&=
+amp;reserved=3D0" originalsrc=3D"https://www.gog.com/promo/20180430_weekly_=
+sale?utm_medium=3Demail&amp;utm_source=3Dnewsletter&amp;utm_campaign=3D2018=
+0430_info_feed&amp;utm_term=3DDE" shash=3D"QF0drnl3ncFKT3Ml1Zfbd6pS2ycA5NkX=
+FaR&#43;AE/YB4MuiniqGqALubKyUKims73bFKqT6EKBPokvgqtjhFSVYo64EaoiGNx7hASlZPN=
+vCTOLdnLVjuuQsYM7Il5gryEFK3tMykBQY1enDHyBVL5JgixCtZgt/z5/A&#43;Q6emK198M=3D=
+" class=3D"em_tag_a em_text_14 em_text_ffffff em_border_9fbf00" style=3D"bo=
+rder-color:#9fbf00;font-size:14px;line-height:20px;color:#ffffff;font-famil=
+y:Helvetica, Lato, sans-serif;font-weight:bold;text-decoration:none;text-tr=
+ansform:uppercase;border-width:1px;border-style:solid;padding-left:9px;padd=
+ing-right:9px;padding-top:3px;padding-bottom:5px;display:inline-block;"> Bi=
+s zu 90% Rabatt </a> </td> </tr> </table> <!-- /price tag --> </td> </tr> <=
+/table> </td> </tr> <!-- /tile caption --> </table> </td> </tr> <tr> <td al=
+ign=3D"center" valign=3D"top" width=3D"600" class=3D"em_content_600 em_padd=
+ing_0_48" style=3D"width:600px;max-width:600px;vertical-align:top;padding-t=
+op:20px;padding-right:0px;padding-bottom:12px;padding-left:0px;"> <table bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0"> <tr> <td align=3D"center" b=
+gcolor=3D"#9fbf00" class=3D"em_button em_bg_9fbf00" style=3D"background-col=
+or:#9fbf00;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3=
+px;"> <a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttp=
+s%3A%2F%2Fwww.gog.com%2Fpromo%2F20180430_weekly_sale%3Futm_medium%3Demail%2=
+6utm_source%3Dnewsletter%26utm_campaign%3D20180430_info_feed%26utm_term%3DD=
+E&amp;data=3D02%7C01%7C%7Cd575efb272564d8f0edc08d5af9f0d0b%7C84df9e7fe9f640=
+afb435aaaaaaaaaaaa%7C1%7C0%7C636608020026955895&amp;sdata=3D0k8JsnDe9bHf9Bv=
+p6ECKpu1LWrA8IySqOHWQx4pxJzE%3D&amp;reserved=3D0" originalsrc=3D"https://ww=
+w.gog.com/promo/20180430_weekly_sale?utm_medium=3Demail&amp;utm_source=3Dne=
+wsletter&amp;utm_campaign=3D20180430_info_feed&amp;utm_term=3DDE" shash=3D"=
+QF0drnl3ncFKT3Ml1Zfbd6pS2ycA5NkXFaR&#43;AE/YB4MuiniqGqALubKyUKims73bFKqT6EK=
+BPokvgqtjhFSVYo64EaoiGNx7hASlZPNvCTOLdnLVjuuQsYM7Il5gryEFK3tMykBQY1enDHyBVL=
+5JgixCtZgt/z5/A&#43;Q6emK198M=3D" class=3D"em_button_a em_text_14 em_text_f=
+fffff em_border_9fbf00" style=3D"border-color:#9fbf00;font-size:14px;line-h=
+eight:20px;color:#ffffff;font-family:Helvetica, Lato, sans-serif;font-weigh=
+t:bold;text-decoration:none;text-transform:uppercase;-webkit-border-radius:=
+3px;-moz-border-radius:3px;border-radius:3px;border-width:1px;border-style:=
+solid;padding-left:14px;padding-right:14px;padding-top:13px;padding-bottom:=
+12px;display:inline-block;"> ANGEBOTE DER WOCHE ANSEHEN </a> </td> </tr> </=
+table> </td> </tr> <!-- /big tile --> <!-- /tiles -->
+<!-- footer --> <tr> <td align=3D"center" valign=3D"top" width=3D"600" clas=
+s=3D"em_content_600 em_padding_0_24" style=3D"width:600px;max-width:600px;v=
+ertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:24px;pad=
+ding-left:0px;"> <div class=3D"em_text_wrapper em_text_808080 em_text_14" s=
+tyle=3D"font-family:Helvetica, Lato, sans-serif;font-style:normal;font-weig=
+ht:100;margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:0px;pa=
+dding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;color:#=
+808080;font-size:14px;line-height:20px;"> <span class=3D"em_link_fix_808080=
+"> Weitere Informationen zu den einzelnen Angeboten auf GOG.com. </span> </=
+div> </td> </tr> <!-- /footer -->
+<!-- /SECTION -->
+<!-- SECTION (winter promo features) -->
+<!-- header --> <!-- /header -->
+<!-- tiles --> <!-- /tiles -->
+<!-- footer --> <!-- /footer -->
+<!-- /SECTION -->
+<!-- SECTION (bundles slot #1) --> <!-- /SECTION -->
+<!-- SECTION (bundles slot #2) --> <!-- /SECTION -->
+<!-- SECTION (bundles slot #3) --> <!-- /SECTION -->
+<!-- SECTION (bundles slot #4) --> <!-- /SECTION -->
+<!-- SECTION (general footer) --> <!-- /SECTION --> </table> </td> </tr>
+<!-- /BODY -->
+<!-- FOOTER (disclaimers, etc.) --> <tr> <td bgcolor=3D"#262626" align=3D"c=
+enter" valign=3D"top" class=3D"em_main_section em_bg_e6e6e6" style=3D"borde=
+r-style:none;border-width:0px;margin-top:0px;margin-bottom:0px;margin-right=
+:0px;margin-left:0px;padding-top:0px;padding-right:12px;padding-bottom:0px;=
+padding-left:12px;background-color:#262626;"> <table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" class=3D"em_content_wrapper" style=3D"border-sty=
+le:none;border-width:0px;margin-top:0px;margin-bottom:0px;margin-right:0px;=
+margin-left:0px;padding-top:0px;padding-bottom:0px;padding-right:0px;paddin=
+g-left:0px;"> <tr> <td align=3D"center" valign=3D"top" width=3D"600" class=
+=3D"em_content_600 em_padding_24" style=3D"width:600px;max-width:600px;vert=
+ical-align:top;padding-top:24px;padding-right:0px;padding-bottom:24px;paddi=
+ng-left:0px;">
+<!-- EN --> <div class=3D"em_text_wrapper em_text_808080 em_text_12 wwwno" =
+style=3D"font-family:Helvetica, Lato, sans-serif;font-style:normal;font-wei=
+ght:100;margin-top:0px;margin-bottom:0px;margin-right:0px;margin-left:0px;p=
+adding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;color:=
+#808080;font-size:12px;line-height:16px;"> Du erh=C3=A4ltst diese Email, we=
+il sich deine Email-Adresse auf unserer Empf=C3=A4ngerliste befindet.<br> W=
+enn du keine Emails mehr von uns erhalten m=C3=B6chtest, kannst du dich hie=
+r <a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A=
+%2F%2Fwww.gog.com%2Funsubscribe%2F4dDzbIEGgm3e7jPkk97O71E2NtmkNQ%7C%7C&amp;=
+data=3D02%7C01%7C%7Cd575efb272564d8f0edc08d5af9f0d0b%7C84df9e7fe9f640afb435=
+aaaaaaaaaaaa%7C1%7C0%7C636608020026955895&amp;sdata=3DSt35iD3amtGSnEtTMTk7W=
+E92%2BibIsg58CSYeO1XzE10%3D&amp;reserved=3D0" originalsrc=3D"https://www.go=
+g.com/unsubscribe/4dDzbIEGgm3e7jPkk97O71E2NtmkNQ||" shash=3D"aonksD5y31yGsl=
+YgzjhcREL2AHI0GceJXFFa5BXzxkylDIOFhGSy&#43;0/dl1PLZ&#43;JrzCRXR9anYh7YHZ7&#=
+43;GmgrGItopsRVMK/rP9Vo22Nce2QS0VXTIExBvg/fL6aGYaIEfAo88sBElcl4Y9gC9ob/oPje=
+NghZ6MqJKnCXIhpS47g=3D" class=3D"em_text_9fbf00" style=3D"color:#9fbf00;">a=
+bmelden</a>. </div><br class=3D"wwwno"> <div class=3D"em_text_wrapper em_te=
+xt_808080 em_text_12 em_header" style=3D"font-family:Helvetica, Lato, sans-=
+serif;font-style:normal;font-weight:100;margin-top:0px;margin-bottom:0px;ma=
+rgin-right:0px;margin-left:0px;padding-top:0px;padding-bottom:0px;padding-r=
+ight:0px;padding-left:0px;color:#808080;font-size:12px;line-height:16px;tex=
+t-transform:uppercase;"> <span class=3D"em_link_fix_808080">GOG.com =C2=A9 =
+2018. Teil der CD PROJEKT-Gruppe.</span> </div> <div class=3D"em_text_wrapp=
+er em_text_808080 em_text_12" style=3D"font-family:Helvetica, Lato, sans-se=
+rif;font-style:normal;font-weight:100;margin-top:0px;margin-bottom:0px;marg=
+in-right:0px;margin-left:0px;padding-top:0px;padding-bottom:0px;padding-rig=
+ht:0px;padding-left:0px;color:#808080;font-size:12px;line-height:16px;"> Al=
+le anderen Marken sind Eigentum ihrer jeweiligen Inhaber. </div> <div class=
+=3D"em_text_wrapper em_text_808080 em_text_12 wwwno wwwno" style=3D"font-fa=
+mily:Helvetica, Lato, sans-serif;font-style:normal;font-weight:100;margin-t=
+op:0px;margin-bottom:0px;margin-right:0px;margin-left:0px;padding-top:0px;p=
+adding-bottom:0px;padding-right:0px;padding-left:0px;color:#808080;font-siz=
+e:12px;line-height:16px;"> <a href=3D"" style=3D"text-decoration:none;color=
+:#808080;border:none;">GOG sp. z o.o., ul. Jagiello=C5=84ska 74, 03-301 War=
+schau, Polen</a> </div>
+<!-- DE --> </td> </tr> </table> </td> </tr>
+<!-- /FOOTER --> </table>
+<!-- /WRAPPER --> <img src=3D"https://www.google-analytics.com/collect?v=3D=
+1&amp;tid=3DUA-6605418-1&amp;cid=3D4dDzbIEGgm3e7jPkk97O71E2NtmkNQ||&amp;t=
+=3Devent&amp;ec=3Demail&amp;ea=3Dopen&amp;el=3D4dDzbIEGgm3e7jPkk97O71E2Ntmk=
+NQ||&amp;cs=3Dnewsletter&amp;cm=3Demail&amp;cn=3D20180430_info_feed"> </bod=
+y>
+</html>
+
+--4a900993396d6a3a8799c25c090c6364347368379fce2317480126ac15f352e1--

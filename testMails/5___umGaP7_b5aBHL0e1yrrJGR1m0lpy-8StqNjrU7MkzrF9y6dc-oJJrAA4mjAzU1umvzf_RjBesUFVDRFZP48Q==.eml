@@ -1,0 +1,1370 @@
+Authentication-Results: spf=pass (sender IP is 54.240.1.42) smtp.mailfrom=bounces.amazon.de; hotmail.com; dkim=pass (signature was verified) header.d=amazon.de;hotmail.com; dmarc=pass action=none header.from=amazon.de;
+Bounces-To: 201906151446416905637377674b7ebf7caf216e60p0eu@bounces.amazon.de
+Content-Type: multipart/mixed; boundary=b5910b6f67b21b865085e7638e5bf8e5abc52dd0fae314c0d6bb423dea8f9baa
+Date: Sat, 15 Jun 2019 14:46:42 +0000
+Delivered-To: max.schuckert@protonmail.com
+Dkim-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=ihchhvubuqgjsxyuhssfvqohv7z3u4hn; d=amazonses.com; t=1560610002; h=From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:Date:Feedback-ID; bh=Mx5009adwx+ODkL6i3kXMg54Tl2nHYkH00MUmzPAxGw=; b=jbCgKMzrW5yQ2GQx5AqBclDVHUPPKxX59DB73e9XdMDFapoNBqtNiD2hOINetTFj vvN2ydmRi+BEn2132G1P8+jGRq14s1vtgnSVQqnYcJ+OIsh0OxOqoUlfRpGm/wZELYc 28HvNRKhCvZzm8lk1jbGYwE/shMVAlZYWMowrIEo=
+Feedback-Id: 1.eu-west-1.UIAUrMfbpGrxavqnRE0yoZrAUBI9C7GRNUx/kUDo6B4=:AmazonSES
+From: "Amazon.de" <bestellbestaetigung@amazon.de>
+Message-Id: <0102016b5b9ad7dc-c265488b-34e4-4ffd-80f2-7fa2c27532ec-000000@eu-west-1.amazonses.com>
+Mime-Version: 1.0
+Received: from a1-42.smtp-out.eu-west-1.amazonses.com (54.240.1.42) by SN1NAM04FT013.mail.protection.outlook.com (10.152.88.111) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.1987.11 via Frontend Transport; Sat, 15 Jun 2019 14:46:43 +0000
+Received-Spf: Pass (protection.outlook.com: domain of bounces.amazon.de designates 54.240.1.42 as permitted sender) receiver=protection.outlook.com; client-ip=54.240.1.42; helo=a1-42.smtp-out.eu-west-1.amazonses.com;
+References: <__umGaP7_b5aBHL0e1yrrJGR1m0lpy-8StqNjrU7MkzrF9y6dc-oJJrAA4mjAzU1umvzf_RjBesUFVDRFZP48Q==@protonmail.internalid>
+Reply-To: <bestellbestaetigung@amazon.de>
+Return-Path: 201906151446416905637377674b7ebf7caf216e60p0eu@bounces.amazon.de
+Subject: Ihre Amazon.de Bestellung von "Air Cooler Leakproof...".
+To: <max.wilke2000@hotmail.com>
+X-Amazon-Mail-Relay-Type: notification
+X-Amazon-Metadata: CA=C19Z1NQDTDH7SM-CU=A30UJINXEBJ5CQ
+X-Eopattributedmessage: 0
+X-Eoptenantattributedmessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-Forefront-Antispam-Report: EFV:NLI;
+X-Incomingheadercount: 16
+X-Incomingtopheadermarker: OriginalChecksum:3A74FFDF446A0195517F2C4323155582A213277FD847EF0ED4B9EB944B2A08E2;UpperCasedChecksum:ECCD091EB87F3BD9F51D2ACB7A031D05CE4112E27B8FA01BE21046AF038D650F;SizeAsReceived:1778;Count:16
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MDtHRD0wO1NDTD0tMQ==
+X-Message-Info: 5vMbyqxGkddhh69sIkKp9pLi3PfvO4Ny18wihVylw+Ba0/j3V9f/n2rZJV2H8qH8pq+Eusavhc6U6HBGCM2DSmtrcyLMOsa9X9wEctPNmkz9tlav+t/mscBRo+FD9I0EA0VDaC2fHol1k3wubNPy+xoqBWYbZEyidHmpHY7qUHjSSivJPHPd1lhI/+bSUz20yq51Wmz0ovOAYopEMmUO4w==
+X-Microsoft-Antispam: BCL:2;PCL:0;RULEID:(2390118)(5000113)(711020)(4605104)(610169)(650170)(651021)(8291501072);SRVR:SN1NAM04HT034;
+X-Microsoft-Antispam-Mailbox-Delivery: abwl:0;wl:0;pcwl:0;kl:0;iwl:0;ijl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000261)(5061607266)(5061608174)(4900115)(4920090)(6250004)(4950130)(4990090);
+X-Microsoft-Antispam-Message-Info: /R6ThydLZwlWH4jwhQjZ7SSvMM9VuB5OniTSgGKagAiKq4tWofZcVXRPygKSwhlfKy5YvvnWLzBh4a4+XgzpDDUtNGAd5gZSIWHAIogmbn0RPFaw14mM/Ivz0juFjOdhm2ezI2Ll5A+4c3Fb0prD4Bbm2lY4+hHT0O1ptRfR03HdWwCqbXJUKi4TltD+pA15xkCDQHUbC9VEAfnzXDktRAOZmtFPcWS+PBPjAbMARfNiJKSihTCDhAul86xPTv4OK5v38/+eUBu5NofmyQE2q6QNytxnwuLmw4vBDSri0foVKFaQokOVxOhzuoWfucAqLGLfSKPwTDnuzrldrYVJPSEJ6wV6LlzvAvBbVkiBgQVbMzA2vFtSu0uXhZS+XFuUuJF36xJOTJQQvazOYIKZhPP57sVqkHE8qxGnTS4Znf/5oi5eUEJ9nU+B+fDcGNX6eGS8pFmz9e6vMes2GEM6I9GlZ1apxWpGPO1hH3x1t8BOzSAVdUqRPKjCSDbbjV3plE+G+Wxwi/YMATbSMaChlF7Ktk6tdgiDXtb18I5aaFkYNwr8PJMAWQaa+R9JGffrGeoG5+cKjOumMkC+jeaavGU1rm6/yNwsDUTYCl1bZgc9y3CBOEBoxHIQwUT/Qr4yr2MHW/IFBDzq6EzIksHOhaaT3/xHpt7W3JAlwkIq8mBuj9BLZLbBFQeZiMFHXtR9x3LJYwsnnetzrCaO6wuAxUxpYrdQc8yK2tJK6Y/eGg65yXruJyJAPURg5lu0lpvtn55W9KG8nCN5RNOPK1G7XR4V/3eBdWAWx3q1vHPSvKE=
+X-Ms-Exchange-Crosstenant-Fromentityheader: Internet
+X-Ms-Exchange-Crosstenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-Ms-Exchange-Crosstenant-Network-Message-Id: 875bef4b-3f0d-4a0b-70bd-08d6f1a048aa
+X-Ms-Exchange-Crosstenant-Originalarrivaltime: 15 Jun 2019 14:46:43.2151 (UTC)
+X-Ms-Exchange-Crosstenant-Rms-Persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-Ms-Exchange-Eopdirect: true
+X-Ms-Exchange-Organization-Authas: Anonymous
+X-Ms-Exchange-Organization-Authsource: SN1NAM04FT013.eop-NAM04.prod.protection.outlook.com
+X-Ms-Exchange-Organization-Expirationinterval: 1:00:00:00.0000000
+X-Ms-Exchange-Organization-Expirationintervalreason: OriginalSubmit
+X-Ms-Exchange-Organization-Expirationstarttime: 15 Jun 2019 14:46:43.5694 (UTC)
+X-Ms-Exchange-Organization-Expirationstarttimereason: OriginalSubmit
+X-Ms-Exchange-Organization-Messagedirectionality: Incoming
+X-Ms-Exchange-Organization-Network-Message-Id: 875bef4b-3f0d-4a0b-70bd-08d6f1a048aa
+X-Ms-Exchange-Organization-Pcl: 2
+X-Ms-Exchange-Processed-By-Bccfoldering: 15.20.1987.013
+X-Ms-Exchange-Purlcount: 31
+X-Ms-Exchange-Transport-Crosstenantheadersstamped: SN1NAM04HT034
+X-Ms-Exchange-Transport-Endtoendlatency: 00:00:01.5493451
+X-Ms-Office365-Filtering-Correlation-Id: 875bef4b-3f0d-4a0b-70bd-08d6f1a048aa
+X-Ms-Publictraffictype: Email
+X-Ms-Traffictypediagnostic: SN1NAM04HT034:
+X-Ms-Userlastlogontime: 6/15/2019 2:28:23 PM
+X-Original-Messageid: <urn.rtn.msg.201906151446416905637377674b7ebf7caf216e60p0eu@1560610002896.rtn-svc-eu-back-m4l1c-9d99ee02.eu-west-1.amazon.com>
+X-Original-To: max.schuckert@protonmail.com
+X-Originatororg: outlook.com
+X-Pm-Content-Encryption: on-import
+X-Pm-Conversationid-Id: klDm5nhSPnbeWnVe5ODnfR7e_bgU07G1-4LWJSMPapYgqOVxQses52_eza2lr7AW25zoDESTFQadca4GB0Qx6g==
+X-Pm-Date: Sat, 15 Jun 2019 16:46:42 +0200
+X-Pm-External-Id: <0102016b5b9ad7dc-c265488b-34e4-4ffd-80f2-7fa2c27532ec-000000@eu-west-1.amazonses.com>
+X-Pm-Internal-Id: __umGaP7_b5aBHL0e1yrrJGR1m0lpy-8StqNjrU7MkzrF9y6dc-oJJrAA4mjAzU1umvzf_RjBesUFVDRFZP48Q==
+X-Pm-Origin: import
+X-Pm-Spam-Action: dunno
+X-Pm-Spamscore: 0
+X-Sender-Ip: 54.240.1.42
+X-Ses-Outgoing: 2019.06.15-54.240.1.42
+X-Sid-Pra: BESTELLBESTAETIGUNG@AMAZON.DE
+X-Sid-Result: PASS
+
+
+--b5910b6f67b21b865085e7638e5bf8e5abc52dd0fae314c0d6bb423dea8f9baa
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"/>
+  <style type=3D"text/css">
+body {
+    background-color: #ffffff;
+	margin:0;
+	font:12px/16px Arial, sans-serif;
+}
+
+a {
+	text-decoration:none;
+	color:#006699;
+	font:12px/16px Arial, sans-serif;
+}
+
+a img {
+	border:0;
+}
+
+h2 {
+	font-size:20px;
+	line-height:24px;
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	color:#000 !important;
+}
+
+h3 {
+	font-size: 18px;
+	color:#cc6600;
+	margin:15px 0 0 0;
+	font-weight: normal;
+}
+
+h4 {
+	font-size:14px;
+	margin:0;
+	font-weight:normal;
+}
+
+p {
+	margin:4px 0 0 0;
+	font:12px/16px Arial, sans-serif;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+td {
+	vertical-align: top;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: Arial, sans-serif;
+}
+
+/* container */
+#container {
+	width:640px;
+	color:#333;
+	margin:0 auto;
+}
+
+#container .frame {
+	padding:0 20px 20px 20px;
+}
+
+/* content tables */
+#main, #header, #summary, #desiredInformation, #orderDetails, #itemDetails,=
+ #costBreakdown,
+#selfService, #closing, #marketingContent, #legalCopy {
+	width:100%;
+}
+
+/* header */
+#header .logo {
+	width:115px;
+	padding:18px 0 0 0;
+}
+
+#header .navigation {
+	text-align:right;
+	padding:5px 0;
+	border-bottom:1px solid #ccc;
+	white-space:nowrap;
+}
+
+#header .navigation a {
+	border-right:0px solid #CCC;
+	margin-right:0px;
+	padding-right:0px;
+}
+
+#header .navigation span {
+	text-decoration:none;
+	color:#CCC;
+	font-size:15px;
+	font-family:Arial, sans-serif;
+}
+
+#header .navigation a.last {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+#header .title {
+	text-align:right;
+	padding:7px 0 5px 0;
+}
+
+#header .title img {
+	padding:0 4px 0 0;
+}
+
+/* summary */
+#summary a{
+	text-decoration:none;
+	color:#006699;
+}
+
+#summary p {
+	margin:5px 0 0 0;
+}
+
+/* Alexa Shopping content */
+#alexaShoppingContent {
+	border-top:3px solid rgb(256, 256, 256);
+	width: 100%!important;
+	background-color:#efefef;
+}
+
+#alexaShoppingContent td {
+	vertical-align: middle;
+	white-space: nowrap;
+	text-align: left;
+}
+
+#alexaShoppingContent td:last-child {
+	width: 100%;
+}
+
+#alexaShoppingContent .text {
+	font-size: 12px;
+	color: rgb(51, 51, 51);
+}
+
+#alexaShoppingContent .alexaUtterance {
+	font: italic 12px Georgia;
+	color: rgb(51, 51, 51);
+}
+
+/* critical info */
+#criticalInfo {
+	border-top:3px solid #2d3741;
+	width: 95%;
+}
+
+/* background-color: rgb(22, 22, 256); */
+#criticalInfo .alexa-shopping-content {
+	padding:0 0 0 0;
+}
+
+#criticalInfo td {
+	font-size:14px;
+	padding:11px 18px 18px 18px;
+	background-color:#efefef;
+	width:50%;
+}
+
+#criticalInfo .label {
+	color:#666;
+}
+
+#criticalInfo p {
+	margin:2px 0 9px 0;
+}
+
+#criticalInfo span {
+	color:#666;
+}
+
+#criticalInfo a {
+	font-size:11px;
+	color:#006699;
+	text-decoration:none;
+}
+
+#cancelOrder p {
+    font: 11px/ 16px Arial, sans-serif;
+    color: rgb(51, 51, 51);
+}
+/* desiredInformation */
+#desiredInformation a {
+	text-decoration:none;
+	color:#006699;
+}
+
+/* buttons */
+.button {
+	text-decoration:none !important;
+	display:block;
+	height:26px;
+	display:inline-block;
+	margin:0 0 2px 0;
+}
+
+.button.small {
+	height:20px;
+}
+
+.button .expandable {
+	float:left;
+	overflow:hidden;
+}
+
+.button .text {
+	color:#000f68;
+	font-size:12px;
+	position:relative;
+	z-index:10;
+	top:-22px;
+	left:-12px;
+	text-align:center;
+}
+
+.button.secondary .text {
+	left:0;
+}
+
+.button.small .text {
+	top:-20px;
+	left:0;
+	font-size:11px;
+}
+
+/* supporting details */
+#supportingDetails {
+	font-size:11px;
+	color:#666;
+	line-height:14px;
+	margin:10px 20px;
+}
+
+#supportingDetails {
+	margin:0 18px 0 18px;
+}
+
+/* order details */
+#orderDetails h3 {
+	border-bottom:1px solid #ccc;
+	margin:0 0 3px 0;
+	padding:0 0 3px 0;
+}
+
+#orderDetails .frame {
+	padding:16px 20px 6px 20px;
+}
+
+#orderDetails .orderDate {
+	color:#666666;
+	font-size:12px;
+}
+
+#orderDetails span {
+	font-size:12px;
+	color:#666;
+}
+
+#orderDetails p {
+	margin:2px 0 9px 0;
+}
+
+/* item details */
+#itemDetails {
+	width: 95%;
+}
+
+#itemDetails .photo {
+	width:150px;
+	text-align:center;
+	padding:16px 0 10px 0;
+}
+
+#itemDetails .photo .play img {
+	margin:3px 0 0 0;
+}
+
+#itemDetails .name {
+	color:#666;
+	padding:10px 0 0 0;
+}
+
+#itemDetails ul {
+	margin:0;
+	padding:0;
+}
+
+#itemDetails ul li {
+	list-style-type:none;
+	line-height:14px;
+	padding:0 0 4px 0;
+}
+
+#itemDetails ul li a {
+	font-size:14px;
+}
+
+#itemDetails .name p {
+	margin:0;
+	padding:10px 0 0 0;
+	font-size:12px;
+	line-height:14px;
+}
+
+#itemDetails .name p a {
+	text-decoration:none;
+    color:#006699;
+}
+
+
+#itemDetails .name .share {
+	margin:3px 0 15px 0;
+}
+
+#itemDetails .name .share a {
+	margin: 4px 5px 0 0;
+	font-size:0;
+}
+
+#itemDetails .name .supportingDetails,
+#itemDetails .name .supportingDetails a {
+	margin:8px 0 0 0;
+	font-size:12px;
+}
+
+#itemDetails .price {
+	text-align:right;
+	font-size:14px;
+	padding:10px 10px 0 10px;
+	white-space:nowrap;
+}
+
+#itemDetails .price a {
+	text-decoration:none;
+    color:#006699;
+}
+
+#itemDetails .divider {
+	border-top:1px solid #eaeaea;
+	padding:0 0 16px 0;
+}
+
+#itemDetails .name table {
+border-collapse: separate;
+}
+
+/* cost breakdown */
+#costBreakdow {
+	width:95%;
+}
+
+#costBreakdown td {
+	text-align:right;
+	line-height:18px;
+	padding:0 10px 0 0;
+}
+
+#costBreakdown .divider {
+	border-top:1px solid #eaeaea;
+	padding:0 0 16px 0;
+}
+
+#costBreakdown .end {
+	padding:0 0 16px 0;
+}
+
+#costBreakdown .price {
+	width:150px;
+}
+
+#costBreakdown .total {
+	font-size:14px;
+	font-weight:bold;
+	font: 12px/ 16px Arial, sans-serif;
+}
+
+#costBreakdown .disclaimer {
+	text-align:right;
+	font: 12px
+}
+
+.deferred-payments-separator {
+    border: 1px solid #cbcfd4;
+}
+
+/* additional shipments */
+#additionalShipments {
+	font-size:11px;
+}
+
+#additionalShipments h3 {
+	margin:10px 0 0 0;
+}
+
+#additionalShipments p {
+	margin:10px 20px 0px 20px;
+}
+
+#additionalShipments .orderDate {
+	color:#666666;
+	font-size:12px;
+}
+
+#additionalShipments .details {
+	padding:10px 20px 10px 20px;
+}
+
+#additionalShipments .details .label {
+	color:#666666;
+	font-weight:bold;
+}
+
+#additionalShipments .details .edd, #additionalShipments .details .quantity=
+ {
+	font-weight:bold;
+}
+
+/* self service */
+#selfService .divider {
+	border-top:1px solid #ccc;
+	padding:0 0 16px 0;
+}
+
+#selfService a{
+	text-decoration:none;
+	color:#006699;
+}
+
+/* closing */
+#closing {
+	padding:0 0 0 0;
+	border-collapse:collapse;
+}
+
+#closing p {
+	padding:0 0 20px 0;
+	border-bottom:1px solid #eaeaea;
+	margin:10px 0 0 0;
+}
+
+#closing .signature {
+	font-size:16px;
+	font-weight:bold;
+}
+
+#closing a{
+	text-decoration:none;
+	color:#006699;
+}
+
+/* marketing content */
+#marketingContent {
+	border-bottom:1px solid #eaeaea;
+	border-collapse:collapse;
+	padding:0;
+}
+
+#marketingContent td.recs {
+	padding:10px 0;
+}
+
+#marketingContent td.right {
+	padding:10px 15px 10px 0;
+}
+
+#marketingContent td.left {
+	padding:10px 0 10px 15px;
+}
+
+#middleCenterMC {
+	text-align:center;
+}
+
+#middleCenterMC img {
+	width:85%;
+}
+
+/* legal copy */
+#legalCopy td {
+	padding:20px 0 0 0;
+}
+
+#legalCopy p {
+	font-size:11px;
+	color:#666;
+	line-height:16px;
+	margin:0 0 10px 0;
+        font:11px;
+}
+
+#legalCopy a {
+	font:11px/16px Arial, sans-serif;
+	text-decoration:none;
+	color:#006699;
+}
+
+#legalExceptionsList li{
+	padding-left: 10px;
+}
+
+#extendedLegalInfoBlock {
+	font-size:11px;
+	color:#666;
+	line-height:16px;
+	margin:0 0 10px 0;
+}
+
+/* reg fee */
+#regFee td {
+	colspan: "2";
+	border-top:1px solid #ccc;
+}
+
+/* html button */
+
+.link {
+    color: rgb(17, 17, 17) !important;
+    text-decoration: none !important;
+    font: 16px/ 18px Arial, sans-serif !important;
+    padding: 10px 12px;
+    line-height: 1.5;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    background: #F0C14B linear-gradient(#F7DFA5, #F0C14B) repeat scroll 0% =
+0%;
+    white-space: nowrap;
+}
+
+.a-icon-info, .a-icon-small {
+    background-position: -166px -130px;
+    height: 13px;
+    width: 14px;
+}
+
+.a-icon {
+    background-image: url(https://m.media-amazon.com/images/G/01/AUIClients=
+/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.pn=
+g);
+    -webkit-background-size: 400px 670px;
+    display: inline-block;
+}
+
+.a-text-italic {
+    font-style: italic !important;
+}
+
+.a-size-small {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+.inline-block{
+    display: inline-block;
+}
+
+</style>
+  <title>
+Ihre Amazon.de Bestellung von &#34;Air Cooler Leakproof...&#34;.  </title>
+ </head>
+ <body style=3D"background-color: rgb(255, 255, 255); margin: 0; font: 12px=
+/ 16px Arial, sans-serif"><img width=3D"1" height=3D"1" src=3D"https://www.=
+amazon.de/gp/r.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn=
+:msg:201906151446416905637377674b7ebf7caf216e60p0eu&amp;R=3DLPRTX7WPXGE3&am=
+p;T=3DO&amp;U=3Dhttps%3A%2F%2Fimages-eu.ssl-images-amazon.com%2Fimages%2FG%=
+2F01%2Fnav%2Ftransp.gif&amp;H=3DFYFFCSXYEYOIJNWKDDHZ7YACTG4A&amp;ref_=3Dpe_=
+3044161_185740101_opens"/>
+  <table id=3D"container" dir=3D"ltr" style=3D"width: 640px; color: rgb(51,=
+ 51, 51); margin: 0 auto; border-collapse: collapse">
+   <tbody>
+    <tr>
+     <td class=3D"frame" style=3D"padding: 0 20px 20px 20px; vertical-align=
+: top; font-size: 12px; line-height: 16px; font-family: Arial, sans-serif">
+      <table id=3D"main" style=3D"width: 100%; border-collapse: collapse">
+       <tbody>
+        <tr>
+         <td style=3D"vertical-align: top; font-size: 12px; line-height: 16=
+px; font-family: Arial, sans-serif">
+          <table id=3D"header" style=3D"width: 100%; border-collapse: colla=
+pse">
+           <tbody>
+            <tr>
+             <td rowspan=3D"2" class=3D"logo" style=3D"width: 115px; paddin=
+g: 18px 0 0 0; vertical-align: top; font-size: 12px; line-height: 16px; fon=
+t-family: Arial, sans-serif"> <a href=3D"https://www.amazon.de/gp/r.html?C=
+=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:2019061514464169=
+05637377674b7ebf7caf216e60p0eu&amp;R=3D214FJ29ORZWM2&amp;T=3DC&amp;U=3Dhttp=
+s%3A%2F%2Fwww.amazon.de%2Fref%3Dpe_3044161_185740101_TE_logo&amp;H=3DAAWDCH=
+QK0NJAFXAQR1HAXTSG7GCA&amp;ref_=3Dpe_3044161_185740101_TE_logo" title=3D"Be=
+suchen Sie Amazon.de" style=3D"text-decoration: none; color: rgb(0, 102, 15=
+3); font: 12px/ 16px Arial, sans-serif"> <img alt=3D"Amazon.de" src=3D"http=
+://g-ec2.images-amazon.com/images/G/01/e-mail/logos/a_de_prime_logo_48.gif"=
+ style=3D"border: 0; width: 115px"/> </a> </td>
+             <td class=3D"navigation" style=3D"text-align: right; padding: =
+5px 0; border-bottom: 1px solid rgb(204, 204, 204); white-space: nowrap; ve=
+rtical-align: top; font-size: 12px; line-height: 16px; font-family: Arial, =
+sans-serif"> </td>
+             <td style=3D"width: 100%; padding: 7px 5px 0; text-align: righ=
+t; border-bottom: 1px solid rgb(204, 204, 204); white-space: nowrap; vertic=
+al-align: top; font-size: 12px; line-height: 16px; font-family: Arial, sans=
+-serif" class=3D"navigation"> <a href=3D"https://www.amazon.de/gp/r.html?C=
+=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:2019061514464169=
+05637377674b7ebf7caf216e60p0eu&amp;R=3D3A1EBD12BYQTQ&amp;T=3DC&amp;U=3Dhttp=
+s%3A%2F%2Fwww.amazon.de%2Fgp%2Fcss%2Fyour-orders-access%3Fref_%3Dpe_3044161=
+_185740101_TE_yo&amp;H=3DSYQFJFXJYAV5EDBZLOGOTVT4FFIA&amp;ref_=3Dpe_3044161=
+_185740101_TE_yo" style=3D"border-right: 0px solid rgb(204, 204, 204); marg=
+in-right: 0px; padding-right: 0px; text-decoration: none; color: rgb(0, 102=
+, 153); font: 12px/ 16px Arial, sans-serif">Meine Bestellungen</a> </td>
+             <td class=3D"navigation" style=3D"text-align: right; padding: =
+5px 0; border-bottom: 1px solid rgb(204, 204, 204); white-space: nowrap; ve=
+rtical-align: top; font-size: 12px; line-height: 16px; font-family: Arial, =
+sans-serif"> <span style=3D"text-decoration: none; color: rgb(204, 204, 204=
+); font-size: 15px; font-family: Arial, sans-serif">=C2=A0|=C2=A0</span> <a=
+ href=3D"https://www.amazon.de/gp/r.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7=
+YT2AV&amp;M=3Durn:rtn:msg:201906151446416905637377674b7ebf7caf216e60p0eu&am=
+p;R=3D3LBP26RP8LAB7&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.de%2Fgp%2Fcs=
+s%2Fyour-account-access%3Fref_%3Dpe_3044161_185740101_TE_ya&amp;H=3D7YAMW2U=
+CQJPBT2T1WTO9TUEK3POA&amp;ref_=3Dpe_3044161_185740101_TE_ya" style=3D"borde=
+r-right: 0px solid rgb(204, 204, 204); margin-right: 0px; padding-right: 0p=
+x; text-decoration: none; color: rgb(0, 102, 153); font: 12px/ 16px Arial, =
+sans-serif">Mein Konto</a> <span style=3D"text-decoration: none; color: rgb=
+(204, 204, 204); font-size: 15px; font-family: Arial, sans-serif">=C2=A0|=
+=C2=A0</span> <a href=3D"https://www.amazon.de/gp/r.html?C=3D3ILR4VQSVD3HI&=
+amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:201906151446416905637377674b7ebf7=
+caf216e60p0eu&amp;R=3D2JTHGM12X722L&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.ama=
+zon.de%2Fref%3Dpe_3044161_185740101_TE_cn&amp;H=3DY3WJMNJRL0PFTVQHFQGOPMC1W=
+K0A&amp;ref_=3Dpe_3044161_185740101_TE_cn" style=3D"border-right: 0px solid=
+ rgb(204, 204, 204); margin-right: 0px; padding-right: 0px; text-decoration=
+: none; color: rgb(0, 102, 153); font: 12px/ 16px Arial, sans-serif">Amazon=
+.de</a> </td>
+            </tr>
+            <tr>
+             <td colspan=3D"3" class=3D"title" style=3D"text-align: right; =
+padding: 7px 0 5px 0; vertical-align: top; font-size: 12px; line-height: 16=
+px; font-family: Arial, sans-serif"> <h2 style=3D"font-size: 20px; line-hei=
+ght: 24px; margin: 0; padding: 0; font-weight: normal; color: rgb(0, 0, 0) =
+!important">Bestellbest=C3=A4tigung</h2> Bestellung #<a href=3D"https://www=
+.amazon.de/gp/r.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rt=
+n:msg:201906151446416905637377674b7ebf7caf216e60p0eu&amp;R=3D2FN5EM2CZ4AFM&=
+amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.de%2Fgp%2Fcss%2Fsummary%2Fedit.h=
+tml%3Fie%3DUTF8%26orderID%3D305-5417829-0677969%26ref_%3Dpe_3044161_1857401=
+01_TE_order&amp;H=3D4BNMY2N2ZB9VURQ4KTNDNTPIGU4A&amp;ref_=3Dpe_3044161_1857=
+40101_TE_order" class=3D"inline-block" style=3D"display: inline-block; text=
+-decoration: none; color: rgb(0, 102, 153); font: 12px/ 16px Arial, sans-se=
+rif">305-5417829-0677969</a> <br/> </td>
+            </tr>
+           </tbody>
+          </table> </td>
+        </tr>
+        <tr>
+         <td style=3D"vertical-align: top; font-size: 12px; line-height: 16=
+px; font-family: Arial, sans-serif">
+          <table id=3D"summary" style=3D"width: 100%; border-collapse: coll=
+apse">
+           <tbody>
+            <tr>
+             <td style=3D"vertical-align: top; font-size: 12px; line-height=
+: 16px; font-family: Arial, sans-serif"> <h3 style=3D"font-size: 18px; colo=
+r: rgb(204, 102, 0); margin: 15px 0 0 0; font-weight: normal">Guten Tag,</h=
+3> <p style=3D"margin: 5px 0 0 0; font: 12px/ 16px Arial, sans-serif"> viel=
+en Dank f=C3=BCr Ihre Bestellung. Wir werden Sie benachrichtigen, sobald Ih=
+r(e) Artikel versandt wurde(n). Sie finden das voraussichtliche Lieferdatum=
+ weiter unten. Um Ihre Bestellung anzusehen oder zu ver=C3=A4ndern, besuche=
+n Sie <a href=3D"https://www.amazon.de/gp/r.html?C=3D3ILR4VQSVD3HI&amp;K=3D=
+3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:201906151446416905637377674b7ebf7caf216e6=
+0p0eu&amp;R=3D4UETSVLIJSD8&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.de%2F=
+gp%2Fcss%2Fyour-orders-access%3Fref_%3Dpe_3044161_185740101_TE_gs&amp;H=3D3=
+3NFWSYB8J8IGEG4XH51FJCGSDSA&amp;ref_=3Dpe_3044161_185740101_TE_gs" style=3D=
+"text-decoration: none; color: rgb(0, 102, 153); font: 12px/ 16px Arial, sa=
+ns-serif">Meine Bestellungen</a> auf unserer Amazon.de Website. </p> </td>
+            </tr>
+            <tr>
+             <td style=3D"vertical-align: top; font-size: 12px; line-height=
+: 16px; font-family: Arial, sans-serif"> </td>
+            </tr>
+           </tbody>
+          </table> </td>
+        </tr>
+        <tr>
+         <td style=3D"vertical-align: top; font-size: 12px; line-height: 16=
+px; font-family: Arial, sans-serif">
+          <table id=3D"desiredInformation" style=3D"width: 100%; border-col=
+lapse: collapse">
+          </table> </td>
+        </tr>
+        <tr>
+         <td style=3D"vertical-align: top; font-size: 12px; line-height: 16=
+px; font-family: Arial, sans-serif">
+          <table style=3D"width: 100%; border-top: 3px solid rgb(45, 55, 65=
+); border-collapse: collapse" id=3D"criticalInfo">
+           <tbody>
+            <tr>
+             <td style=3D"font-size: 14px; padding: 11px 18px 18px 18px; ba=
+ckground-color: rgb(239, 239, 239); width: 50%; vertical-align: top; line-h=
+eight: 16px; font-family: Arial, sans-serif"> <p style=3D"margin: 2px 0 9px=
+ 0; font: 12px/ 16px Arial, sans-serif"> <span style=3D"color: rgb(102, 102=
+, 102)">Zustellung: </span> <br/> <b style=3D"color:#009900;"> Dienstag, 25=
+ Juni </b> </p> <p style=3D"margin: 2px 0 9px 0; font: 12px/ 16px Arial, sa=
+ns-serif"> <span style=3D"color: rgb(102, 102, 102)">Versandart: </span> <b=
+r/> <b> <img src=3D"https://m.media-amazon.com/images/G/30/email/logos/prim=
+e_39x10.png"/> Premiumversand </b> </p> <p style=3D"margin: 2px 0 9px 0; fo=
+nt: 12px/ 16px Arial, sans-serif"> <span style=3D"color: rgb(102, 102, 102)=
+">Gew=C3=A4hlte Versandoption: </span> <br/> <b>Artikel versenden, sobald s=
+ie verf=C3=BCgbar sind. </b> </p> <br/> <a target=3D"_blank" class=3D"link"=
+ href=3D"https://www.amazon.de/gp/r.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7=
+YT2AV&amp;M=3Durn:rtn:msg:201906151446416905637377674b7ebf7caf216e60p0eu&am=
+p;R=3D20KANMZE4AFQE&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.de%2Fgp%2Fcs=
+s%2Fsummary%2Fedit.html%3Fie%3DUTF8%26orderID%3D305-5417829-0677969%26ref_%=
+3Dpe_3044161_185740101_TE_on_sh&amp;H=3DC5WNFRYE1WM5RHBVAFG5EAPERWYA&amp;re=
+f_=3Dpe_3044161_185740101_TE_on_sh" style=3D"font-size: 11px; color: rgb(17=
+, 17, 17) !important; text-decoration: none !important; font: 16px/ 18px Ar=
+ial, sans-serif !important; padding: 10px 12px; line-height: 1.5; border-ra=
+dius: 10px; border-style: solid; border-color: rgb(0, 0, 0); border-width: =
+1px; background: rgb(240, 193, 75) linear-gradient(rgb(247,223,165),rgb(240=
+,193,75)) repeat scroll 0% 0%; white-space: nowrap">Bestelldetails</a> </td=
+>
+             <td style=3D"font-size: 14px; padding: 11px 18px 18px 18px; ba=
+ckground-color: rgb(239, 239, 239); width: 50%; vertical-align: top; line-h=
+eight: 16px; font-family: Arial, sans-serif"> <p style=3D"margin: 2px 0 9px=
+ 0; font: 12px/ 16px Arial, sans-serif"> <span style=3D"color: rgb(102, 102=
+, 102)">Die Bestellung geht an: </span> <br/> <b> Maximilian Schuckert <br/=
+> Rosenweg 13 <br/> Oranienbaum-W=C3=B6rlitz, Sachsen-Anhalt 06785 <br/> De=
+utschland </b> </p> </td>
+            </tr>
+           </tbody>
+          </table> </td>
+        </tr>
+        <tr>
+         <td style=3D"border-bottom: 1px solid rgb(204, 204, 204); vertical=
+-align: top; font-size: 12px; line-height: 16px; font-family: Arial, sans-s=
+erif"> <h3 style=3D"font-size: 18px; color: rgb(204, 102, 0); margin: 15px =
+0 0 0; font-weight: normal">Einzelheiten Ihrer Bestellung</h3> </td>
+        </tr>
+        <tr>
+         <td style=3D"vertical-align: top; font-size: 12px; line-height: 16=
+px; font-family: Arial, sans-serif">
+          <table id=3D"orderDetails" style=3D"width: 100%; border-collapse:=
+ collapse">
+           <tbody>
+            <tr>
+             <td style=3D"vertical-align: top; font-size: 12px; line-height=
+: 16px; font-family: Arial, sans-serif"> Bestellnummer #<a href=3D"https://=
+www.amazon.de/gp/r.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn=
+:rtn:msg:201906151446416905637377674b7ebf7caf216e60p0eu&amp;R=3D3HHFVLGFUFX=
+BI&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.de%2Fgp%2Fcss%2Fsummary%2Fedi=
+t.html%3Fie%3DUTF8%26orderID%3D305-5417829-0677969%26ref_%3Dpe_3044161_1857=
+40101_TE_order&amp;H=3DZSJPNJ4XMDQBZACCEWU0ZC8G094A&amp;ref_=3Dpe_3044161_1=
+85740101_TE_order" class=3D"inline-block" style=3D"display: inline-block; t=
+ext-decoration: none; color: rgb(0, 102, 153); font: 12px/ 16px Arial, sans=
+-serif">305-5417829-0677969</a> <br/> <span style=3D"font-size: 12px; color=
+: rgb(102, 102, 102)">Aufgegeben am 15. Juni 2019</span> </td>
+            </tr>
+           </tbody>
+          </table> </td>
+        </tr>
+        <tr>
+         <td style=3D"padding-left: 32px; vertical-align: top; font-size: 1=
+2px; line-height: 16px; font-family: Arial, sans-serif">
+          <table style=3D"width: 95%; border-collapse: collapse" id=3D"item=
+Details">
+           <tbody>
+            <tr>
+             <td class=3D"photo" style=3D"width: 150px; text-align: center;=
+ padding: 16px 0 10px 0; vertical-align: top; font-size: 12px; line-height:=
+ 16px; font-family: Arial, sans-serif"> <a href=3D"https://www.amazon.de/gp=
+/r.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:2019061=
+51446416905637377674b7ebf7caf216e60p0eu&amp;R=3D1UMOVS9T3PQJ3&amp;T=3DC&amp=
+;U=3Dhttps%3A%2F%2Fwww.amazon.de%2Fdp%2FB07RWBH1RZ%2Fref%3Dpe_3044161_18574=
+0101_TE_item_image&amp;H=3DA3NBBLREUUDR3S5EUM45RKIAZLSA&amp;ref_=3Dpe_30441=
+61_185740101_TE_item_image" style=3D"text-decoration: none; color: rgb(0, 1=
+02, 153); font: 12px/ 16px Arial, sans-serif"> <img id=3D"asin" src=3D"http=
+s://images-na.ssl-images-amazon.com/images/I/51lhMGpFeIL._SCLZZZZZZZ__SY115=
+_SX115_.jpg" style=3D"border: 0"/> </a> </td>
+             <td class=3D"name" style=3D"color: rgb(102, 102, 102); padding=
+: 10px 0 0 0; vertical-align: top; font-size: 12px; line-height: 16px; font=
+-family: Arial, sans-serif"> <a href=3D"https://www.amazon.de/gp/r.html?C=
+=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:2019061514464169=
+05637377674b7ebf7caf216e60p0eu&amp;R=3D22DNPPNDRMMEJ&amp;T=3DC&amp;U=3Dhttp=
+s%3A%2F%2Fwww.amazon.de%2Fdp%2FB07RWBH1RZ%2Fref%3Dpe_3044161_185740101_TE_i=
+tem&amp;H=3DERQJJNF8ULSMLMSZ00QHYAJTYNOA&amp;ref_=3Dpe_3044161_185740101_TE=
+_item" style=3D"text-decoration: none; color: rgb(0, 102, 153); font: 12px/=
+ 16px Arial, sans-serif"> Air Cooler Leakproof Luftk=C3=BCHler Mobile Klima=
+ger=C3=A4Te Klimaanlage Ventilator Cool Air Ventilator, Luftbefeuchter und =
+Luftreiniger f=C3=BCr B=C3=BCRo, Hotel, K=C3=BCChe (Wei=C3=9F) </a> <br/> Z=
+ustand: Neu <br/> Verkauft von: <a href=3D"https://www.amazon.de/gp/f.html?=
+C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:201906151446416=
+905637377674b7ebf7caf216e60p0eu&amp;R=3D2SWWVBVXONT7X&amp;T=3DC&amp;U=3Dhtt=
+ps%3A%2F%2Fwww.amazon.de%2Fgp%2Fhelp%2Fseller%2Fhome.html%3Fref_%3Dpe_30441=
+61_185740101_TE_seller%26ie%3DUTF8%26seller%3DA1LZTCHYDHCYS&amp;H=3DFSQNRBL=
+8FOHLKYXQFK54OZPV4XUA&amp;ref_=3Dpe_3044161_185740101_TE_seller" style=3D"t=
+ext-decoration: none; color: rgb(0, 102, 153); font: 12px/ 16px Arial, sans=
+-serif">Life Expert-Fr</a> <br/> <a href=3D"https://www.amazon.de/gp/f.html=
+?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:20190615144641=
+6905637377674b7ebf7caf216e60p0eu&amp;R=3D1CXKMNOQQHJZN&amp;T=3DC&amp;U=3Dht=
+tps%3A%2F%2Fwww.amazon.de%2Fhelp%2Fen%2Ffba%3Fref_%3Dpe_3044161_185740101_T=
+E_fbaen&amp;H=3DRRWJWNUUFSXJEIEIHPLZIBAR5K4A&amp;ref_=3Dpe_3044161_18574010=
+1_TE_fbaen" style=3D"text-decoration: none; color: rgb(0, 102, 153); font: =
+12px/ 16px Arial, sans-serif">Versand durch Amazon</a>
+              <div style=3D"vertical-align: top; align=3Dcenter;">
+               <table border=3D"0" cellspacing=3D"4" cellpadding=3D"0" styl=
+e=3D"border-collapse: separate">
+                <tbody style=3D"vertical-align: bottom;">
+                 <tr>
+                  <td style=3D"vertical-align: top; font-size: 12px; line-h=
+eight: 16px; font-family: Arial, sans-serif"> </td>
+                  <td style=3D"vertical-align: top; font-size: 12px; line-h=
+eight: 16px; font-family: Arial, sans-serif"> <a href=3D"https://www.amazon=
+.de/gp/f.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:2=
+01906151446416905637377674b7ebf7caf216e60p0eu&amp;R=3D2BU8IIZFESWAV&amp;T=
+=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.de%3A443%2Fgp%2Fredirect.html%3F_enco=
+ding%3DUTF8%26location%3Dhttps%253A%252F%252Fwww.facebook.com%252Fdialog%25=
+2Ffeed%253Fapp_id%253D164734381262%2526caption%253D%2526display%253Dpopup%2=
+526link%253Dhttp%25253A%25252F%25252Fwww.amazon.de%25252Fdp%25252FB07RWBH1R=
+Z%25252Fref%25253Dcm_sw_r_fa_roce%2526name%253D%2526picture%253Dhttps%25253=
+A%25252F%25252Fimages-na.ssl-images-amazon.com%25252Fimages%25252FI%25252F5=
+1lhMGpFeIL._SCLZZZZZZZ__SY115_SX115_.jpg%2526redirect_uri%253Dhttp%25253A%2=
+5252F%25252Fwww.amazon.de%25252Fdp%25252FB07RWBH1RZ%25252Fref%25253Dcm_sw_r=
+_fa_roce%26source%3Dstandards%26token%3D45BEB52B2786B0D052AEB7900087B0CF46A=
+E8075%26ref_%3Dpe_3044161_185740101&amp;H=3DUFC7BVT3GXU4R5OYRW2QTLT2BRSA&am=
+p;ref_=3Dpe_3044161_185740101" title=3D"Facebook" style=3D"text-decoration:=
+ none; color: rgb(0, 102, 153); font: 12px/ 16px Arial, sans-serif"> <i cla=
+ss=3D"a-icon a-icon-share-facebook" role=3D"img" style=3D"background-image:=
+ url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-spri=
+te_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png); -webkit-backgroun=
+d-size: 400px 670px; display: inline-block"> </i> </a> </td>
+                  <td style=3D"vertical-align: top; font-size: 12px; line-h=
+eight: 16px; font-family: Arial, sans-serif"> <a href=3D"https://www.amazon=
+.de/gp/f.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:2=
+01906151446416905637377674b7ebf7caf216e60p0eu&amp;R=3D2FG3HAMO75W73&amp;T=
+=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.de%3A443%2Fgp%2Fredirect.html%3F_enco=
+ding%3DUTF8%26location%3Dhttps%253A%252F%252Ftwitter.com%252Fshare%253Fcoun=
+t%253Dnone%2526original_referer%253Dhttp%25253A%25252F%25252Fwww.amazon.de%=
+25252Fdp%25252FB07RWBH1RZ%25252Fref%25253Dcm_sw_r_tw_roce%2526related%253Da=
+mazon%25252Camazondeals%25252Camazonmp3%2526text%253DAir%252520Cooler%25252=
+0Leakproof%252520Luftk%2525C3%2525BCHler%252520Mobile%252520Klimager%2525C3=
+%2525A4Te%252520Klimaanlage%252520Ventilator%252520Cool%252520Air%252520Ven=
+tilator%25252C%252520Luftbefeuchter%252520und%252520Luftreiniger%252520f%25=
+25C3%2525BCr%252520B%2525C3%2525BCRo%25252C%252520Hotel%25252C%252520K%2525=
+C3%2525BCChe%252520%252528Wei%2525C3%25259F%252529%252520by%252520Amazon%25=
+26url%253Dhttp%25253A%25252F%25252Fwww.amazon.de%25252Fdp%25252FB07RWBH1RZ%=
+25252Fref%25253Dcm_sw_r_tw_roce%2526via%253Damazon%26source%3Dstandards%26t=
+oken%3DD5F1F57D24FE8C26A63C4532A8D7F450D1F99591%26ref_%3Dpe_3044161_1857401=
+01&amp;H=3DGDYH7GJA5FVNYU09KQWCMRFSUM0A&amp;ref_=3Dpe_3044161_185740101" ti=
+tle=3D"Twitter" style=3D"text-decoration: none; color: rgb(0, 102, 153); fo=
+nt: 12px/ 16px Arial, sans-serif"> <i class=3D"a-icon a-icon-share-twitter"=
+ role=3D"img" style=3D"background-image: url(https://m.media-amazon.com/ima=
+ges/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58=
+763b54df7cf._V2_.png); -webkit-background-size: 400px 670px; display: inlin=
+e-block"> </i> </a> </td>
+                  <td style=3D"vertical-align: top; font-size: 12px; line-h=
+eight: 16px; font-family: Arial, sans-serif"> <a href=3D"https://www.amazon=
+.de/gp/f.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:2=
+01906151446416905637377674b7ebf7caf216e60p0eu&amp;R=3D1EG87LQL6ZK9P&amp;T=
+=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.de%3A443%2Fgp%2Fredirect.html%3F_enco=
+ding%3DUTF8%26location%3Dhttps%253A%252F%252Fpinterest.com%252Fpin%252Fcrea=
+te%252Fbutton%252F%253Fdescription%253DAir%252520Cooler%252520Leakproof%252=
+520Luftk%2525C3%2525BCHler%252520Mobile%252520Klimager%2525C3%2525A4Te%2525=
+20Klimaanlage%252520Ventilator%252520Cool%252520Air%252520Ventilator%25252C=
+%252520Luftbefeuchter%252520und%252520Luftreiniger%252520f%2525C3%2525BCr%2=
+52520B%2525C3%2525BCRo%25252C%252520Hotel%25252C%252520K%2525C3%2525BCChe%2=
+52520%252528Wei%2525C3%25259F%252529%252520by%252520Amazon%25252C%252520htt=
+p%25253A%25252F%25252Fwww.amazon.de%25252Fdp%25252FB07RWBH1RZ%25252Fref%252=
+53Dcm_sw_r_pi_roce%2526is_video%253Dfalse%2526media%253Dhttps%25253A%25252F=
+%25252Fimages-na.ssl-images-amazon.com%25252Fimages%25252FI%25252F51lhMGpFe=
+IL._SCLZZZZZZZ__SY115_SX115_.jpg%2526title%253D%2526url%253Dhttp%25253A%252=
+52F%25252Fwww.amazon.de%25252Fdp%25252FB07RWBH1RZ%25252Fref%25253Dcm_sw_r_p=
+i_roce%26source%3Dstandards%26token%3D4F0DA9833FD0D0404C35B9DFCEA75CF72DB45=
+C89%26ref_%3Dpe_3044161_185740101&amp;H=3DNDEAHRZM4PD7PTYRQXYW081MXFGA&amp;=
+ref_=3Dpe_3044161_185740101" title=3D"Pinterest" style=3D"text-decoration: =
+none; color: rgb(0, 102, 153); font: 12px/ 16px Arial, sans-serif"> <i clas=
+s=3D"a-icon a-icon-share-pinterest" role=3D"img" style=3D"background-image:=
+ url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-spri=
+te_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png); -webkit-backgroun=
+d-size: 400px 670px; display: inline-block"> </i> </a> </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div> </td>
+             <td class=3D"price" style=3D"text-align: right; font-size: 14p=
+x; padding: 10px 10px 0 10px; white-space: nowrap; vertical-align: top; lin=
+e-height: 16px; font-family: Arial, sans-serif"> <strong>EUR 33,98</strong>=
+ <br/> </td>
+            </tr>
+           </tbody>
+          </table> </td>
+        </tr>
+        <tr>
+         <td style=3D"padding-left: 32px; vertical-align: top; font-size: 1=
+2px; line-height: 16px; font-family: Arial, sans-serif">
+          <table style=3D"width: 95%; border-collapse: collapse" id=3D"cost=
+Breakdown">
+           <tbody>
+            <tr>
+             <td colspan=3D"2" class=3D"divider" style=3D"border-top: 1px s=
+olid rgb(234, 234, 234); padding: 0 0 16px 0; text-align: right; line-heigh=
+t: 18px; vertical-align: top; font-size: 12px; font-family: Arial, sans-ser=
+if"></td>
+            </tr>
+            <tr>
+             <td style=3D"text-align: right; line-height: 18px; padding: 0 =
+10px 0 0; vertical-align: top; font-size: 12px; font-family: Arial, sans-se=
+rif"> Zwischensumme: </td>
+             <td class=3D"price" style=3D"width: 150px; text-align: right; =
+line-height: 18px; padding: 0 10px 0 0; vertical-align: top; font-size: 12p=
+x; font-family: Arial, sans-serif"> EUR 33,98 </td>
+            </tr>
+            <tr>
+             <td style=3D"text-align: right; line-height: 18px; padding: 0 =
+10px 0 0; vertical-align: top; font-size: 12px; font-family: Arial, sans-se=
+rif"> Verpackung und Versand: </td>
+             <td class=3D"price" style=3D"width: 150px; text-align: right; =
+line-height: 18px; padding: 0 10px 0 0; vertical-align: top; font-size: 12p=
+x; font-family: Arial, sans-serif"> EUR 0,00 </td>
+            </tr>
+            <tr>
+             <td colspan=3D"2" style=3D"text-align: right; line-height: 18p=
+x; padding: 0 10px 0 0; vertical-align: top; font-size: 12px; font-family: =
+Arial, sans-serif"> <p style=3D"margin: 4px 0 0 0; font: 12px/ 16px Arial, =
+sans-serif"></p> </td>
+            </tr>
+            <tr>
+             <td colspan=3D"2" style=3D"text-align: right; line-height: 18p=
+x; padding: 0 10px 0 0; vertical-align: top; font-size: 12px; font-family: =
+Arial, sans-serif"> <p style=3D"margin: 4px 0 0 0; font: 12px/ 16px Arial, =
+sans-serif"></p> </td>
+            </tr>
+            <tr>
+             <td class=3D"total" style=3D"font-size: 14px; font-weight: bol=
+d; font: 12px/ 16px Arial, sans-serif; text-align: right; line-height: 18px=
+; padding: 0 10px 0 0; vertical-align: top; font-family: Arial, sans-serif"=
+> <strong>Endbetrag: </strong> </td>
+             <td class=3D"total" style=3D"font-size: 14px; font-weight: bol=
+d; font: 12px/ 16px Arial, sans-serif; text-align: right; line-height: 18px=
+; padding: 0 10px 0 0; vertical-align: top; font-family: Arial, sans-serif"=
+> <strong>EUR 33,98</strong> </td>
+            </tr>
+            <tr>
+             <td rowspan=3D"2" style=3D"text-align: right; line-height: 18p=
+x; padding: 0 10px 0 0; vertical-align: top; font-size: 12px; font-family: =
+Arial, sans-serif"> Gew=C3=A4hlte Zahlungsart: </td>
+             <td class=3D"price" style=3D"width: 150px; text-align: right; =
+line-height: 18px; padding: 0 10px 0 0; vertical-align: top; font-size: 12p=
+x; font-family: Arial, sans-serif"> Bankeinzug </td>
+            </tr>
+            <tr></tr>
+            <tr>
+             <td colspan=3D"2" class=3D"end" style=3D"padding: 0 0 16px 0; =
+text-align: right; line-height: 18px; vertical-align: top; font-size: 12px;=
+ font-family: Arial, sans-serif"></td>
+            </tr>
+            <tr>
+             <td colspan=3D"2" class=3D"divider" style=3D"border-top: 1px s=
+olid rgb(234, 234, 234); padding: 0 0 16px 0; text-align: right; line-heigh=
+t: 18px; vertical-align: top; font-size: 12px; font-family: Arial, sans-ser=
+if"></td>
+            </tr>
+           </tbody>
+          </table> </td>
+        </tr>
+        <tr>
+         <td style=3D"vertical-align: top; font-size: 12px; line-height: 16=
+px; font-family: Arial, sans-serif"> </td>
+        </tr>
+        <tr>
+         <td style=3D"vertical-align: top; font-size: 12px; line-height: 16=
+px; font-family: Arial, sans-serif">
+          <table id=3D"selfService" style=3D"width: 100%; border-collapse: =
+collapse">
+           <tbody>
+            <tr>
+             <td style=3D"vertical-align: top; font-size: 12px; line-height=
+: 16px; font-family: Arial, sans-serif"> <p style=3D"margin: 4px 0 0 0; fon=
+t: 12px/ 16px Arial, sans-serif"> M=C3=B6chten Sie Ihre Bestellung =C3=A4nd=
+ern, besuchen Sie bitte unsere <a href=3D"https://www.amazon.de/gp/f.html?C=
+=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:2019061514464169=
+05637377674b7ebf7caf216e60p0eu&amp;R=3D3P4BRW7LDJI07&amp;T=3DC&amp;U=3Dhttp=
+s%3A%2F%2Fwww.amazon.de%2Fbestellung-aendern%3Fref_%3Dpe_3044161_185740101_=
+TE_ssen&amp;H=3DSTZ9WE2EPJWFG2KXBYLEGNDTLXUA&amp;ref_=3Dpe_3044161_18574010=
+1_TE_ssen" style=3D"text-decoration: none; color: rgb(0, 102, 153); font: 1=
+2px/ 16px Arial, sans-serif">Hilfeseite</a>, wo Sie Informationen und Hilfe=
+videos dazu finden. </p> </td>
+            </tr>
+            <tr>
+             <td style=3D"vertical-align: top; font-size: 12px; line-height=
+: 16px; font-family: Arial, sans-serif"> <p style=3D"margin: 4px 0 0 0; fon=
+t: 12px/ 16px Arial, sans-serif"> Wenn Sie ein mobiles Ger=C3=A4t verwenden=
+, k=C3=B6nnen Sie mit der kostenlosen <a href=3D"https://www.amazon.de/gp/r=
+.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:201906151=
+446416905637377674b7ebf7caf216e60p0eu&amp;R=3D1H53EOGATAOEB&amp;T=3DC&amp;U=
+=3Dhttps%3A%2F%2Fwww.amazon.de%2Fb%3Fnode%3D4951330031%26ref%3DTE_%26ref_%3=
+Dpe_3044161_185740101&amp;H=3DYFL0AI0S8AGQWAKMZZSNUUUFUG8A&amp;ref_=3Dpe_30=
+44161_185740101" style=3D"text-decoration: none; color: rgb(0, 102, 153); f=
+ont: 12px/ 16px Arial, sans-serif">Amazon app</a> Lieferbenachrichtigungen =
+empfangen und den Verlauf Ihrer Sendung auch unterwegs verfolgen. </p> </td=
+>
+            </tr>
+           </tbody>
+          </table> </td>
+        </tr>
+        <tr>
+         <td style=3D"vertical-align: top; font-size: 12px; line-height: 16=
+px; font-family: Arial, sans-serif">
+          <table id=3D"closing" style=3D"width: 100%; padding: 0 0 0 0; bor=
+der-collapse: collapse">
+           <tbody>
+            <tr>
+             <td style=3D"vertical-align: top; font-size: 12px; line-height=
+: 16px; font-family: Arial, sans-serif"> <p style=3D"padding: 0 0 20px 0; b=
+order-bottom: 1px solid rgb(234, 234, 234); margin: 10px 0 0 0; font: 12px/=
+ 16px Arial, sans-serif"> Wir freuen uns auf Ihren n=C3=A4chsten Besuch! <b=
+r/> <span class=3D"signature" style=3D"font-size: 16px; font-weight: bold">=
+ <strong>Amazon.de</strong> </span> </p> </td>
+            </tr>
+           </tbody>
+          </table> </td>
+        </tr>
+        <tr>
+         <td style=3D"vertical-align: top; font-size: 12px; line-height: 16=
+px; font-family: Arial, sans-serif">
+          <table id=3D"marketingContent" style=3D"width: 100%; border-botto=
+m: 1px solid rgb(234, 234, 234); border-collapse: collapse; padding: 0">
+           <tbody>
+            <tr>
+             <td class=3D"recs" style=3D"padding: 10px 0; vertical-align: t=
+op; font-size: 12px; line-height: 16px; font-family: Arial, sans-serif">
+              <table width=3D"640" cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" align=3D"left" class=3D"deviceWidth" style=3D"vertical-align: cent=
+ral; background: white; border-collapse: collapse">
+               <tbody>
+                <tr>
+                 <td style=3D"vertical-align: top; font-size: 12px; line-he=
+ight: 16px; font-family: Arial, sans-serif">
+                  <table width=3D"640" class=3D"devicewidth" cellspacing=3D=
+"0" cellpadding=3D"0" align=3D"inherit" bgcolor=3D"#FFFFFF" style=3D"border=
+-collapse: collapse">
+                   <tbody>
+                    <tr>
+                     <td style=3D"font: 18px Arial, sans-serif; text-decora=
+tion: none; color: rgb(204, 102, 0); text-align: left; padding: 6px 0 5px 0=
+; vertical-align: top; font-size: 12px; line-height: 16px; font-family: Ari=
+al, sans-serif"> Artikel Ihres Wunschzettels </td>
+                    </tr>
+                   </tbody>
+                  </table> </td>
+                </tr>
+                <tr>
+                 <td style=3D"vertical-align: top; font-size: 12px; line-he=
+ight: 16px; font-family: Arial, sans-serif">
+                  <table width=3D"640" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0" align=3D"left" class=3D"deviceWidth p13n-te-widget-recs" style=
+=3D"vertical-align: central; background: white; border-collapse: collapse">
+                   <tbody>
+                    <tr>
+                     <td width=3D"30%" bgcolor=3D"#ffffff" align=3D"left" c=
+lass=3D"asin_3col" style=3D"font: 13px Arial, sans-serif; text-decoration: =
+none; vertical-align: top; padding: 6px 16px 0 6px; line-height: 18px; font=
+-size: 12px; font-family: Arial, sans-serif">
+                      <table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" bgcolor=3D"#ffffff" style=3D"border-collapse: collapse"=
+>
+                       <tbody>
+                        <tr>
+                         <td valign=3D"bottom" align=3D"left" style=3D"vert=
+ical-align: left; padding: 4px 6px 4px 6px; font-size: 12px; line-height: 1=
+6px; font-family: Arial, sans-serif" class=3D"p13n-te-asin-image"> <a href=
+=3D"https://www.amazon.de/gp/r.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV=
+&amp;M=3Durn:rtn:msg:201906151446416905637377674b7ebf7caf216e60p0eu&amp;R=
+=3DY0M4G801MU60&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.de%2Fgp%2Fproduc=
+t%2FB07DGGP5YW%2Fref%3Dpe_3044161_185740101_pd_te_o_wl_im%3F_encoding%3DUTF=
+8%26pd_rd_i%3DB07DGGP5YW%26pd_rd_r%3D778W2XW2GCMPK25RT11T%26pd_rd_w%3Diicum=
+%26pd_rd_wg%3DruESM&amp;H=3DKNMS1QOIW45AJUSYA6S767MPBE8A&amp;ref_=3Dpe_3044=
+161_185740101_pd_te_o_wl_im" style=3D"text-decoration: none; color: rgb(0, =
+102, 153); font: 12px/ 16px Arial, sans-serif"> <img src=3D"https://images-=
+na.ssl-images-amazon.com/images/I/71IDw%2BrXTEL._AC_SR115,115_.jpg" width=
+=3D"115" height=3D"115" class=3D"pr_image_115 pr_image_desktop" alt=3D"M=C3=
+=A4nner und Herren T-Shirt Biker Es ist Nicht das Alter Es ist die Einstell=
+ung (mit R=C3=BCckendruck) Gr=C3=B6=C3=9Fe S - 8XL" border=3D"0" style=3D"b=
+order: 0"/> </a> </td>
+                        </tr>
+                        <tr align=3D"left" style=3D"padding:0; display:bloc=
+k; line-height:16px">
+                         <td align=3D"left" style=3D"vertical-align: top; f=
+ont-size: 12px; line-height: 16px; font-family: Arial, sans-serif"> <span s=
+tyle=3D"font:13px Arial,sans-serif; text-decoration:none; color: #868686;" =
+class=3D"p13n-te-asin-title"> <a href=3D"https://www.amazon.de/gp/r.html?C=
+=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:2019061514464169=
+05637377674b7ebf7caf216e60p0eu&amp;R=3D50PZ6O8CC8W&amp;T=3DC&amp;U=3Dhttps%=
+3A%2F%2Fwww.amazon.de%2Fgp%2Fproduct%2FB07DGGP5YW%2Fref%3Dpe_3044161_185740=
+101_pd_te_o_wl_ti%3F_encoding%3DUTF8%26pd_rd_i%3DB07DGGP5YW%26pd_rd_r%3D778=
+W2XW2GCMPK25RT11T%26pd_rd_w%3Diicum%26pd_rd_wg%3DruESM&amp;H=3DUBYZ9LXTLBYE=
+1BNWAGWIILTRODUA&amp;ref_=3Dpe_3044161_185740101_pd_te_o_wl_ti" style=3D"fo=
+nt: 13px Arial, sans-serif; text-decoration: none; color: rgb(134, 134, 134=
+)">M=C3=A4nner und Herren T-Shirt Biker Es ist Nicht...</a> </span> </td>
+                        </tr>
+                        <tr align=3D"left" style=3D"padding:0; display:bloc=
+k; line-height:16px" class=3D"pr_title">
+                         <td valign=3D"middle" align=3D"left" style=3D"vert=
+ical-align: top; font-size: 12px; line-height: 16px; font-family: Arial, sa=
+ns-serif"> <span style=3D"font:13px Arial,sans-serif; text-decoration:none;=
+ color: #868686; vertical-align:3px"> EUR 17,77 </span> <span style=3D"vert=
+ical-align:0px"><img src=3D"https://images-eu.ssl-images-amazon.com/images/=
+G/03/tea/prime-badge._CB508038566_.gif" width=3D"45" height=3D"17" border=
+=3D"0"/></span> </td>
+                        </tr>
+                       </tbody>
+                      </table> </td>
+                     <td width=3D"30%" bgcolor=3D"#ffffff" align=3D"left" c=
+lass=3D"asin_3col" style=3D"font: 13px Arial, sans-serif; text-decoration: =
+none; vertical-align: top; padding: 6px 16px 0 6px; line-height: 18px; font=
+-size: 12px; font-family: Arial, sans-serif">
+                      <table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" bgcolor=3D"#ffffff" style=3D"border-collapse: collapse"=
+>
+                       <tbody>
+                        <tr>
+                         <td valign=3D"bottom" align=3D"left" style=3D"vert=
+ical-align: left; padding: 4px 6px 4px 6px; font-size: 12px; line-height: 1=
+6px; font-family: Arial, sans-serif" class=3D"p13n-te-asin-image"> <a href=
+=3D"https://www.amazon.de/gp/r.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV=
+&amp;M=3Durn:rtn:msg:201906151446416905637377674b7ebf7caf216e60p0eu&amp;R=
+=3D1PNQTNX7HQ34Y&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.de%2Fgp%2Fprodu=
+ct%2FB078P3DTX1%2Fref%3Dpe_3044161_185740101_pd_te_o_wl_im%3F_encoding%3DUT=
+F8%26pd_rd_i%3DB078P3DTX1%26pd_rd_r%3D778W2XW2GCMPK25RT11T%26pd_rd_w%3Diicu=
+m%26pd_rd_wg%3DruESM&amp;H=3DYKMDOUBPW687IINJQVQD8RY1BQUA&amp;ref_=3Dpe_304=
+4161_185740101_pd_te_o_wl_im" style=3D"text-decoration: none; color: rgb(0,=
+ 102, 153); font: 12px/ 16px Arial, sans-serif"> <img src=3D"https://images=
+-na.ssl-images-amazon.com/images/I/71kx909-6RL._AC_SR115,115_.jpg" width=3D=
+"115" height=3D"115" class=3D"pr_image_115 pr_image_desktop" alt=3D"Inateck=
+ USB 3.0 zu SATA Festplattengeh=C3=A4use Externes HDD Geh=C3=A4use f=C3=BCr=
+ 2,5=E2=80=9D/ 3,5=E2=80=9D SATA HDD und SSD, Unterst=C3=BCtzt UASP und 8 T=
+B Laufwerke, 12 V/ 2A Netzteil, Werkzeuglos (FE3002)" border=3D"0" style=3D=
+"border: 0"/> </a> </td>
+                        </tr>
+                        <tr align=3D"left" style=3D"padding:0; display:bloc=
+k; line-height:16px">
+                         <td align=3D"left" style=3D"vertical-align: top; f=
+ont-size: 12px; line-height: 16px; font-family: Arial, sans-serif"> <span s=
+tyle=3D"font:13px Arial,sans-serif; text-decoration:none; color: #868686;" =
+class=3D"p13n-te-asin-title"> <a href=3D"https://www.amazon.de/gp/r.html?C=
+=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:2019061514464169=
+05637377674b7ebf7caf216e60p0eu&amp;R=3DI93AHM8XNP9H&amp;T=3DC&amp;U=3Dhttps=
+%3A%2F%2Fwww.amazon.de%2Fgp%2Fproduct%2FB078P3DTX1%2Fref%3Dpe_3044161_18574=
+0101_pd_te_o_wl_ti%3F_encoding%3DUTF8%26pd_rd_i%3DB078P3DTX1%26pd_rd_r%3D77=
+8W2XW2GCMPK25RT11T%26pd_rd_w%3Diicum%26pd_rd_wg%3DruESM&amp;H=3DD2J7ISALAUB=
+Y80V94W4MYRXOIPKA&amp;ref_=3Dpe_3044161_185740101_pd_te_o_wl_ti" style=3D"f=
+ont: 13px Arial, sans-serif; text-decoration: none; color: rgb(134, 134, 13=
+4)">Inateck USB 3.0 zu SATA Festplattengeh=C3=A4use...</a> </span> </td>
+                        </tr>
+                        <tr align=3D"left" style=3D"padding:0; display:bloc=
+k; line-height:16px" class=3D"pr_title">
+                         <td valign=3D"middle" align=3D"left" style=3D"vert=
+ical-align: top; font-size: 12px; line-height: 16px; font-family: Arial, sa=
+ns-serif"> <span style=3D"font:13px Arial,sans-serif; text-decoration:none;=
+ color: #868686; vertical-align:3px"> EUR 18,99 </span> <span style=3D"vert=
+ical-align:0px"><img src=3D"https://images-eu.ssl-images-amazon.com/images/=
+G/03/tea/prime-badge._CB508038566_.gif" width=3D"45" height=3D"17" border=
+=3D"0"/></span> </td>
+                        </tr>
+                       </tbody>
+                      </table> </td>
+                     <td width=3D"30%" bgcolor=3D"#ffffff" align=3D"left" c=
+lass=3D"asin_3col" style=3D"font: 13px Arial, sans-serif; text-decoration: =
+none; vertical-align: top; padding: 6px 16px 0 6px; line-height: 18px; font=
+-size: 12px; font-family: Arial, sans-serif">
+                      <table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" bgcolor=3D"#ffffff" style=3D"border-collapse: collapse"=
+>
+                       <tbody>
+                        <tr>
+                         <td valign=3D"bottom" align=3D"left" style=3D"vert=
+ical-align: left; padding: 4px 6px 4px 6px; font-size: 12px; line-height: 1=
+6px; font-family: Arial, sans-serif" class=3D"p13n-te-asin-image"> <a href=
+=3D"https://www.amazon.de/gp/r.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV=
+&amp;M=3Durn:rtn:msg:201906151446416905637377674b7ebf7caf216e60p0eu&amp;R=
+=3D3JG0KE2TFF39S&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.de%2Fgp%2Fprodu=
+ct%2FB001D7UYBO%2Fref%3Dpe_3044161_185740101_pd_te_o_wl_im%3F_encoding%3DUT=
+F8%26pd_rd_i%3DB001D7UYBO%26pd_rd_r%3D778W2XW2GCMPK25RT11T%26pd_rd_w%3Diicu=
+m%26pd_rd_wg%3DruESM&amp;H=3DU1AMZTXM4GSEKUWPYFQ9EMEJUPAA&amp;ref_=3Dpe_304=
+4161_185740101_pd_te_o_wl_im" style=3D"text-decoration: none; color: rgb(0,=
+ 102, 153); font: 12px/ 16px Arial, sans-serif"> <img src=3D"https://images=
+-na.ssl-images-amazon.com/images/I/71t8Q8Yz9-L._AC_SR115,115_.jpg" width=3D=
+"115" height=3D"115" class=3D"pr_image_115 pr_image_desktop" alt=3D"R=C3=B8=
+de PSA1 Gelenkarmstativ" border=3D"0" style=3D"border: 0"/> </a> </td>
+                        </tr>
+                        <tr align=3D"left" style=3D"padding:0; display:bloc=
+k; line-height:16px">
+                         <td align=3D"left" style=3D"vertical-align: top; f=
+ont-size: 12px; line-height: 16px; font-family: Arial, sans-serif"> <span s=
+tyle=3D"font:13px Arial,sans-serif; text-decoration:none; color: #868686;" =
+class=3D"p13n-te-asin-title"> <a href=3D"https://www.amazon.de/gp/r.html?C=
+=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:2019061514464169=
+05637377674b7ebf7caf216e60p0eu&amp;R=3D2Q08PRPKZ52WT&amp;T=3DC&amp;U=3Dhttp=
+s%3A%2F%2Fwww.amazon.de%2Fgp%2Fproduct%2FB001D7UYBO%2Fref%3Dpe_3044161_1857=
+40101_pd_te_o_wl_ti%3F_encoding%3DUTF8%26pd_rd_i%3DB001D7UYBO%26pd_rd_r%3D7=
+78W2XW2GCMPK25RT11T%26pd_rd_w%3Diicum%26pd_rd_wg%3DruESM&amp;H=3DGZIHJ9Q79J=
+QC2TFHE7WE16YGRICA&amp;ref_=3Dpe_3044161_185740101_pd_te_o_wl_ti" style=3D"=
+font: 13px Arial, sans-serif; text-decoration: none; color: rgb(134, 134, 1=
+34)">R=C3=B8de PSA1 Gelenkarmstativ</a> </span> </td>
+                        </tr>
+                        <tr align=3D"left" style=3D"padding:0; display:bloc=
+k; line-height:16px" class=3D"pr_title">
+                         <td valign=3D"middle" align=3D"left" style=3D"vert=
+ical-align: top; font-size: 12px; line-height: 16px; font-family: Arial, sa=
+ns-serif"> <span style=3D"font:13px Arial,sans-serif; text-decoration:none;=
+ color: #868686; vertical-align:3px"> EUR 69,00 </span> <span style=3D"vert=
+ical-align:0px"><img src=3D"https://images-eu.ssl-images-amazon.com/images/=
+G/03/tea/prime-badge._CB508038566_.gif" width=3D"45" height=3D"17" border=
+=3D"0"/></span> </td>
+                        </tr>
+                       </tbody>
+                      </table> </td>
+                    </tr>
+                   </tbody>
+                  </table> </td>
+                </tr>
+               </tbody>
+              </table></td>
+            </tr>
+           </tbody>
+          </table> </td>
+        </tr>
+        <tr>
+         <td style=3D"vertical-align: top; font-size: 12px; line-height: 16=
+px; font-family: Arial, sans-serif">
+          <table id=3D"legalCopy" style=3D"width: 100%; border-collapse: co=
+llapse">
+           <tbody>
+            <tr>
+             <td style=3D"padding: 20px 0 0 0; vertical-align: top; font-si=
+ze: 12px; line-height: 16px; font-family: Arial, sans-serif"> <p style=3D"f=
+ont-size: 11px; color: rgb(102, 102, 102); line-height: 16px; margin: 0 0 1=
+0px 0; font: 11px"> Artikel mit dem Hinweis &#34;<a href=3D"https://www.ama=
+zon.de/gp/f.html?C=3D3ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:ms=
+g:201906151446416905637377674b7ebf7caf216e60p0eu&amp;R=3DWD17OVIH7FM6&amp;T=
+=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.de%2Fhelp%2Fen%2Ffba%3Fref_%3Dpe_3044=
+161_185740101_TE_helpfba&amp;H=3DP3NCOZ4H7PUXGL5FWQKI7PIERMCA&amp;ref_=3Dpe=
+_3044161_185740101_TE_helpfba" style=3D"font: 11px/ 16px Arial, sans-serif;=
+ text-decoration: none; color: rgb(0, 102, 153)">Versand durch Amazon</a>&#=
+34; werden bei einem Drittanbieter gekauft, aber von einem unserer Logistik=
+zentren an Sie verschickt. Hierzu z=C3=A4hlen auch Artikel, die Sie =C3=BCb=
+er Amazon.de Warehouse Deals erwerben. Warehouse Deals ist ein Handelsname =
+der Amazon EU S.a.r.l. </p> <p style=3D"font-size: 11px; color: rgb(102, 10=
+2, 102); line-height: 16px; margin: 0 0 10px 0; font: 11px">Wir weisen dara=
+uf hin, dass Verk=C3=A4ufer m=C3=B6glicherweise zus=C3=A4tzliche Informatio=
+nen, wie beispielsweise die USt-Identifikationsnummer anfragen werden, um k=
+orrekte Rechnungen ausstellen zu k=C3=B6nnen. </p> </td>
+            </tr>
+            <tr>
+             <td style=3D"padding: 0; vertical-align: top; font-size: 12px;=
+ line-height: 16px; font-family: Arial, sans-serif"> <p style=3D"font-size:=
+ 11px; color: rgb(102, 102, 102); line-height: 16px; margin: 0 0 10px 0; fo=
+nt: 11px">Bitte beachten Sie: Diese E-Mail dient lediglich der Best=C3=A4ti=
+gung des Einganges Ihrer Bestellung und stellt noch keine Annahme Ihres Ang=
+ebotes auf Abschluss eines Kaufvertrages dar. Ihr Kaufvertrag f=C3=BCr eine=
+n Artikel kommt zu Stande, wenn wir Ihre Bestellung annehmen, indem wir Ihn=
+en eine <a href=3D"https://www.amazon.de/gp/f.html?C=3D3ILR4VQSVD3HI&amp;K=
+=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:201906151446416905637377674b7ebf7caf21=
+6e60p0eu&amp;R=3D16CZ03GBJ79OZ&amp;T=3DC&amp;U=3Dhttps%3A%2F%2Fwww.amazon.d=
+e%2Fgp%2Fhelp%2Fcustomer%2Fdisplay.html%3FnodeId%3D201909000%26ref_%3Dpe_30=
+44161_185740101_TE_gtnc&amp;H=3D1FRGVVAB5Z8CZA37ABRCFNRQ8U0A&amp;ref_=3Dpe_=
+3044161_185740101_TE_gtnc" style=3D"font: 11px/ 16px Arial, sans-serif; tex=
+t-decoration: none; color: rgb(0, 102, 153)">E-Mail mit der Benachrichtigun=
+g zusenden, dass der Artikel an Sie abgeschickt wurde</a>. </p> <p style=3D=
+"font-size: 11px; color: rgb(102, 102, 102); line-height: 16px; margin: 0 0=
+ 10px 0; font: 11px">Dies ist eine automatisch versendete Nachricht. Bitte =
+antworten Sie nicht auf dieses Schreiben, da die Adresse nur zur Versendung=
+ von E-Mails eingerichtet ist. </p> </td>
+            </tr>
+           </tbody>
+          </table> </td>
+        </tr>
+       </tbody>
+      </table> </td>
+    </tr>
+   </tbody>
+  </table>
+ <img width=3D"1" height=3D"1" src=3D"https://www.amazon.de/gp/r.html?C=3D3=
+ILR4VQSVD3HI&amp;K=3D3E5MXXT7YT2AV&amp;M=3Durn:rtn:msg:20190615144641690563=
+7377674b7ebf7caf216e60p0eu&amp;R=3D150TXFSLIJV4J&amp;T=3DE&amp;U=3Dhttps%3A=
+%2F%2Fimages-eu.ssl-images-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&=
+amp;H=3D7YR1GAWGUAOF26YHX6TQJ4IEVOAA&amp;ref_=3Dpe_3044161_185740101_open"/=
+>
+</body></html>
+--b5910b6f67b21b865085e7638e5bf8e5abc52dd0fae314c0d6bb423dea8f9baa--

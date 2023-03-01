@@ -1,0 +1,777 @@
+Authentication-Results: spf=pass (sender IP is 13.111.14.28) smtp.mailfrom=bounce.em.blizzard.com; OUTLOOK.DE; dkim=pass (signature was verified) header.d=em.blizzard.com;OUTLOOK.DE; dmarc=pass action=none header.from=em.blizzard.com;
+Content-Type: multipart/mixed; boundary=5a8c6a160eacd760d1fa6f154e93d5ca2f5a58df048653ab35b11bc804d8d346
+Date: Fri, 06 Dec 2019 12:33:58 -0600
+Delivered-To: maraltez@validmax.tech
+Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=200608; d=em.blizzard.com; h=From:To:Subject:Date:List-Unsubscribe:MIME-Version:Reply-To:List-ID: Message-ID:Content-Type; i=email@em.blizzard.com; bh=vSjtGOdP08bjwQsYG3dfwozWEb9KEpcxPX6JsPf2tuY=; b=CrhDBPPvmirzmgxNvOMq2EsXNvXBXeCL/feJzZgNWirjKd2gUrKqVi98x9xtF4HvTG5dG6vXEv8S ymonqFPsFLJT0deW31Wl6kLBmsEjs3FByOQDbjcQNQgnSRrfdNnUTVJydoTKHq3krnMCjmlgNFUb Z3jDufPvsRVUR7wPmbU=
+From: "Blizzard Entertainment" <email@em.blizzard.com>
+List-Id: <7235448.xt.local>
+List-Unsubscribe: <mailto:leave-fd8916701a3c402029-fe3616707564077a7c1771-fefa17737d6601-fe9d13727167047d77-ff5f12717c@leave.em.blizzard.com>
+Message-Id: <2d249705-9f07-4b0b-9291-5014f203f5f0@atl1s07mta973.xt.local>
+Mime-Version: 1.0
+Received: from SG2APC01HT108.eop-APC01.prod.protection.outlook.com (2603:10a6:209:8e::47) by AM6PR09MB3538.eurprd09.prod.outlook.com with HTTPS via AM6P193CA0070.EURP193.PROD.OUTLOOK.COM; Fri, 6 Dec 2019 18:34:14 +0000
+Received: from SG2APC01FT057.eop-APC01.prod.protection.outlook.com (10.152.250.51) by SG2APC01HT108.eop-APC01.prod.protection.outlook.com (10.152.251.242) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2495.25; Fri, 6 Dec 2019 18:34:13 +0000
+Received: from mta7.em.blizzard.com (13.111.14.28) by SG2APC01FT057.mail.protection.outlook.com (10.152.251.133) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2495.25 via Frontend Transport; Fri, 6 Dec 2019 18:34:12 +0000
+Received: by mta7.em.blizzard.com id htafia2fmd43 for <EZIOGAMING@OUTLOOK.DE>; Fri, 6 Dec 2019 18:33:58 +0000 (envelope-from <bounce-20_HTML-200037931-33825-7243002-619@bounce.em.blizzard.com>)
+Received-Spf: Pass (protection.outlook.com: domain of bounce.em.blizzard.com designates 13.111.14.28 as permitted sender) receiver=protection.outlook.com; client-ip=13.111.14.28; helo=mta7.em.blizzard.com;
+References: <__gTkk_fMoB3wAQwMhpfcdpmLzOLrfyhUj-0YrA-D8aOr1cSkRkrrVFskouFRonPIvuO0-7df4-PqOsHwHqSpA==@protonmail.internalid>
+Reply-To: "Blizzard Entertainment" <reply-fefa17737d6601-20_HTML-200037931-7243002-619@em.blizzard.com>
+Return-Path: bounce-20_HTML-200037931-33825-7243002-619@bounce.em.blizzard.com
+Subject: =?utf-8?q?Ezio9364,_erklimm_die_R=C3=A4nge_in_Saison_1_von_Modern_Warfare?=
+To: <EZIOGAMING@OUTLOOK.DE>
+X-Csa-Complaints: whitelistcomplaints@eco.de
+X-Eopattributedmessage: 0
+X-Eoptenantattributedmessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-Forefront-Antispam-Report: EFV:NLI;
+X-Incomingheadercount: 14
+X-Incomingtopheadermarker: OriginalChecksum:20C9864EE09FF7ED002FF4A0C29AB2FAA09E49D5D93FA27E777B2A3B6C6E8E7B;UpperCasedChecksum:EFA56FE10006002F7A6A0F822D17E8DE7A8F291B75BE5998AB4A46C7A209E46A;SizeAsReceived:1376;Count:14
+X-Job: 7243002_33825
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MDtHRD0wO1NDTD0tMQ==
+X-Message-Info: 5vMbyqxGkdenmZ+H4/XvcpvE0KtR1HNy14m7h1D3BhXKehZLgFUbA9qOKD19bbLaN29u5WAJg4gwqAwVsQekFquS1JH9D1bYQO23QqQ85iQDulHwKvENHtYMRgiuxLZwnwatfh7Lg3bkNZgNKgCMcJcNqm5TCwYKamblxTbnt1kaYRp8pzPBj2VhgpcUY3DwiWX/SPBfusspYPggLpsDvg==
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Mailbox-Delivery: abwl:0;wl:0;pcwl:0;kl:0;iwl:0;ijl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000261)(5061607266)(5061608174)(4900115)(4920090)(6250004)(4950130)(4990090);
+X-Microsoft-Antispam-Message-Info: 0JSCwiiQ03khfAngeyKjsXl5StU3dAB5PXplaY37CNSYy18vMErDVS9ahV/TykquhWMpV9LJod5MqZecX1tf4+u8t/fzCCpZu1Y6whkMQa/DNMgMNUq3Fsqu8BO/iNX+WPcZk79mwcbSS68+ZChV6c9WpA5F8v4WcIzRwqXexUHyau5ytkdo0de3g4SubJLB/fUtjKAiKLoU/zmdsNm6q4y4uINrU8cuk74k3SJlpVtKLE/iiayxJw7UUzM+0VPX0B19MTsK4Rp+q4EPp52oGQoRc6RS2QC6YMisWmjtw/+D6UODbkzQzDv4pptucXdP7qFFS+Wb0m9bwGLm+3ljPz5aWyunNy/r8zAtrc7hsmuVlmEEe7KcpfbGVQEAxbQ5p4nm9ZkslJF/Z2mPYu1q+68fSr8qB8C1FKyfJaPan53tOnpMzWnQuVhxkhEwGah++VUpmBckbbewU4Ei6BOnOzXtcAZcZxsowDE1ZA/l/zGq7CUncGd/GjrVOtIRnmRDMwMY0eqFYqcwnfX+35jlv28R+Nb2O6Wr63qLTbJ82mX6xvh3O4azZLG/7jtQMFW7OKXgtd+VDLkPWuu4ya4X2to+/BiioVrIabgRMHQCSxdmt8UsxYzAkfwzUJJpilA4/n4DIEVAO9s3DNcU1g96u89wt+XOwDDxivn7VN7nN/RDODIUVO6/+1dfJxNhMx4HT/IAohsm6hhphCk/Pe1rREDVS/VR6FMItHnTN1AFmbjeo/xSD7Ij/wTPxah93te1F/zkMvvP/mxgpIT+VsBGHqBbCIjMRzlN2pjY2brm1HhOKtaZ7jE/g/CLKtRzp5M/
+X-Ms-Exchange-Atpmessageproperties: SA|SL
+X-Ms-Exchange-Atpsafelinks-Stat: 0
+X-Ms-Exchange-Crosstenant-Fromentityheader: Internet
+X-Ms-Exchange-Crosstenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-Ms-Exchange-Crosstenant-Network-Message-Id: 790ec3cd-9087-4cea-e095-08d77a7ae457
+X-Ms-Exchange-Crosstenant-Originalarrivaltime: 06 Dec 2019 18:34:12.3349 (UTC)
+X-Ms-Exchange-Crosstenant-Rms-Persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-Ms-Exchange-Eopdirect: true
+X-Ms-Exchange-Organization-Authas: Anonymous
+X-Ms-Exchange-Organization-Authsource: SG2APC01FT057.eop-APC01.prod.protection.outlook.com
+X-Ms-Exchange-Organization-Expirationinterval: 1:00:00:00.0000000
+X-Ms-Exchange-Organization-Expirationintervalreason: OriginalSubmit
+X-Ms-Exchange-Organization-Expirationstarttime: 06 Dec 2019 18:34:13.1777 (UTC)
+X-Ms-Exchange-Organization-Expirationstarttimereason: OriginalSubmit
+X-Ms-Exchange-Organization-Messagedirectionality: Incoming
+X-Ms-Exchange-Organization-Network-Message-Id: 790ec3cd-9087-4cea-e095-08d77a7ae457
+X-Ms-Exchange-Organization-Pcl: 2
+X-Ms-Exchange-Processed-By-Bccfoldering: 15.20.2495.013
+X-Ms-Exchange-Safelinks-Url-Keyver: 1
+X-Ms-Exchange-Safelinks-Url-Keyver: 1
+X-Ms-Exchange-Transport-Crosstenantheadersstamped: SG2APC01HT108
+X-Ms-Exchange-Transport-Endtoendlatency: 00:00:02.3370517
+X-Ms-Office365-Filtering-Correlation-Id: 790ec3cd-9087-4cea-e095-08d77a7ae457
+X-Ms-Publictraffictype: Email
+X-Ms-Traffictypediagnostic: SG2APC01HT108:
+X-Ms-Userlastlogontime: 12/6/2019 6:23:05 PM
+X-Original-To: maraltez@validmax.tech
+X-Originatororg: outlook.com
+X-Pm-Content-Encryption: on-delivery
+X-Pm-Conversationid-Id: t86PA3uX_0LNQlsRBE87Q-NaSRICEXfeOhYrBS_jqG5eQ56z16_v7Mm-uG_K1goRh-OaZmW5ry0NumXmejsApw==
+X-Pm-Date: Fri, 06 Dec 2019 19:33:58 +0100
+X-Pm-External-Id: <2d249705-9f07-4b0b-9291-5014f203f5f0@atl1s07mta973.xt.local>
+X-Pm-Internal-Id: __gTkk_fMoB3wAQwMhpfcdpmLzOLrfyhUj-0YrA-D8aOr1cSkRkrrVFskouFRonPIvuO0-7df4-PqOsHwHqSpA==
+X-Pm-Origin: import
+X-Pm-Spam-Action: dunno
+X-Pm-Spamscore: 0
+X-Sender-Ip: 13.111.14.28
+X-Sid-Pra: EMAIL@EM.BLIZZARD.COM
+X-Sid-Result: PASS
+
+
+--5a8c6a160eacd760d1fa6f154e93d5ca2f5a58df048653ab35b11bc804d8d346
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+
+<!-- Localised Emails --><!-- ES-CL--><!-- ES-AR--><!-- WOW classic: copy a=
+ll from wow and rename assets to wowclassic--><!-- if preview is set in the=
+ data (json files)--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitio=
+nal//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xm=
+lns=3D"http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>Ezio9364, erklimm die R=C3=A4nge in Saison 1 von Modern Warfare</title=
+><meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1=
+.0">
+<!--[if !mso]><!-->
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<!--<![endif]--><style>body { margin-left: 0px; margin-top: 0px; margin-rig=
+ht: 0px; margin-bottom: 0px; }
+* { mso-line-height-rule: exactly; }</style><!--[if (gte mso 9)|(IE)]> <sty=
+le type=3D"text/css">    table { border-collapse: collapse !important !impo=
+rtant !important; } </style> <![endif]--></head><body bgcolor=3D"#000000" l=
+ink=3D"#388e9b" vlink=3D"#388e9b" alink=3D"#388e9b"><div style=3D"display: =
+none !important; mso-hide: all; width: 0px; height: 0px; max-width: 0px; ma=
+x-height: 0px; font-size: 0px; line-height: 0px;">Saison 1 hat begonnen! Sp=
+iel jetzt Call of Duty: Modern Warfare und schalte besondere neue Belohnung=
+en und Inhalte frei.</div><center style=3D"width: 100%; table-layout: fixed=
+; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;"><div bgcolor=
+=3D"#000000" style=3D"max-width: 600px;"><!--[if gte mso 9]> <table width=
+=3D"600" align=3D"center"> <tr> <td> <![endif]-->
+<table align=3D"center" bgcolor=3D"#000000" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-spacing: 0; font-family: arial, sans-serif; color: #=
+e3e8e2; font-size: 12px; margin-top: 0; margin-bottom: 0; margin-left: auto=
+; margin-right: auto; width: 100%; max-width: 600px; line-height: 1; paddin=
+g: 0;"><tr><td style=3D"padding: 0;"><table width=3D"100%" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"><tr><td style=3D"padding: 0; font-size: 0;=
+"><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%=
+2F%2Fclick.em.blizzard.com%2F%3Fqs%3Df16711d84c4f454984a86d1e52eb208e8d6361=
+4e87df1c136fc85f79b2a86a861990624e3247fb99493da767cf72910554ae76a03e728bfc&=
+amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640af=
+b435aaaaaaaaaaaa%7C1%7C0%7C637112540543394870&amp;sdata=3DgYShqtp6c6YELaKf3=
+TWk8K0FVSANRE%2BkEjjBN%2B6MH1s%3D&amp;reserved=3D0" originalsrc=3D"http://c=
+lick.em.blizzard.com/?qs=3Df16711d84c4f454984a86d1e52eb208e8d63614e87df1c13=
+6fc85f79b2a86a861990624e3247fb99493da767cf72910554ae76a03e728bfc" shash=3D"=
+pslsMEcdETgvmgSXNMJ73JX2G4NfdG5Xi/bZQ76cVO8lR3QzJKuD9aSMjx8JE/qBLea80txNUU1=
+E2AVRQVCE7z92mrbKdo21d0UpO765olJnzcdcu6lIkvdRaOh5vw02tBMGH52MRSJXQSP6wqpl93=
+Os7vc77ME/R0Snyb7&#43;kS8=3D" style=3D"color: #388e9b;">
+<img src=3D"http://media.wow-europe.com/email/2019/Activision/COD/2019-12-0=
+4_MW Title Update Delta_MW_owners/images/block-ddf9dc43-cbac-4996-a56a-0bee=
+4dc78e6b_de-de.jpg" alt=3D"JETZT SPIELEN" width=3D"600" style=3D"border: 0;=
+ display: block !important; width: 100%; height: auto; max-width: 600px; ma=
+x-height: 780px;"></a></td></tr></table><table width=3D"100%" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" background=3D"" bgcolor=3D""><tr><td st=
+yle=3D"padding: 0; font-size: 0;background-color: #20201e;"><!--[if (gte ms=
+o 9)|(IE)]> <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr>=
+ <![endif]--> <!--[if (gte mso 9)|(IE)]> <td valign=3D"top" width=3D"600"> =
+<![endif]--><div style=3D"display: inline-block !important; width: 100%; ma=
+x-width: 600px; vertical-align: top;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr>=
+<td width=3D"100%" style=3D"padding: 0; color: #e3e8e2; font-family: arial,=
+ sans-serif; font-size: 12; text-align: left; background-color: #20201e; li=
+ne-height: 24px; color:#bdbdbd;  font-size: 14px; padding-top: 0px; padding=
+-bottom: 0px; padding-left: 30px; padding-right: 30px;">
+Schnall dich gut an, <strong style=3D"color: #e3e8e2;">Ezio9364</strong>, d=
+enn <a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3=
+A%2F%2Fclick.em.blizzard.com%2F%3Fqs%3Df16711d84c4f45494958102c53d92b8f52ba=
+9fce7e290a864bb1e59b1d070972392abc89fb9a6cf66ba6476bbc41bebfe590fbc67ee51f2=
+e&amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640=
+afb435aaaaaaaaaaaa%7C1%7C0%7C637112540543414880&amp;sdata=3DlcDPNX6fYJhC5Z5=
+EycMXeSwi6cgajzj%2BgzOzszzJxOg%3D&amp;reserved=3D0" originalsrc=3D"http://c=
+lick.em.blizzard.com/?qs=3Df16711d84c4f45494958102c53d92b8f52ba9fce7e290a86=
+4bb1e59b1d070972392abc89fb9a6cf66ba6476bbc41bebfe590fbc67ee51f2e" shash=3D"=
+xQR0LRTmaSs7mBFiI1/IlswPk6GvQTJu7MX8ZZArOKbA348SnakYPjvtldw9Pzkm&#43;5uIANZ=
+7onxICO/9PyCQVcN9&#43;OCh0TovzY9B&#43;yQ2tTG0zy1NlVD13qE2ztVeX92g&#43;R/Eoy=
+Z1Y3UjuCf93UfahaaZ5uwqprgSWsUHTn1kQS0=3D" target=3D"_blank" style=3D"color:=
+ #388e9b;">Saison&nbsp;1 von <em>Call of Duty: Modern Warfare</em> ist hier=
+</a>. Du kannst zwei <strong style=3D"color: #e3e8e2;">neue Einsatzleiter</=
+strong> spielen: <strong style=3D"color: #e3e8e2;">Mara</strong> und <stron=
+g style=3D"color: #e3e8e2;">Nikto</strong>. Au=C3=9Ferdem ist jetzt ein neu=
+es saisonales Rangsystem verf=C3=BCgbar&nbsp;=E2=80=93 halt auf dem Schlach=
+tfeld also die Augen offen. Erklimm w=C3=A4hrend Saison&nbsp;1 die <strong =
+style=3D"color: #e3e8e2;">Offizierr=C3=A4nge
+</strong> und schalte besondere neue Belohnungen frei, w=C3=A4hrend du dich=
+ durch 100&nbsp;R=C3=A4nge an die Spitze k=C3=A4mpfst. Dich erwarten unter =
+Anderem neue Waffenbaupl=C3=A4ne und besondere Saisonembleme.<br></td></tr>=
+</table></div><!--[if (gte mso 9)|(IE)]> </td> <![endif]--><!--[if (gte mso=
+ 9)|(IE)]> </tr> </table> <![endif]--></td></tr></table><table width=3D"100=
+%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#20201e"><tr=
+><td valign=3D"top" width=3D"600" height=3D"30"></td></tr></table><table wi=
+dth=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#2=
+0201e"><tr><td style=3D"min-width: 0px; padding: 0;"></td><td align=3D"cent=
+er" style=3D"padding: 0; font-size: 0;"><a href=3D"https://apc01.safelinks.=
+protection.outlook.com/?url=3Dhttp%3A%2F%2Fclick.em.blizzard.com%2F%3Fqs%3D=
+f16711d84c4f45494958102c53d92b8f52ba9fce7e290a864bb1e59b1d070972392abc89fb9=
+a6cf66ba6476bbc41bebfe590fbc67ee51f2e&amp;data=3D02%7C01%7C%7C790ec3cd90874=
+ceae09508d77a7ae457%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6371125405=
+43434897&amp;sdata=3DYklV2u5s0rw8INHzQBMs4dEHUqvwO1lviKrq7dzpH0s%3D&amp;res=
+erved=3D0" originalsrc=3D"http://click.em.blizzard.com/?qs=3Df16711d84c4f45=
+494958102c53d92b8f52ba9fce7e290a864bb1e59b1d070972392abc89fb9a6cf66ba6476bb=
+c41bebfe590fbc67ee51f2e" shash=3D"FYdykS2UsbxPWErVE5jC1nz9qB81BPjhhd1&#43;i=
+I/qJtUAH7qOhMG1EwOzuNX/5Gh21T6FRcJ6oFmqJmnmQuDeLWz86fGI6LuBkG3X/qKNLYA4q7GQ=
+TFMoYUKM9mOICSxhAY5nvFQuuIVwWb4zL5kdqNIwjnAgvJWbA3vENMayvlk=3D" style=3D"te=
+xt-decoration: none; display: inline-block !important;">
+<img alt=3D"JETZT SPIELEN" src=3D"http://media.wow-europe.com/email/2019/Ac=
+tivision/COD/2019-12-04_MW Title Update Delta_MW_owners/images/button-c6357=
+3d1-45f8-433d-93a6-e453b8fe436a_de-de.jpg" style=3D"border: 0; display: blo=
+ck !important; width: 100%; max-width: 600px; height: auto; max-height: 52p=
+x; padding: 0;"></a></td><td style=3D"min-width: 0px; padding: 0;"></td></t=
+r></table><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" bgcolor=3D"#20201e"><tr><td valign=3D"top" width=3D"600" height=3D"6=
+0"></td></tr></table><table width=3D"100%" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0"><tr><td style=3D"padding: 0; font-size: 0;"><a href=3D"htt=
+ps://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fclick.em.bl=
+izzard.com%2F%3Fqs%3Df16711d84c4f454984a86d1e52eb208e8d63614e87df1c136fc85f=
+79b2a86a861990624e3247fb99493da767cf72910554ae76a03e728bfc&amp;data=3D02%7C=
+01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640afb435aaaaaaaaaaaa=
+%7C1%7C0%7C637112540543444908&amp;sdata=3DMBYTxU8QjfAc%2BoSA3jLbonmCCE2h3PZ=
+R%2BrzokZCF9xE%3D&amp;reserved=3D0" originalsrc=3D"http://click.em.blizzard=
+.com/?qs=3Df16711d84c4f454984a86d1e52eb208e8d63614e87df1c136fc85f79b2a86a86=
+1990624e3247fb99493da767cf72910554ae76a03e728bfc" shash=3D"alNOCh87zlhLN&#4=
+3;yZOaeTz7D/4Q3udgtGMgxXxKAhqrkWJ6&#43;WhMLBIB&#43;nq84JgaSEXwIDLDj&#43;nOO=
+k22g2oYwD0XMFy2ZuQbimU/fl7EQLSv&#43;9F6qdRsScOU543N6xXyk/ynIEbrxyYQFFiZQTEl=
+jhraPEbhkHbNup0uyqMABxcxQ=3D" style=3D"color: #388e9b;">
+<img src=3D"http://media.wow-europe.com/email/2019/Activision/COD/2019-12-0=
+4_MW Title Update Delta_MW_owners/images/block-257e8ce0-cf62-4127-8ef5-f8ee=
+b340cfcf_de-de.jpg" alt=3D"" width=3D"600" style=3D"border: 0; display: blo=
+ck !important; width: 100%; height: auto; max-width: 600px; max-height: 320=
+px;"></a></td></tr></table><table width=3D"100%" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" bgcolor=3D"#20201e"><tr><td valign=3D"top" width=
+=3D"600" height=3D"25"></td></tr></table><table width=3D"100%" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0"><tr><td style=3D"padding: 0; font-size=
+: 0;"><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttp=
+%3A%2F%2Fclick.em.blizzard.com%2F%3Fqs%3Df16711d84c4f454984a86d1e52eb208e8d=
+63614e87df1c136fc85f79b2a86a861990624e3247fb99493da767cf72910554ae76a03e728=
+bfc&amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f6=
+40afb435aaaaaaaaaaaa%7C1%7C0%7C637112540543464924&amp;sdata=3DbgPAUI7%2BnMW=
+cyzUEUVeQ0iDPRf%2FSbA6ov1yEJaVcS0U%3D&amp;reserved=3D0" originalsrc=3D"http=
+://click.em.blizzard.com/?qs=3Df16711d84c4f454984a86d1e52eb208e8d63614e87df=
+1c136fc85f79b2a86a861990624e3247fb99493da767cf72910554ae76a03e728bfc" shash=
+=3D"U/6&#43;Pu0JW6NZwv&#43;Y1rx4LyGIV/InBzZjjqcEjG8BvJMXajSOJxtr1VtPl3sdy&#=
+43;WyfEUC5afcqbUmB7McRceArC0pr84H45QiiECpe3aSjVgRA53LnN6M4payjvIzJEfqrAtZXy=
+Xy&#43;KrJ6FD6GpXKngxy6U4kynXoolyIppAqgeY=3D" style=3D"color: #388e9b;">
+<img src=3D"http://media.wow-europe.com/email/2019/Activision/COD/2019-12-0=
+4_MW Title Update Delta_MW_owners/images/block-c269e440-388f-4ac9-9815-6935=
+97260445_de-de.jpg" alt=3D"NEUE KARTEN, MODI &amp;amp; MEHR" width=3D"600" =
+style=3D"border: 0; display: block !important; width: 100%; height: auto; m=
+ax-width: 600px; max-height: 80px;"></a></td></tr></table><table width=3D"1=
+00%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" background=3D"" bgcol=
+or=3D""><tr><td style=3D"padding: 0; font-size: 0;background-color: #20201e=
+;"><!--[if (gte mso 9)|(IE)]> <table width=3D"100%" cellpadding=3D"0" cells=
+pacing=3D"0"> <tr> <![endif]--> <!--[if (gte mso 9)|(IE)]> <td valign=3D"to=
+p" width=3D"600"> <![endif]--><div style=3D"display: inline-block !importan=
+t; width: 100%; max-width: 600px; vertical-align: top;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr>=
+<td width=3D"100%" style=3D"padding: 0; color: #e3e8e2; font-family: arial,=
+ sans-serif; font-size: 12; text-align: left; background-color: #20201e; li=
+ne-height: 24px; color:#bdbdbd;  font-size: 14px; padding-top: 20px; paddin=
+g-bottom: 0px; padding-left: 30px; padding-right: 30px;">
+Neue Karten und Modi stellen dein taktisches Geschick auf die Probe. K=C3=
+=A4mpf dich durch neue Mehrspielerkarten&nbsp;=E2=80=93 die Karte <strong s=
+tyle=3D"color: #e3e8e2;">Crash</strong> f=C3=BCr den Klassikmodus, die Kart=
+e <strong style=3D"color: #e3e8e2;">Port</strong> f=C3=BCr Bodenkrieg und d=
+ie Karten <strong style=3D"color: #e3e8e2;">Atrium und Cargo</strong> f=C3=
+=BCr den 2v2-Modus. Au=C3=9Ferdem kannst du <strong style=3D"color: #e3e8e2=
+;">zwei neue klassische Missionen im Modus Spezialeinheit abschlie=C3=9Fen&=
+nbsp;=E2=80=93 Pitch Black und Grounded</strong>.<br><br>Im <strong style=
+=3D"color: #e3e8e2;">neuen Spielmodus Reinforce
+</strong> gilt es Punkte einzunehmen, um gefallene Teammitglieder wiederzub=
+eleben. Wem die Einnahme aller Punkte gelingt, dem geh=C3=B6rt der Sieg. Au=
+=C3=9Ferdem erwartet dich der neue Spielmodus Waffenspiel, der vor Kurzem v=
+er=C3=B6ffentlicht wurde.<br></td></tr></table></div><!--[if (gte mso 9)|(I=
+E)]> </td> <![endif]--><!--[if (gte mso 9)|(IE)]> </tr> </table> <![endif]-=
+-></td></tr></table><table width=3D"100%" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" bgcolor=3D"#20201e"><tr><td valign=3D"top" width=3D"600" he=
+ight=3D"31"></td></tr></table><table width=3D"100%" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" bgcolor=3D"#20201e"><tr><td style=3D"min-width: 0=
+px; padding: 0;"></td><td align=3D"center" style=3D"padding: 0; font-size: =
+0;">
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fclick.em.blizzard.com%2F%3Fqs%3Df16711d84c4f45494958102c53d92b8f52ba9fce=
+7e290a864bb1e59b1d070972392abc89fb9a6cf66ba6476bbc41bebfe590fbc67ee51f2e&am=
+p;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640afb4=
+35aaaaaaaaaaaa%7C1%7C0%7C637112540543484940&amp;sdata=3D9t6Fcfg5lZko0RBXWmf=
+hHvhHtXMKCnm3VdcXpmA3Iv8%3D&amp;reserved=3D0" originalsrc=3D"http://click.e=
+m.blizzard.com/?qs=3Df16711d84c4f45494958102c53d92b8f52ba9fce7e290a864bb1e5=
+9b1d070972392abc89fb9a6cf66ba6476bbc41bebfe590fbc67ee51f2e" shash=3D"uPfvDj=
+0MBz78ANSutyVGU/DpMl3IIUZJRbpMwOmU51t3F17wGSh2zjMpz3IxZ&#43;GLVrjmMbRq1VYgG=
+se&#43;LZgPzkXEj/VXH6y8qqfbQpSXbARUsQoXKk8zKTAVoPOXELvp&#43;PefjZCkq5Vu62bz=
+TaZuHfCpoll5HYbtr5ds6GYhb0U=3D" style=3D"text-decoration: none; display: in=
+line-block !important;"><img alt=3D"MEHR ERFAHREN" src=3D"http://media.wow-=
+europe.com/email/2019/Activision/COD/2019-12-04_MW Title Update Delta_MW_ow=
+ners/images/button-2d833eb3-082d-4d65-b740-1e672192b773_de-de.jpg" style=3D=
+"border: 0; display: block !important; width: 100%; max-width: 600px; heigh=
+t: auto; max-height: 52px; padding: 0;"></a></td><td style=3D"min-width: 0p=
+x; padding: 0;"></td></tr></table><table width=3D"100%" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" bgcolor=3D"#20201e"><tr><td valign=3D"top" wi=
+dth=3D"600" height=3D"61"></td></tr></table><table width=3D"100%" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td style=3D"padding: 0; font-s=
+ize: 0;">
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fclick.em.blizzard.com%2F%3Fqs%3Df16711d84c4f4549cdad9ac9709c2c6eb710658b=
+b09e4bda71d91e4bdec233d55b5581eb8ee124ef719310cfc3521ba8db5848021114ad8e&am=
+p;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640afb4=
+35aaaaaaaaaaaa%7C1%7C0%7C637112540543504956&amp;sdata=3DVwstLyCEQnLQ1zYqF%2=
+BeR6X8Qns6In9lny8%2F8j2I%2Fwnk%3D&amp;reserved=3D0" originalsrc=3D"http://c=
+lick.em.blizzard.com/?qs=3Df16711d84c4f4549cdad9ac9709c2c6eb710658bb09e4bda=
+71d91e4bdec233d55b5581eb8ee124ef719310cfc3521ba8db5848021114ad8e" shash=3D"=
+Ba&#43;eFKispD04Wsg&#43;vPwuTdPiw4MsvYo7/8N7d&#43;cG7RC8rncTBM02gnaKDjz79wV=
+RaGK4FhuEVwVGqLV&#43;X3gd2OnU6sBs1TpVOKIsTJNT0nYKK13K4gqgK0WxPGlihCddQdUU9D=
+g4SxpPa0xOh7mQZ9NOQzIM/2pDlxXYhlA64GQ=3D" style=3D"color: #388e9b;"><img sr=
+c=3D"http://media.wow-europe.com/email/2019/Activision/COD/2019-12-04_MW Ti=
+tle Update Delta_MW_owners/images/block-fcf10ee4-bfdc-473d-8f64-f85202d0743=
+4_de-de.jpg" alt=3D"" width=3D"600" style=3D"border: 0; display: block !imp=
+ortant; width: 100%; height: auto; max-width: 600px; max-height: 320px;"></=
+a></td></tr></table><table width=3D"100%" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" bgcolor=3D"#20201e"><tr><td valign=3D"top" width=3D"600" he=
+ight=3D"25"></td></tr></table><table width=3D"100%" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0"><tr><td style=3D"padding: 0; font-size: 0;"><a hr=
+ef=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fcl=
+ick.em.blizzard.com%2F%3Fqs%3Df16711d84c4f4549cdad9ac9709c2c6eb710658bb09e4=
+bda71d91e4bdec233d55b5581eb8ee124ef719310cfc3521ba8db5848021114ad8e&amp;dat=
+a=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640afb435aaa=
+aaaaaaaaa%7C1%7C0%7C637112540543514974&amp;sdata=3Dut0cLLymNBa6uEIcYRcrTyt8=
+4CcLWl%2BInxL9AoBza8w%3D&amp;reserved=3D0" originalsrc=3D"http://click.em.b=
+lizzard.com/?qs=3Df16711d84c4f4549cdad9ac9709c2c6eb710658bb09e4bda71d91e4bd=
+ec233d55b5581eb8ee124ef719310cfc3521ba8db5848021114ad8e" shash=3D"dDmMPouZk=
+XFTNCu8LNJrMcu6xqQZlkYjCf/0hHscy0vAxlwiSY/lhiuF1r&#43;vEFN/a&#43;Wkl8MiboPh=
+Sn5pmb9yJ3TrkG&#43;CS23k7VE8z1d5UNVtwdhqVGjHbT3MkvZJPo4sFBTsM2mDs2keM4cA1VV=
+sQHuBMaOyKv7QHWoOeV7PyQU=3D" style=3D"color: #388e9b;">
+<img src=3D"http://media.wow-europe.com/email/2019/Activision/COD/2019-12-0=
+4_MW Title Update Delta_MW_owners/images/block-13a41671-b737-4824-ad15-230f=
+371babfe_de-de.jpg" alt=3D"AUF INS GEFECHT" width=3D"600" style=3D"border: =
+0; display: block !important; width: 100%; height: auto; max-width: 600px; =
+max-height: 40px;"></a></td></tr></table><table width=3D"100%" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" background=3D"" bgcolor=3D""><tr><td s=
+tyle=3D"padding: 0; font-size: 0;background-color: #20201e;"><!--[if (gte m=
+so 9)|(IE)]> <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr=
+> <![endif]--> <!--[if (gte mso 9)|(IE)]> <td valign=3D"top" width=3D"600">=
+ <![endif]--><div style=3D"display: inline-block !important; width: 100%; m=
+ax-width: 600px; vertical-align: top;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr>=
+<td width=3D"100%" style=3D"padding: 0; color: #e3e8e2; font-family: arial,=
+ sans-serif; font-size: 12; text-align: left; background-color: #20201e; li=
+ne-height: 24px; color:#bdbdbd;  font-size: 14px; padding-top: 25px; paddin=
+g-bottom: 0px; padding-left: 30px; padding-right: 30px;">
+<span style=3D"color: #e3e8e2;">Der Battle Pass ist da. Ab jetzt kannst du =
+</span><strong style=3D"color: #e3e8e2;">22&nbsp;Gegenst=C3=A4nde freischal=
+ten, die f=C3=BCr alle Spieler kostenlos verf=C3=BCgbar sind</strong><span =
+style=3D"color: #e3e8e2;">. Aber das ist noch nicht alles&nbsp;=E2=80=93 Ca=
+ll of Duty-Punkte sind ebenfalls bereit. F=C3=BCr 1.000&nbsp;CP erh=C3=A4lt=
+st du beim Battle Pass Zugriff auf weitere 78&nbsp;Stufen. Alternativ kanns=
+t du f=C3=BCr 2.400&nbsp;CP auf das Battle Pass-Paket aufwerten, um so alle=
+ Stufen freizuschalten.</span><br></td></tr></table></div><!--[if (gte mso =
+9)|(IE)]> </td> <![endif]--><!--[if (gte mso 9)|(IE)]> </tr> </table> <![en=
+dif]--></td></tr></table><table width=3D"100%" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" bgcolor=3D"#20201e"><tr><td valign=3D"top" width=3D"60=
+0" height=3D"61"></td></tr>
+</table><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0"><tr><td style=3D"padding: 0; font-size: 0;"><a href=3D"https://apc01.sa=
+felinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fclick.em.blizzard.com%2F=
+%3Fqs%3Df16711d84c4f454968855f3dd71f983bf311442d5a9e62ecac23a921ee7ed413792=
+0c7e61e5088e95287f70059fa44dc4e96094b5ff17288&amp;data=3D02%7C01%7C%7C790ec=
+3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C63=
+7112540543534978&amp;sdata=3DT2179N6USQkztB55KjWV9IcPEHHXDsZcsxTL0rjJQ4c%3D=
+&amp;reserved=3D0" originalsrc=3D"http://click.em.blizzard.com/?qs=3Df16711=
+d84c4f454968855f3dd71f983bf311442d5a9e62ecac23a921ee7ed4137920c7e61e5088e95=
+287f70059fa44dc4e96094b5ff17288" shash=3D"NitD2bX1pvtbRn&#43;EslP8FwHuP13mG=
+pnwB1ECFZTrBqiR6yRvBKDORI4vnTvfWbjasK0rtJr2B1plpxP8ObYLcaCkKp/e58T3RSrgxC1Y=
+ffb2LimK0fGu0r9arfeyGWr4NdKacEQmGC4NZ4bJbYxnqcuhEakd/g4jCR/spWGEvGQ=3D" sty=
+le=3D"color: #388e9b;"><img src=3D"http://media.wow-europe.com/email/2019/A=
+ctivision/COD/2019-12-04_MW Title Update Delta_MW_owners/images/block-a0318=
+478-7b9e-4602-a127-4bf6d8793cca_de-de.jpg" alt=3D"" width=3D"600" style=3D"=
+border: 0; display: block !important; width: 100%; height: auto; max-width:=
+ 600px; max-height: 320px;"></a></td></tr></table><table width=3D"100%" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td style=3D"padding: 0; =
+font-size: 0;"><a href=3D"https://apc01.safelinks.protection.outlook.com/?u=
+rl=3Dhttp%3A%2F%2Fclick.em.blizzard.com%2F%3Fqs%3Df16711d84c4f454968855f3dd=
+71f983bf311442d5a9e62ecac23a921ee7ed4137920c7e61e5088e95287f70059fa44dc4e96=
+094b5ff17288&amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84d=
+f9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637112540543544989&amp;sdata=3DShI2=
+MgS880t8UeGJDlYmVe2K24rinkrimI7pRTc1o%2BU%3D&amp;reserved=3D0" originalsrc=
+=3D"http://click.em.blizzard.com/?qs=3Df16711d84c4f454968855f3dd71f983bf311=
+442d5a9e62ecac23a921ee7ed4137920c7e61e5088e95287f70059fa44dc4e96094b5ff1728=
+8" shash=3D"iFDwxnIrFTRuOnhdgWjn0NWhcv3tIrr3PjaCrUi/Dei&#43;FgZ0V6&#43;bgZu=
+6hZdhVfuoAq6az4VkKS5Lu6NrY5386zgoIxwyr/LZliVTxWkuQEooofCjEIOWJ/qgeVyjKmj2pV=
+nZPY1N766k5Aogl9zRbgAvUFuUvHJLf3lZq5jQTA8=3D" style=3D"color: #388e9b;">
+<img src=3D"http://media.wow-europe.com/email/2019/Activision/COD/2019-12-0=
+4_MW Title Update Delta_MW_owners/images/block-8f5e1f28-fdee-4ecf-a35d-d27d=
+be35ebf1_de-de.jpg" alt=3D"ERLEBE&lt;br&gt;MODERN WARFARE&lt;br&gt;JETZT IM=
+ ANGEBOT" width=3D"600" style=3D"border: 0; display: block !important; widt=
+h: 100%; height: auto; max-width: 600px; max-height: 138px;"></a></td></tr>=
+</table><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" background=3D"" bgcolor=3D""><tr><td style=3D"padding: 0; font-size: 0;=
+background-color: #20201e;"><!--[if (gte mso 9)|(IE)]> <table width=3D"100%=
+" cellpadding=3D"0" cellspacing=3D"0"> <tr> <![endif]--> <!--[if (gte mso 9=
+)|(IE)]> <td valign=3D"top" width=3D"600"> <![endif]--><div style=3D"displa=
+y: inline-block !important; width: 100%; max-width: 600px; vertical-align: =
+top;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr>=
+<td width=3D"100%" style=3D"padding: 0; color: #e3e8e2; font-family: arial,=
+ sans-serif; font-size: 12; text-align: left; background-color: #20201e; li=
+ne-height: 24px; color:#bdbdbd;  font-size: 14px; padding-top: 20px; paddin=
+g-bottom: 0px; padding-left: 30px; padding-right: 30px;">
+Feier mit uns die gr=C3=B6=C3=9Fte Menge an Inhalten in der Geschichte von =
+<em>Call of Duty</em> mit tollen<a href=3D"https://apc01.safelinks.protecti=
+on.outlook.com/?url=3Dhttp%3A%2F%2Fclick.em.blizzard.com%2F%3Fqs%3Df16711d8=
+4c4f454991d08c7b7d2c3a08ec866dc0d75465e37a5566c707b2a2ea9b23937cc24c524ec6d=
+e26fafdd274d90f24cdbff88f5af8&amp;data=3D02%7C01%7C%7C790ec3cd90874ceae0950=
+8d77a7ae457%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637112540543565005=
+&amp;sdata=3DQGjjZIvqunqc6dP674AvlQ1YO5N9%2BmUwhq4oMupo0%2BE%3D&amp;reserve=
+d=3D0" originalsrc=3D"http://click.em.blizzard.com/?qs=3Df16711d84c4f454991=
+d08c7b7d2c3a08ec866dc0d75465e37a5566c707b2a2ea9b23937cc24c524ec6de26fafdd27=
+4d90f24cdbff88f5af8" shash=3D"c6QRZGaWcETHU&#43;I1D8XS6pV1To/FHK8t59SWqi7E9=
+3Ua4cQi9oz4d4V7t5HOsPY0jomt/wFkC4FOFHslOuk1v/x9ahmR2GJYQuuQxL0GCDc/Kymzjz68=
+u8DPZbTqZ0ZYvGU7aEXO0QZyGW2EnCabwF&#43;ndn9MJMLod&#43;9Z1Hu7yh4=3D" target=
+=3D"_blank" style=3D"color: #388e9b;"> Sparangeboten</a>. Das ist deine Cha=
+nce, dich in mit der <strong style=3D"color: #e3e8e2;">Standard Edition bis=
+ zum 9.&nbsp;Dezember f=C3=BCr nur 39,99&nbsp;EUR</strong><strong>*</strong=
+> in <em>Call of Duty: Modern Warfare</em> ins Gefecht zu st=C3=BCrzen. Hol=
+ dir die digitale Version des Spiels und sicher dir das XRK-Waffenpaket im =
+Spiel, das unter anderem das <strong style=3D"color: #e3e8e2;">Sturmgewehr =
+XRK&nbsp;M4</strong> und die <strong style=3D"color: #e3e8e2;">XRK&nbsp;.35=
+7</strong> enth=C3=A4lt.<br></td></tr></table></div><!--[if (gte mso 9)|(IE=
+)]> </td> <![endif]--><!--[if (gte mso 9)|(IE)]> </tr>
+</table> <![endif]--></td></tr></table><table width=3D"100%" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#20201e"><tr><td valign=3D"to=
+p" width=3D"600" height=3D"25"></td></tr></table><table width=3D"100%" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#20201e"><tr><td st=
+yle=3D"min-width: 0px; padding: 0;"></td><td align=3D"center" style=3D"padd=
+ing: 0; font-size: 0;"><a href=3D"https://apc01.safelinks.protection.outloo=
+k.com/?url=3Dhttp%3A%2F%2Fclick.em.blizzard.com%2F%3Fqs%3Df16711d84c4f45499=
+1d08c7b7d2c3a08ec866dc0d75465e37a5566c707b2a2ea9b23937cc24c524ec6de26fafdd2=
+74d90f24cdbff88f5af8&amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae4=
+57%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637112540543585021&amp;sdat=
+a=3DiXe%2FXYBuFPOH%2BKjHcRW1bpwfxbN84yD1cHIFKnt%2FFaY%3D&amp;reserved=3D0" =
+originalsrc=3D"http://click.em.blizzard.com/?qs=3Df16711d84c4f454991d08c7b7=
+d2c3a08ec866dc0d75465e37a5566c707b2a2ea9b23937cc24c524ec6de26fafdd274d90f24=
+cdbff88f5af8" shash=3D"OgRCKF1wRJAM0ctfvWEPmwFVT0Sy5tn&#43;Swdl4kzaGS&#43;3=
+UnlbECHlO4hGyusmx/jcBkYprifBOjnWfKJcaXsmAqOlgK2A28E79tx1IgvBxkSf5/RwExHuMac=
+d38AD9&#43;&#43;psyYN7eljjF8xZfg6d6JOkPuO8BN2IF3lGJiSZRqA/Vc=3D" style=3D"t=
+ext-decoration: none; display: inline-block !important;"><img alt=3D"ZUM SH=
+OP" src=3D"http://media.wow-europe.com/email/2019/Activision/COD/2019-12-04=
+_MW Title Update Delta_MW_owners/images/button-ef210dc0-99df-4578-bdba-187f=
+e8302932_de-de.jpg" style=3D"border: 0; display: block !important; width: 1=
+00%; max-width: 600px; height: auto; max-height: 52px; padding: 0;">
+</a></td><td style=3D"min-width: 0px; padding: 0;"></td></tr></table><table=
+ width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" background=
+=3D"" bgcolor=3D""><tr><td style=3D"padding: 0; font-size: 0;background-col=
+or: #20201e;"><!--[if (gte mso 9)|(IE)]> <table width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0"> <tr> <![endif]--> <!--[if (gte mso 9)|(IE)]> <td =
+valign=3D"top" width=3D"600"> <![endif]--><div style=3D"display: inline-blo=
+ck !important; width: 100%; max-width: 600px; vertical-align: top;"><table =
+width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr>
+<td width=3D"100%" style=3D"padding: 0; color: #e3e8e2; font-family: arial,=
+ sans-serif; font-size: 12; text-align: center; background-color: #20201e; =
+line-height: 12px; color:#bdbdbd;  font-size: 14px; padding-top: 20px; padd=
+ing-bottom: 20px; padding-left: 0px; padding-right: 0px;">
+<span style=3D"color: #e3e8e2;">* Angebot endet am Montag, dem 9.&nbsp;Deze=
+mber um 19:00&nbsp;Uhr&nbsp;MEZ.</span><br></td></tr></table></div><!--[if =
+(gte mso 9)|(IE)]> </td> <![endif]--><!--[if (gte mso 9)|(IE)]> </tr> </tab=
+le> <![endif]--></td></tr></table><center style=3D"padding-top: 20px; backg=
+round-color: #1c1c1c;"><img src=3D"http://media.wow-europe.com/email/includ=
+es/social/titles/codmw_title_de-de.jpg" style=3D"border: 0; display: block =
+!important; width: 100%; height: auto;"></center><table width=3D"100%" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" background=3D"" bgcolor=3D""><=
+tr><td style=3D"padding: 0; font-size: 0;background-color: #1c1c1c; font-fa=
+mily:arial, sans-serif;"><!--[if (gte mso 9)|(IE)]> <table width=3D"100%" c=
+ellpadding=3D"0" cellspacing=3D"0"> <tr> <![endif]-->
+<!--[if (gte mso 9)|(IE)]> <td valign=3D"top" width=3D"600"> <![endif]--><d=
+iv style=3D"display: inline-block !important; width: 100%; max-width: 600px=
+; vertical-align: top;"><table width=3D"100%" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0"><tr><td width=3D"100%" style=3D"padding: 0; color: #e3e=
+8e2; font-family: arial, sans-serif; font-size: 12; padding-top: 0px; paddi=
+ng-bottom: 30px; padding-left: 70px; padding-right: 70px;"><p style=3D"text=
+-align: center; color: undefined; line-height: 1.6; margin: 0; font-size: 1=
+4px; padding-right:0;font-family:arial, sans-serif; margin-top: -10px;"></p=
+></td></tr></table></div><!--[if (gte mso 9)|(IE)]> </td> <![endif]--><!--[=
+if (gte mso 9)|(IE)]> </tr> </table> <![endif]--></td></tr></table>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" back=
+ground=3D"" bgcolor=3D""><tr><td style=3D"padding: 0; font-size: 0;backgrou=
+nd-color: #1c1c1c; text-align:center; font-family:arial, sans-serif; paddin=
+g-bottom: 20px;"><!--[if (gte mso 9)|(IE)]> <table width=3D"100%" cellpaddi=
+ng=3D"0" cellspacing=3D"0"> <tr> <![endif]--><center><!--[if (gte mso 9)|(I=
+E)]> <td valign=3D"top" width=3D"600"> <![endif]--><div style=3D"display: i=
+nline-block !important; width: 100%; max-width: 600px; vertical-align: top;=
+"><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><t=
+r><td width=3D"100%" style=3D"padding: 0; color: #e3e8e2; font-family: aria=
+l, sans-serif; font-size: 12; background-color: #1c1c1c; text-align:center;=
+"><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%=
+2F%2Fclick.em.blizzard.com%2F%3Fqs%3D339022c064741994743906efb466ab27d37c91=
+4cc0cd27d0492b5b9a75bc53bb471cfd21656be2ad41ae285cbaaaae527db0f836dedede64&=
+amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640af=
+b435aaaaaaaaaaaa%7C1%7C0%7C637112540543595026&amp;sdata=3D8CjFJUf%2BWCWRebe=
+1e1Grzp2jPUjthrFZpdxBYtqld2E%3D&amp;reserved=3D0" originalsrc=3D"http://cli=
+ck.em.blizzard.com/?qs=3D339022c064741994743906efb466ab27d37c914cc0cd27d049=
+2b5b9a75bc53bb471cfd21656be2ad41ae285cbaaaae527db0f836dedede64" shash=3D"H/=
+KJkpAnHAz1kYPjQxeO3mW/cIRRUqa/9NEZtOV2pG16uuc0TbFKYL0Ah5fV70u6rpFRLNXHn&#43=
+;mwCyX0U7TZ8zvx2LbnppsiRefkOUtidwQ2E4g29o1CE&#43;imR8e4bYsqTEJ0KOEBAl8QVrWv=
+&#43;nwuWmeB/xTpXyU8XwMK8fX0JiU=3D" style=3D"color: #388e9b;">
+<img src=3D"http://media.wow-europe.com/email/includes/social/callOfDuty_ho=
+me_icon.jpg"></a><img src=3D"http://media.wow-europe.com/email/includes/soc=
+ial/codmw_socialspacer.jpg" style=3D"padding-left: 5px; padding-right: 5px;=
+"><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%=
+2F%2Fclick.em.blizzard.com%2F%3Fqs%3D339022c064741994b212e162d5e7a42022fcb8=
+bd5970ab3cf1a286affd2bd971a9fa89411df275456ff129a7d0b481d714117f31444bd9dc&=
+amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640af=
+b435aaaaaaaaaaaa%7C1%7C0%7C637112540543615043&amp;sdata=3DzsGIVhVCiV9Nr02qa=
+iPtF35cqBGhjr56M%2F7orkRZli0%3D&amp;reserved=3D0" originalsrc=3D"http://cli=
+ck.em.blizzard.com/?qs=3D339022c064741994b212e162d5e7a42022fcb8bd5970ab3cf1=
+a286affd2bd971a9fa89411df275456ff129a7d0b481d714117f31444bd9dc" shash=3D"Od=
+V/arWQSuqa3/4T/EBqubhE/TAtBmiR7TCEp5Kewqps6tT/aH310eAZVARC6I4zPq&#43;7N5LXL=
+s7W6e6grhGKq8hoBhvE8iBFJMfDjgXhPm/KsqiP3dAN8fmMqL3J&#43;hrbTt&#43;0vP789bKy=
+4Es0XAyZXJcKZiJRoPcAuLVi&#43;8DBwFM=3D" style=3D"color: #388e9b;"><img src=
+=3D"http://media.wow-europe.com/email/includes/social/callOfDuty_facebook_i=
+con.jpg"></a><img src=3D"http://media.wow-europe.com/email/includes/social/=
+codmw_socialspacer.jpg" style=3D"padding-left: 5px; padding-right: 5px;"><a=
+ href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2=
+Fclick.em.blizzard.com%2F%3Fqs%3Df16711d84c4f4549825cb14f8d616f5682474365ac=
+7362369b13b91b5cb7f08a0a5a0333666db424ab28b6f2db38a363414e06594d52373f&amp;=
+data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640afb435=
+aaaaaaaaaaaa%7C1%7C0%7C637112540543635059&amp;sdata=3Dc71GETj%2Boy51Om9w%2B=
+mzTrhPiYOjbNu%2FuJOX7o3lB66M%3D&amp;reserved=3D0" originalsrc=3D"http://cli=
+ck.em.blizzard.com/?qs=3Df16711d84c4f4549825cb14f8d616f5682474365ac7362369b=
+13b91b5cb7f08a0a5a0333666db424ab28b6f2db38a363414e06594d52373f" shash=3D"K5=
+/f&#43;7emloIta6p91CdPEAxu/nGGj8LYIMNUPr8rDLmOfljyXWxTDmoMfxtHalg7aKIAONtS3=
+Diz58JgWZKVSf/PvQEMLAxZ2XWjTk5p2YudyA4oVWzXGcRBmrAiUDbG5n7if4TT/63f6FkOLsHC=
+qhVH1eD0KiyJi/yCdxbAoJc=3D" style=3D"color: #388e9b;"><img src=3D"http://me=
+dia.wow-europe.com/email/includes/social/callOfDuty_twitter_icon.jpg"></a>
+<img src=3D"http://media.wow-europe.com/email/includes/social/codmw_socials=
+pacer.jpg" style=3D"padding-left: 5px; padding-right: 5px;"><a href=3D"http=
+s://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fclick.em.bli=
+zzard.com%2F%3Fqs%3D339022c064741994efafe3f95220b44c8d02ac2e0cb5fae8757fc9c=
+4ecde12ce0a839ec21adde8cf6f909ce7af15ace86425a4b9b89fa240&amp;data=3D02%7C0=
+1%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640afb435aaaaaaaaaaaa%=
+7C1%7C0%7C637112540543645076&amp;sdata=3D5E%2BqeZNVezYUcXP2tAa0JU2Vt9g%2BYn=
+bWYQwvKMvdqHc%3D&amp;reserved=3D0" originalsrc=3D"http://click.em.blizzard.=
+com/?qs=3D339022c064741994efafe3f95220b44c8d02ac2e0cb5fae8757fc9c4ecde12ce0=
+a839ec21adde8cf6f909ce7af15ace86425a4b9b89fa240" shash=3D"WGse&#43;thPAET2p=
+w9UibtsqqlK7Jl3O1zDT9IpKxrBWdkVxCJLpYpqSQandNIF7/5LIo2vROCG&#43;7VuAcgYERWk=
+IUWrURFAx4mfzqIXr7KQUgKY5xl8BVzryuIe2hduTouD7zCDYe2lYl&#43;sRix20jf/JsQk&#4=
+3;j7tG0wRPyqVjfvS1z4=3D" style=3D"color: #388e9b;"><img src=3D"http://media=
+.wow-europe.com/email/includes/social/callOfDuty_youtube_icon.jpg"></a><img=
+ src=3D"http://media.wow-europe.com/email/includes/social/codmw_socialspace=
+r.jpg" style=3D"padding-left: 5px; padding-right: 5px;"><a href=3D"https://=
+apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fclick.em.blizzar=
+d.com%2F%3Fqs%3Df16711d84c4f45492e8cd795fdd79bc262839fdb08745de68a8b572db2a=
+272c1376eae9aa40d03e387702f1f9129fc3018d724eaab104c48&amp;data=3D02%7C01%7C=
+%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%=
+7C0%7C637112540543665086&amp;sdata=3D61A0vfLGE0Qbl9K6DHdiE0%2BL3qJPYwgVE8VJ=
+xje8Rpg%3D&amp;reserved=3D0" originalsrc=3D"http://click.em.blizzard.com/?q=
+s=3Df16711d84c4f45492e8cd795fdd79bc262839fdb08745de68a8b572db2a272c1376eae9=
+aa40d03e387702f1f9129fc3018d724eaab104c48" shash=3D"xD&#43;RFd&#43;igVGRa8Q=
+R1j&#43;syc6iIRAuSORuob/oXSjlA1QUpzXkNEzaE8fLcSRtnEsN9rxWe86PO5OZq8KuBcCQ0K=
+MHtHVlztGR&#43;m2wgAXMPkLhsWXCCHztIiTeEYaQsuXI2P/S0l8TPKTuDpyeU5MRZumbDw0LF=
+L9QkxTgCKi/lPg=3D" style=3D"color: #388e9b;"><img src=3D"http://media.wow-e=
+urope.com/email/includes/social/callOfDuty_insta_icon.jpg"></a><img src=3D"=
+http://media.wow-europe.com/email/includes/social/codmw_socialspacer.jpg" s=
+tyle=3D"padding-left: 5px; padding-right: 5px;">
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fclick.em.blizzard.com%2F%3Fqs%3D339022c064741994f66391e02317fb2c2e02a20c=
+25a7c0e895c280963dd6f4fbbe767ee6010f6054ec1d2d1efd748c994eef1a1f5da5bd33&am=
+p;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640afb4=
+35aaaaaaaaaaaa%7C1%7C0%7C637112540543685102&amp;sdata=3DcP0f0gxZKyUuzQvBIYE=
+K1oYX1ils%2FW4VYF%2BCAS9ASBc%3D&amp;reserved=3D0" originalsrc=3D"http://cli=
+ck.em.blizzard.com/?qs=3D339022c064741994f66391e02317fb2c2e02a20c25a7c0e895=
+c280963dd6f4fbbe767ee6010f6054ec1d2d1efd748c994eef1a1f5da5bd33" shash=3D"MO=
+q3c32l2OdCSTodf4eVj0whBN5w6jI4Udea0qWGw5wALzOer1Xo0wl5XBherpq9SO0nLfwAiOiqe=
+eD4fCXfDJkrOmTJNNoXnI5B2Qqs7WuaclNLBjzZOlx00fsKBlGTMOuAWFmgL5jEo2&#43;WwmGf=
+BMINWB4ceI3w6ZotpRYY5iA=3D" style=3D"color: #388e9b;"><img src=3D"http://me=
+dia.wow-europe.com/email/includes/social/callOfDuty_twitch_icon.jpg"></a></=
+td></tr></table></div><!--[if (gte mso 9)|(IE)]> </td> <![endif]--></center=
+><!--[if (gte mso 9)|(IE)]> </tr> </table> <![endif]--></td></tr></table><t=
+able width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><t=
+d style=3D"padding: 0; font-size: 0;"><img src=3D"http://media.wow-europe.c=
+om/email/includes/blizz-logo/blizz-logo-spacer1-codmw_de.jpg" alt=3D"" widt=
+h=3D"600" style=3D"border: 0; display: block !important; width: 100%; heigh=
+t: auto; max-width: 600px; max-height: 123px;"></td></tr></table><table wid=
+th=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#18=
+1818"><tr>
+<td style=3D"min-width: 20px; padding: 0;"></td><td align=3D"center" style=
+=3D"padding: 0; font-size: 0;"><a href=3D"https://apc01.safelinks.protectio=
+n.outlook.com/?url=3Dhttp%3A%2F%2Fclick.em.blizzard.com%2F%3Fqs%3Df16711d84=
+c4f45491708c6220e32e19add23a4ca3cbbe3b3ee0cf995fa6fda45b07879ea8c4bbe86d7ec=
+75dd61e1fa4429c82af40209ba62&amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508=
+d77a7ae457%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637112540543705119&=
+amp;sdata=3D7GuHmUkMMi20mcUTg8AXQT%2F54vvbs5y70S1UgZ%2FWnBw%3D&amp;reserved=
+=3D0" originalsrc=3D"http://click.em.blizzard.com/?qs=3Df16711d84c4f4549170=
+8c6220e32e19add23a4ca3cbbe3b3ee0cf995fa6fda45b07879ea8c4bbe86d7ec75dd61e1fa=
+4429c82af40209ba62" shash=3D"SV8K4kQodD3C9&#43;8RN8TDd1KIxHucCkx9HolmgIA4zv=
+C0YuE8ZnRwrQbdwZh2MLGI0x&#43;5OxzrOqU60sgvY7lQo&#43;SZO0NakHKtzQ4as6YuhqXqP=
+WtUbO4qxWchR/9lb6XOXWoaekPsVxocghjnllSq08c5fvGuicT97s/ONSW26to=3D" style=3D=
+"text-decoration: none; display: inline-block !important;"><img alt=3D"Bliz=
+zard Entertainment" src=3D"http://media.wow-europe.com/email/includes/blizz=
+-logo/blizz-logo-logo-codmw.jpg" style=3D"border: 0; display: block !import=
+ant; width: 100%; max-width: 180px; height: auto; max-height: 100px; paddin=
+g: 0;"></a></td><td style=3D"min-width: 20px; padding: 0;"></td></tr></tabl=
+e><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><t=
+r><td style=3D"padding: 0; font-size: 0;">
+<img src=3D"http://media.wow-europe.com/email/includes/blizz-logo/blizz-log=
+o-spacer2-codmw.jpg" alt=3D"" width=3D"600" style=3D"border: 0; display: bl=
+ock !important; width: 100%; height: auto; max-width: 600px; max-height: 56=
+px;"></td></tr></table><table width=3D"100%" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" background=3D"" bgcolor=3D""><tr><td style=3D"padding: 0=
+; font-size: 0;text-align:center; font-family:arial, sans-serif; font-size:=
+ 12px; background-color: #181818;"><!--[if (gte mso 9)|(IE)]> <table width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <![endif]--><center><!-=
+-[if (gte mso 9)|(IE)]> <td valign=3D"top" width=3D"600"> <![endif]--><div =
+style=3D"display: inline-block !important; width: 100%; max-width: 600px; v=
+ertical-align: top;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr>=
+<td width=3D"100%" style=3D"padding: 0; color: #e3e8e2; font-family: arial,=
+ sans-serif; font-size: 12; text-align: center; padding-top: 15px; padding-=
+bottom: 15px;"><a href=3D"https://apc01.safelinks.protection.outlook.com/?u=
+rl=3Dhttp%3A%2F%2Fclick.em.blizzard.com%2F%3Fqs%3D339022c064741994e35d073b4=
+1010ff79b6f329ff155ad9b7eebb9b76a638731e25044feea9c5b460cd5ac9701420430248e=
+180e0216c5c7&amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84d=
+f9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637112540543715124&amp;sdata=3DGUkJ=
+E6kI04GxF6NFxgdcOvTld2qOmR6fNeTh0F2UXoA%3D&amp;reserved=3D0" originalsrc=3D=
+"http://click.em.blizzard.com/?qs=3D339022c064741994e35d073b41010ff79b6f329=
+ff155ad9b7eebb9b76a638731e25044feea9c5b460cd5ac9701420430248e180e0216c5c7" =
+shash=3D"lBMQPwio&#43;cwqSkkeAeyYXRC2UkiW2&#43;MGgFxPDi5J239tLVLMgDYUpZYHtZ=
+IcA5M15SmgumATO8ZvBTSBaHwPBZZQ36Zr8&#43;MsHW2EN/t5P1zLCLx48hUazZP4PX0me2zlH=
+M7OHgqibFkvnY862eDJ/3JydV39Pc4rNjYCmRr1Asg=3D" style=3D"display: inline-blo=
+ck; color: inherit;">JOBS</a><span style=3D"display: inline-block; color: i=
+nherit;">&nbsp;|&nbsp;</span><a href=3D"https://apc01.safelinks.protection.=
+outlook.com/?url=3Dhttp%3A%2F%2Fclick.em.blizzard.com%2F%3Fqs%3D339022c0647=
+419941d537acf7cdee8fed2b32db26a161b35f4c823f7f213cfd923c442008340dc64471130=
+8d9d691a72545829d4b3263827&amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d7=
+7a7ae457%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637112540543735146&am=
+p;sdata=3DLMigST%2BiwrGNBQVNkmyipxrOQSCTjsaLz0A4%2BwWZpME%3D&amp;reserved=
+=3D0" originalsrc=3D"http://click.em.blizzard.com/?qs=3D339022c0647419941d5=
+37acf7cdee8fed2b32db26a161b35f4c823f7f213cfd923c442008340dc644711308d9d691a=
+72545829d4b3263827" shash=3D"UqUM/UhWNz015tuYb&#43;JmBkZjGZw1seStHU/lIkV9TV=
+1eJTGVq040gvMeBVLYWR3n6B&#43;&#43;JRkTveVNmwbbUn1p47mLTVPKarFJgLF&#43;w5Upv=
+YGJ0weoF5zwR8ba69JZkCxqymbr25DKVF4xpkC240Dl0BcTrm12fovUFznzJ8ntJPw=3D" styl=
+e=3D"display: inline-block; color: inherit;">IMPRESSUM</a><span style=3D"di=
+splay: inline-block; color: inherit;">&nbsp;|&nbsp;</span>
+<a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fclick.em.blizzard.com%2F%3Fqs%3D339022c0647419949fa0cb2e6d4e5898feabe9df=
+592629db5529c0f7c3e9c67c79f6f2121555d2fee9bdb831d25fd9862ab774d6213f2703&am=
+p;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640afb4=
+35aaaaaaaaaaaa%7C1%7C0%7C637112540543755162&amp;sdata=3DU2JIHdvV8juQFNgwR%2=
+BFqZam9wzbpXQyBb2O8n3gjg5I%3D&amp;reserved=3D0" originalsrc=3D"http://click=
+.em.blizzard.com/?qs=3D339022c0647419949fa0cb2e6d4e5898feabe9df592629db5529=
+c0f7c3e9c67c79f6f2121555d2fee9bdb831d25fd9862ab774d6213f2703" shash=3D"Lyzi=
+xNk0VP6hUSlkfJtWQo9y5xy5m5/XGJK8dqNQYB5enemuSTKQBajV/qQqocY4Sh/UMa3o8K0RvaT=
+uLQ1tg&#43;HtIllGr5IjHCpDOKddChcXxLBcBXaR5JRgp1ccUkr/heyyV5AquesyvyL/NdikPd=
+nfWVlGRnuRzPmDfiM7Sr4=3D" style=3D"display: inline-block; color: inherit;">=
+DATENSCHUTZ</a><span style=3D"display: inline-block; color: inherit;">&nbsp=
+;|&nbsp;
+</span><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhtt=
+p%3A%2F%2Fclick.em.blizzard.com%2F%3Fqs%3D339022c06474199482da995157f622466=
+520e44af8086ab4452961fbe44777568a9d14ef487d53f21983ffa8e081683b163ee07bfc04=
+779d&amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f=
+640afb435aaaaaaaaaaaa%7C1%7C0%7C637112540543765167&amp;sdata=3DULmt0GyXcOVP=
+uhXfudqu6QN3ZvplLZ8hYmteaWIqjlE%3D&amp;reserved=3D0" originalsrc=3D"http://=
+click.em.blizzard.com/?qs=3D339022c06474199482da995157f622466520e44af8086ab=
+4452961fbe44777568a9d14ef487d53f21983ffa8e081683b163ee07bfc04779d" shash=3D=
+"yu8kml5ue6EWH1UCeZMF68ou1OvUouuM8tSB35IbHrGqnjyttWPsGIsQ5RMB0RivnkqGYT2aiV=
+QxRYAX2eSsnqzWGPupwsNE9eYKDvEUrLqbPxW3ut90II&#43;dYuKWshmWbvhcLvJR00oyKsWY4=
+tnCoGf1GkaGqL096fPn4XlM9Fc=3D" style=3D"display: inline-block; color: inher=
+it;">BESTIMMUNGEN</a><span style=3D"display: inline-block; color: inherit;"=
+>&nbsp;|&nbsp;</span><a href=3D"https://apc01.safelinks.protection.outlook.=
+com/?url=3Dhttp%3A%2F%2Fclick.em.blizzard.com%2F%3Fqs%3D339022c064741994e9c=
+8580f78ed62c6d02b63d067e780c0d549f6fd668afbec7bfce5c384414b6f41a4f064e77922=
+13cd72dc16171947b8&amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457=
+%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637112540543785184&amp;sdata=
+=3Dj6AwktNxKCui1ByS%2BfupMkeqd8mL4ANZRzhYNeXQxig%3D&amp;reserved=3D0" origi=
+nalsrc=3D"http://click.em.blizzard.com/?qs=3D339022c064741994e9c8580f78ed62=
+c6d02b63d067e780c0d549f6fd668afbec7bfce5c384414b6f41a4f064e7792213cd72dc161=
+71947b8" shash=3D"cbV696v3kYhtrzju7abj34qVm&#43;JFghNVh2AQl/U6zkEjNiWZ1s&#4=
+3;0jkolYOz4&#43;Cxvx1nhbxjZDoS81NoeXXv9GhkmGFtOsBkzjzynXPxx09NvVSw94kuJbj9s=
+7A1zGryVOA088MTwepVGQiArqSIx&#43;gK&#43;c/rR59CeX&#43;8nxc8df8s=3D" style=
+=3D"display: inline-block; color: inherit;">KUNDENDIENST</a></td></tr></tab=
+le></div><!--[if (gte mso 9)|(IE)]> </td> <![endif]--></center><!--[if (gte=
+ mso 9)|(IE)]> </tr> </table> <![endif]--></td></tr></table></td></tr><tr><=
+td style=3D"padding: 0; padding-top: 15px; background-color: #181818;"><tab=
+le width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" backgrou=
+nd=3D"" bgcolor=3D""><tr><td style=3D"padding: 0; font-size: 0;text-align: =
+center;"><!--[if (gte mso 9)|(IE)]>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr>
+<![endif]--><!--[if (gte mso 9)|(IE)]> <td valign=3D"top" width=3D"600"> <!=
+[endif]--><div style=3D"display: inline-block !important; width: 100%; max-=
+width: 600px; vertical-align: top;"><table width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0"><tr><td width=3D"100%" style=3D"padding: 0;=
+ color: #e3e8e2; font-family: arial, sans-serif; font-size: 12; text-align:=
+ center; padding-right: 10px; padding-left: 10px;  padding-bottom: 30px; pa=
+dding-top: 20px;"><p style=3D"margin: 0; padding: 0; font-size: 11px; font-=
+family: arial, sans-serif; color: #777777;">Probleme beim Anzeigen dieser E=
+-Mail? <a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhtt=
+p%3A%2F%2Fview.em.blizzard.com%2F%3Fqs%3D6b32386748ad6def60384ce93d8a39f269=
+021d5aa12a7269cc59d94c85aadfd1b2a62c7b4fa38f84f29be03fa4c5f6b499655c84b1cb1=
+8961f3ff6b44240a7c1d1a0c24d75f52e01dd60d9ea7cfd4af6&amp;data=3D02%7C01%7C%7=
+C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C=
+0%7C637112540543795195&amp;sdata=3D4GB7JfvvCL%2BpEG1wFrLJK1zLcLN%2BIJW3LRak=
+y8Bw%2BFc%3D&amp;reserved=3D0" originalsrc=3D"http://view.em.blizzard.com/?=
+qs=3D6b32386748ad6def60384ce93d8a39f269021d5aa12a7269cc59d94c85aadfd1b2a62c=
+7b4fa38f84f29be03fa4c5f6b499655c84b1cb18961f3ff6b44240a7c1d1a0c24d75f52e01d=
+d60d9ea7cfd4af6" shash=3D"AQKV3YekjkTQMn5HaT3DKW3XO4czyMZnEgXcz5XIHFCU0n8Hz=
+kBQPFmo5fujqTSf7QTzdm8orDNNaqGVUEc1XIeV6bHj&#43;ClQmw7iJhT&#43;w0vmoFuDEFGY=
+wkcers&#43;4oM6BtdoHslPvEKTZbTVxnxNghN88brStKyhs4VG9mA4MEDQ=3D" target=3D"_=
+blank" style=3D"text-decoration: none;">Hier klicken</a></p></td></tr></tab=
+le></div><!--[if (gte mso 9)|(IE)]> </td> <![endif]-->
+<!--[if (gte mso 9)|(IE)]> </tr> </table> <![endif]--></td></tr></table><ta=
+ble width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" backgro=
+und=3D"" bgcolor=3D""><tr><td style=3D"padding: 0; font-size: 0;text-align:=
+ center; background-color: #181818;"><!--[if (gte mso 9)|(IE)]> <table widt=
+h=3D"100%" cellpadding=3D"0" cellspacing=3D"0"> <tr> <![endif]--><!--[if (g=
+te mso 9)|(IE)]> <td valign=3D"top" width=3D"300"> <![endif]--><div style=
+=3D"display: inline-block !important; width: 100%; max-width: 300px; vertic=
+al-align: top;"><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0"><tr><td width=3D"100%" style=3D"padding: 0; color: #e3e8e2; fon=
+t-family: arial, sans-serif; font-size: 12; text-align: left; padding-right=
+: 10px; padding-left: 10px;">
+<p style=3D"margin: 0; padding: 0; padding-bottom: 12px; font-size: 11px; f=
+ont-family: arial, sans-serif; color: #777777;">Falls du nicht l=C3=A4nger =
+Newsletter oder Informationen zu Produkten von Blizzard erhalten m=C3=B6cht=
+est, antworte bitte auf diese E-Mail mit dem Wort =E2=80=9EAbmelden=E2=80=
+=9C im Inhalt der E-Mail. Alternativ kannst du <a href=3D"https://apc01.saf=
+elinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fclick.em.blizzard.com%2F%=
+3Fqs%3D339022c06474199444c4383e7e4cd27fbda940ea96fbb42071c008d685893ac2bf00=
+44f53f477e0954c274851238969484a169695a7b8ac9&amp;data=3D02%7C01%7C%7C790ec3=
+cd90874ceae09508d77a7ae457%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637=
+112540543815211&amp;sdata=3DYifWg2yKb0Rc3daYlYavoaxc7TOzbq0fbd3e5dhUacY%3D&=
+amp;reserved=3D0" originalsrc=3D"http://click.em.blizzard.com/?qs=3D339022c=
+06474199444c4383e7e4cd27fbda940ea96fbb42071c008d685893ac2bf0044f53f477e0954=
+c274851238969484a169695a7b8ac9" shash=3D"GWW7rxBHqCdN5741/dP9ztLg&#43;ybbIs=
+DN7UVx2jbVC78fXOr8k/qCLvFcrkEsxYm/Uu/zRc0kWvMokb7qk&#43;6OnGTwihtO3rhlVxR7Z=
+NbTjba1pS5zF9JJIBwJ9Itf6kk1Kk&#43;Kn2Mnd0p/r9jmak1IjjZPWvXPp7qQZaElWDHDDc8=
+=3D">hier klicken</a>, um deine Einstellungen zu verwalten.<br><br>DATENSCH=
+UTZ<br><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhtt=
+p%3A%2F%2Fclick.em.blizzard.com%2F%3Fqs%3D339022c06474199494feb4147a0ef67ae=
+bfef78d47961f4113f4dc5317c945d75a86a656263cc15a4fc21be38e3201cd744a8720b50f=
+431b&amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f=
+640afb435aaaaaaaaaaaa%7C1%7C0%7C637112540543835221&amp;sdata=3DI1Zh5kZpjZgs=
+uMNG86wcxPajhEiLmD26%2FdcCJCI9CyE%3D&amp;reserved=3D0" originalsrc=3D"http:=
+//click.em.blizzard.com/?qs=3D339022c06474199494feb4147a0ef67aebfef78d47961=
+f4113f4dc5317c945d75a86a656263cc15a4fc21be38e3201cd744a8720b50f431b" shash=
+=3D"jAmq1rEhvej2x/gQbqMSiE1B0FNkPLeniy2&#43;mwfXd&#43;A&#43;6fRGi/dOssDaP4F=
+Yvthqj/HsBi9fbm&#43;oQcEpAU/vFxffoCmKA5Izhw7E7kyOCbOax6dKbkpas2jMsRh66J7gXk=
+KqDRm4TOpmlqgIo/kgvdPTLeBPvAXxY/8ogFzWDjU=3D" style=3D"color: #388e9b;color=
+: #aeadae">https://www.blizzard.com/de-de/legal/8c41e7e6-0b61-42c4-a674-c91=
+d8e8d68d3</a><br><br>Diese E-Mail wurde an EZIOGAMING@OUTLOOK.DE verschickt=
+.<br><br>Blizzard Entertainment SAS =E2=80=93 RCS Versailles 489 952 457
+<br>145 rue Yves le Coz, 78000 Versailles
+<br><br><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dht=
+tp%3A%2F%2Fclick.em.blizzard.com%2F%3Fqs%3D339022c064741994bda8db4ea6a86d79=
+b3be1502139bcae419d80146ea6ac3dbad645d4fc3746e411a4c586e43f3fb0a3da3a7e8366=
+6431b&amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9=
+f640afb435aaaaaaaaaaaa%7C1%7C0%7C637112540543845232&amp;sdata=3DsFqB4iOZqdL=
+2TaZcFwOxlLIDQ%2FvcKnmJL73RCddjh7k%3D&amp;reserved=3D0" originalsrc=3D"http=
+://click.em.blizzard.com/?qs=3D339022c064741994bda8db4ea6a86d79b3be1502139b=
+cae419d80146ea6ac3dbad645d4fc3746e411a4c586e43f3fb0a3da3a7e83666431b" shash=
+=3D"WJTu/bAsSQxDpO97cQQ7CS6K/ajdM&#43;WXqkELD&#43;n8/AYwAzU0ScxuD9YjuBTDSRf=
+kl3ETZx8OMut3s3q3v/wL0FYCHRyzMJ8QSPxQn38eBYvmMpWsScg8yZh&#43;O9zrSZW2w&#43;=
+QStDR43&#43;jWuYEk5CYdNUXrOCnDb1sKRt06eWiFMx8=3D" style=3D"color: #388e9b;"=
+><img src=3D"http://media.wow-europe.com/ratings/de-usk/de-usk-18.png" alt=
+=3D"USK 18" width=3D"60" height=3D"60" style=3D"display: block; margin-left=
+:0; margin-bottom: 10px;" align=3D"left" border=3D"0" hspace=3D"5"></a><spa=
+n style=3D"font-size: 11px; font-family: arial, sans-serif;">=C2=A9 2019 Bl=
+izzard Entertainment, Inc. Alle Rechte vorbehalten.<br><br>Alle hier genann=
+ten Marken sind Eigentum ihres jeweiligen Inhabers.</span></p></td></tr></t=
+able></div><!--[if (gte mso 9)|(IE)]> </td> <![endif]--><!--[if (gte mso 9)=
+|(IE)]> <td valign=3D"top" width=3D"300"> <![endif]--><div style=3D"display=
+: inline-block !important; width: 100%; max-width: 300px; vertical-align: t=
+op;">
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr>=
+<td width=3D"100%" style=3D"padding: 0; color: #e3e8e2; font-family: arial,=
+ sans-serif; font-size: 12; text-align: left; padding-right: 10px; padding-=
+left: 10px;"><p style=3D"margin: 0; padding: 0; padding-bottom: 12px; font-=
+size: 11px; font-family: arial, sans-serif; color: #777777;">KUNDENDIENST<b=
+r><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%=
+2F%2Fclick.em.blizzard.com%2F%3Fqs%3D339022c06474199491f007f45b4b156688cc5c=
+35803d09915d93fc82f9377a7ce4bd86b4e1cb04a68f823dd2443d23a8e58d87728bc2f7e4&=
+amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640af=
+b435aaaaaaaaaaaa%7C1%7C0%7C637112540543865249&amp;sdata=3D7Lfmkup3xFRwx8A5z=
+Bx%2FQahwNl%2FwjLYlRNVijSlstT0%3D&amp;reserved=3D0" originalsrc=3D"http://c=
+lick.em.blizzard.com/?qs=3D339022c06474199491f007f45b4b156688cc5c35803d0991=
+5d93fc82f9377a7ce4bd86b4e1cb04a68f823dd2443d23a8e58d87728bc2f7e4" shash=3D"=
+m2PnnerecfdVaN4LLEFkwNH1PWdAugnymPWHJHUdYCF0yVCzaQAwtj&#43;&#43;mKHAjjXZnUm=
+pRxZ1TopMoMIS3biegwLmD3mNW/nrxOWVOv1Nz6Nhg7zpgmshAS&#43;hCqCKZjWNo67p6thnTU=
+ee5PC7eFaec4HRs92W4JqxMHwrea/mqp0=3D" style=3D"color: #388e9b;color: #aeada=
+e">http://battle.net/support/de/</a><br><br>Besuche Blizzard im Internet:<b=
+r><a href=3D"https://apc01.safelinks.protection.outlook.com/?url=3Dhttp%3A%=
+2F%2Fclick.em.blizzard.com%2F%3Fqs%3D339022c064741994d0cc1d9b29883a867170bb=
+98467bf8a57af3afc5313c394c2f6fb167816729eff13ada144ce53b214775b4fabba3e2ef&=
+amp;data=3D02%7C01%7C%7C790ec3cd90874ceae09508d77a7ae457%7C84df9e7fe9f640af=
+b435aaaaaaaaaaaa%7C1%7C0%7C637112540543875260&amp;sdata=3Da0H4E8Da3%2FVRoRh=
+qIbnIOPgHOMT64YP0xXIimNH7aa0%3D&amp;reserved=3D0" originalsrc=3D"http://cli=
+ck.em.blizzard.com/?qs=3D339022c064741994d0cc1d9b29883a867170bb98467bf8a57a=
+f3afc5313c394c2f6fb167816729eff13ada144ce53b214775b4fabba3e2ef" shash=3D"JQ=
+gkhnlmkcfbSW/GLWF7vlYtOZgj9UF0dFB1GYc6czLYRsy/K1DqdefUcPcPT9OM&#43;JMN1at06=
+kQzKK3j7dJAt0ogDIYOlPdWIQn25n0/qveiJvFM9v16g/cCbPEuOpqg0wLyuOb9tgokGnqgXvkc=
+S/I8EIW7c6DRIwAyDlc5uQ8=3D" style=3D"color: #388e9b;color: #aeadae">blizzar=
+d.com/de/</a></p></td></tr></table></div><!--[if (gte mso 9)|(IE)]> </td> <=
+![endif]--><!--[if (gte mso 9)|(IE)]> </tr> </table> <![endif]-->
+</td></tr>
+</table></td></tr></table><!--[if gte mso 9]> </td> </tr> </table> <![endif=
+]--></div></center><img src=3D"http://click.em.blizzard.com/open.aspx?ffcb1=
+0-fefa17737d6601-fe2e16707462037a731672-fe9d13727167047d77-ff9d1670-fe36167=
+07564077a7c1771-ff5f12717c" width=3D"1" height=3D"1"></body></html>
+
+
+
+--5a8c6a160eacd760d1fa6f154e93d5ca2f5a58df048653ab35b11bc804d8d346--

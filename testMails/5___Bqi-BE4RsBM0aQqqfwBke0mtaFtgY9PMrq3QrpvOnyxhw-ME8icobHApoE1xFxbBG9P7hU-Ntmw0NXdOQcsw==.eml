@@ -1,0 +1,918 @@
+Arc-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is 209.85.219.199) smtp.rcpttodomain=outlook.de smtp.mailfrom=youtube-subscriptions.bounces.google.com; dmarc=pass (p=reject sp=reject pct=100) action=none header.from=youtube.com; dkim=pass (signature was verified) header.d=youtube.com; arc=pass (0 oda=1 ltdi=1 dkim=[1,1,header.i=@youtube.com] dmarc=[1,1,header.from=youtube.com])
+Arc-Authentication-Results: i=1; gmr-mx.google.com; dkim=pass header.i=@youtube.com header.s=20161025 header.b=aV1fcLpo; spf=pass (google.com: domain of 3smipxqcldbmghkxierrhnmnux.vhfxsbh2wzx-1uxvitzxl.ienlzhhzex.vhf@youtube-subscriptions.bounces.google.com designates 2607:f8b0:4864:20::b48 as permitted sender) smtp.mailfrom=3smiPXQcLDbMghkXierrhnmnUX.VhfXsbh2wzx-1uxviTZXl.ienlZhhZeX.Vhf@youtube-subscriptions.bounces.google.com; dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=youtube.com
+Arc-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=arcselector9901; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=ieMi7TJm3twAOHwICWoqoMvCt9Zf7LBL+goO3QG3+iI=; b=MQJoJsYqXYqhByzJfwKaBPkTghBroNKazhim4i502aD0rGSr0on4/DaFyzSY5SvQAcPgd5ZqKF7UWaNGX03XkycZNs+IBaOLMYMx2wCbU2mx9vNxs+jYRpTDpDpxDW6AZmccef41AA+VLOtFOK4GiZBh1cozmVKuNzbXiCAOEN7u2VGm4Ve+w6KZh2UJVyKOSznaPg6sseqU1qApbB0TVJkyKypkWdost0m7FYKoWkwsIOnG8CaWDBs6g1v84Xxe7KcihaOcAwA0uISqRTzB/ovJiV1zRv2qr/kP7Q9KEYwJAiEcPy94YffKFbzrQ5n7Xi6zqlNsgugm112wiq5u7A==
+Arc-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816; h=to:from:subject:message-id:list-unsubscribe:date:mime-version :dkim-signature; bh=ieMi7TJm3twAOHwICWoqoMvCt9Zf7LBL+goO3QG3+iI=; b=GP9UZtZpDr9J3ihAtqoa+TVH9i45aiUhvYeW52tAsFjyAz7BcBjKqhyBYELIEFbcNd xCVPcei6z6VAJAMgEbMhW1jOnTbjg0UrGAIt3hNqVkKT4oSBtgANRFd9yaDkHVl7v7zE E8gY1A/x6OzjzganymAS0vuQockJNC2TNxcuk+8Ii0RB58b+DvEvNeMHr8mGgrz8ufsO +BTXw7VqFd4NUb94sMPL3RhW3/vW6pgxf62saD+u0c18R6UKqlmk/gIIOqECrb9HroCz T02HTdclTl6a7xYvrN24x1kvuCkZ2unGtjcgkFb3PRRmkDLeWFyFcrlB9Vsd2+y1o05m tFjw==
+Arc-Seal: i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=pass; b=JkwEpbtMiB7WrAtT/bqqwXwX7BBLgYd09seLrU5w3O5HHszFcvuEd6ynjFUWoJD/ajwZi39HCv0N/ZHaEnKZsjashmfIP2TereorZ3iRvVn5A3uDXOXqTanrGrQX2FRwBXnxcDhZ7Xe2LVV3DC9LvpaZaejIJ9uVfHMGrs1N/0cUlPQfD7fuxRVFnWQnNT7LuqQiW1RatoAqJXzOA9/gz3pgo208bcOiozKeIl6NVDTdacN/oGZlsGl7lnYpZj+Fu663VRAdBCGNl2KWkAfuajHlEYUnoae5Pvcbq2JikDnqG6rwtq3TFLx7XMQnd5vk0/1UZeoLBe6y0RVzORAetA==
+Arc-Seal: i=1; a=rsa-sha256; t=1569679538; cv=none; d=google.com; s=arc-20160816; b=Mh5lmP7zLyT4RbbNggwhmasuk4kYzzaBDM9hPT8dgzQ6Gvxi+Ktbkle/c0hua050Kq l4ODn9B7xbZk/S9hq+rgyWM3YzqycdfJz5kfBIu8bva3xbemstjPpu7l1LNDihidhb4p swI6PV0779uI7ggcWNQBL72ydK8vUBFYc0WpqJ+FDj8fkyOJ0TX1yOS71EiJwMwFJe53 5pNtAGZ3MRMXFAsxCtmvrtpVs8uezx01JrG7mBEqjKwUNcdxBkML+bazkKmGoSyaMwR+ adGhVg1zBBv4g7mXQBduJORhVS8KslCCwNaEuGKKGFJvCMKMz1hbpj9pYNNzV3CA2xbp MrIg==
+Authentication-Results: spf=pass (sender IP is 209.85.219.199) smtp.mailfrom=youtube-subscriptions.bounces.google.com; outlook.de; dkim=pass (signature was verified) header.d=youtube.com;outlook.de; dmarc=pass action=none header.from=youtube.com;
+Authentication-Results-Original: gmr-mx.google.com; dkim=pass header.i=@youtube.com header.s=20161025 header.b=aV1fcLpo; spf=pass (google.com: domain of 3smipxqcldbmghkxierrhnmnux.vhfxsbh2wzx-1uxvitzxl.ienlzhhzex.vhf@youtube-subscriptions.bounces.google.com designates 2607:f8b0:4864:20::b48 as permitted sender) smtp.mailfrom=3smiPXQcLDbMghkXierrhnmnUX.VhfXsbh2wzx-1uxviTZXl.ienlZhhZeX.Vhf@youtube-subscriptions.bounces.google.com; dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=youtube.com
+Content-Type: multipart/mixed; boundary=4b183bbec5be0fcff5c5a54ecaa0c8ac90da7c4ac4b23c33b4bfa4e9dc2ede82
+Date: Sat, 28 Sep 2019 07:05:38 -0700
+Delivered-To: maraltez@validmax.tech
+Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=youtube.com; s=20161025; h=mime-version:date:list-unsubscribe:message-id:subject:from:to; bh=ieMi7TJm3twAOHwICWoqoMvCt9Zf7LBL+goO3QG3+iI=; b=aV1fcLpoTuJe4YcJ9o/V++9EnK1Q0yIweXBK9jxDRm7pGKXVOzLqSw7Hp/mLEqTudj ll4aeRUtzx1QDxHTvwRz3l7zTr/620Rv/wEr8lfhwOJ4tG/9eSfr7jAKEiwXqgUu4yun iUI/OCVsDZwvG/R/ABVNKKlX8PCIPF0sHA1LR1EmWOy+nd6mNFL7SjVgKeh88946qpvl iapQsCj794z47B7+RLc5BcI2Y0zrhV0/6AjRWJ75PMuwyfn0Btwr9ihyko8WDuFUGqgU WOeRT4s6WsnhXhEPt7/J5sXQrpzTMNqh4J3AjQq7e+TY+fjrEq1kkvGRzz6/s6TWZu1m sjvw==
+From: "YouTube" <noreply@youtube.com>
+List-Unsubscribe: <mailto:yt-mailto@google.com?subject=http%3A%2F%2Fwww.youtube.com%2Fchannel_updates_unsubscribe%3Fuid%3DDeDpSxjwB0Vni3_OWZws2A%26channel_id%3DUCoYWXymL7cz7rRpQxmDQySQ%26token%3DrY4JmhP9M2BZV9zV8S--TxnWqeh8MTU2OTY3OTMzNEAxNTY5Njc5MzM0%26feature%3Dem-uploademail>, <https://eur02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.youtube.com%2Fchannel_updates_unsubscribe%3Fuid%3DDeDpSxjwB0Vni3_OWZws2A%26channel_id%3DUCoYWXymL7cz7rRpQxmDQySQ%26token%3DrY4JmhP9M2BZV9zV8S--TxnWqeh8MTU2OTY3OTMzNEAxNTY5Njc5MzM0%26feature%3Dem-uploademail&amp;data=02%7C01%7C%7Ca8df28c6db2a4608b94508d7441cf16e%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637052763401764441&amp;sdata=V27gNgzmiysAdpYGqpxeNn4%2Bc6YbW7O0EVDbViF9rrM%3D&amp;reserved=0>
+Message-Id: <0000000000004a1fc405939d7f6e@google.com>
+Mime-Version: 1.0
+Received: from AM5EUR02HT024.eop-EUR02.prod.protection.outlook.com (2603:10a6:203:a3::17) by AM6PR09MB3538.eurprd09.prod.outlook.com with HTTPS via AM5PR0602CA0007.EURPRD06.PROD.OUTLOOK.COM; Sat, 28 Sep 2019 14:05:40 +0000
+Received: from AM5EUR02FT049.eop-EUR02.prod.protection.outlook.com (10.152.8.51) by AM5EUR02HT024.eop-EUR02.prod.protection.outlook.com (10.152.9.180) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.2305.15; Sat, 28 Sep 2019 14:05:39 +0000
+Received: from mail-yb1-f199.google.com (209.85.219.199) by AM5EUR02FT049.mail.protection.outlook.com (10.152.9.233) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA) id 15.20.2305.15 via Frontend Transport; Sat, 28 Sep 2019 14:05:39 +0000
+Received: by mail-yb1-f199.google.com with SMTP id b15so4789130ybr.18 for <eziogaming@outlook.de>; Sat, 28 Sep 2019 07:05:39 -0700 (PDT)
+Received: from mail-yb1-xb48.google.com (mail-yb1-xb48.google.com. [2607:f8b0:4864:20::b48]) by gmr-mx.google.com with ESMTPS id g4si11683ywe.2.2019.09.28.07.05.38 for <ezio9364-8142@pages.plusgoogle.com> (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128); Sat, 28 Sep 2019 07:05:38 -0700 (PDT)
+Received: by mail-yb1-xb48.google.com with SMTP id 133so2546356ybn.19 for <ezio9364-8142@pages.plusgoogle.com>; Sat, 28 Sep 2019 07:05:38 -0700 (PDT)
+Received-Spf: Pass (protection.outlook.com: domain of youtube-subscriptions.bounces.google.com designates 209.85.219.199 as permitted sender) receiver=protection.outlook.com; client-ip=209.85.219.199; helo=mail-yb1-f199.google.com;
+Received-Spf: pass (google.com: domain of 3smipxqcldbmghkxierrhnmnux.vhfxsbh2wzx-1uxvitzxl.ienlzhhzex.vhf@youtube-subscriptions.bounces.google.com designates 2607:f8b0:4864:20::b48 as permitted sender) client-ip=2607:f8b0:4864:20::b48;
+References: <__Bqi-BE4RsBM0aQqqfwBke0mtaFtgY9PMrq3QrpvOnyxhw-ME8icobHApoE1xFxbBG9P7hU-Ntmw0NXdOQcsw==@protonmail.internalid>
+Reply-To: "YouTube" <noreply@youtube.com>
+Return-Path: 3smiPXQcLDbMghkXierrhnmnUX.VhfXsbh2wzx-1uxviTZXl.ienlZhhZeX.Vhf@youtube-subscriptions.bounces.google.com
+Subject: DiePixelHelden hat gerade ein Video hochgeladen
+To: "Ezio9364" <ezio9364-8142@pages.plusgoogle.com>
+X-Eopattributedmessage: 0
+X-Eoptenantattributedmessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-Forefront-Antispam-Report: EFV:NLI;
+X-Gm-Message-State: APjAAAV8HbgU9gauHrlfY/d8pDvqgksW4cl5x0+wmgLySDC/go5T9raP G6q4m2gFseMujAQrkI0FvxQ9
+X-Google-Dkim-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:dkim-signature:mime-version:date :list-unsubscribe:message-id:subject:from:to; bh=ieMi7TJm3twAOHwICWoqoMvCt9Zf7LBL+goO3QG3+iI=; b=N+f3QkItfcyChJQRDcKY71PE9sEC/6iHnk5xFZbL4JiR5wRbnfoI1fvvKcA+QOLxWM 0d6dENxwCELX6OAbQqYO/o+h0qiTL4EmYxVXIbN6FsDLdnMX9lL2o7hIRLG+TSRa9B41 0U+R+TiZNgYpz0sE9sv98vziOUQBg9wsDacDOgOQgdBZx4m3Z+60CYtPem0aRLjQwTF5 cErlUVSev1ijHZThD6aKQceYHB5Lf1cghQbLFNNN0lHn2hh4sYIP9wK7yaqxWPhaAfyu VZw+zt9cFlIdUD8I8dTWBTzBKjgz6JAOdEiTvctTxuVmfae6JhviLBMi3jJ+zdoRllgX aNSw==
+X-Google-Smtp-Source: APXvYqzY7rUPYDe4pDwVEQkDReIz/HpcC1u3XSjJUPYV5ZjHQgnUI8uHUJHBO9kH7l2ZTlY6mnvN
+X-Incomingheadercount: 25
+X-Incomingtopheadermarker: OriginalChecksum:24BDEF8AF204C6AE1D328C1BF81FACF885C62EF6EE96F743BC4194AE22F7DF40;UpperCasedChecksum:D0E4D76477FD1058C99777C7486D7555D41681BE505CFAD4C69E68266BB670C1;SizeAsReceived:5956;Count:25
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0z
+X-Message-Info: 5vMbyqxGkdfEYp2cHbQwfa0HmAq0sey4wRjKDdOROkDn7MCsiQiWAfo++hVRdRB5P2/8nIya3XGxvv0pePA+xTaOLA+BgCEs/FjURvcy3rziBDbyo5dKndRL6OEfs9mFQdCOUwdkIzhmaiSnRBBdyHTu19G/ttRa6al4CseN2kxQqD9I9lorhLUGJD5PTKDMDOb79x+mp5A3W0xXfT7XfA==
+X-Microsoft-Antispam: BCL:1;
+X-Microsoft-Antispam-Mailbox-Delivery: abwl:0;wl:0;pcwl:0;kl:0;iwl:0;ijl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000261)(5061607266)(5061608174)(2017053109075)(4900115)(4920090)(6515079)(4950130)(4990090);
+X-Microsoft-Antispam-Message-Info: QXbWfzK8aotZU8u3lPg5Q6qRujsUQ7hW5YGgmLLjdG1NKCSFZWXjQJ2m/yCbeILQx3CXw8zfhxSDr6trJtmkHbwbY7vmVvwX0buXP3ndW7KMONlkitBZDRt7bFQrfUe9Kw4t61DbhMs3LNHv+TJEWsSQedAZWNW/sI9vp4g6eUF1Q3OUkFx1vq3dpbgc8lSCDMJEM8Q4DHLttR00WeEbu4MEtGraoKNQZA3xTHX18wckiqsV9tzavtreh4Qz+fq+JIbkueqURLpXjs5jL2Cc3NakIpfVNh7bBT+gKTeuMsPh2EUn4YbA+Z+ClIVsRusYRLE9wMJF8USl1oL+gegkXrLdm8Ah8eDT9GPNeqaa6CfbukWs5MIEsm1fhmrDJzmcuAd2eS5LD7UxvIQTJotWM0UpFocgdWo0YM7pUEF7O1DfOQ2pOPaJsqVJHThrcTOYzg6OEdKNAmxjiick59rppDAddGVGUMpXAYKp5tEnKiSRVipAVsaeuD+AmA8qBvnBSeKVjl2gEe2GL3MVOi6w+ZG2kk7y+lGQhN1PUM8aQd2GypEh6emQyfUTh/PQvpysz1aNI+TKwElD7JpuExc6aE+RK2SalUp1vGaVNmN87VxakUlf3nw/ucVZ5WUC++c8pZQnBUbqBItKmL2XVlRPqUkgqbbpaHF8RFGxjEHeAyOF99Cg/l3Z2M9jN62OY7NiCP12kU9uv8p37KgcVDWCPOn60APsDn0V7hDCNQvkf2zqykxkCW+S8r1tMJTAvCJE1s3Laq8cd+87NyLy8On/uxyH+DEdji4ecmhLqyFWlhbETIoBqnSgHg3wi6P6RgwX
+X-Ms-Exchange-Atpmessageproperties: SA|SL
+X-Ms-Exchange-Atpsafelinks-Stat: 0
+X-Ms-Exchange-Crosstenant-Fromentityheader: Internet
+X-Ms-Exchange-Crosstenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-Ms-Exchange-Crosstenant-Network-Message-Id: a8df28c6-db2a-4608-b945-08d7441cf16e
+X-Ms-Exchange-Crosstenant-Originalarrivaltime: 28 Sep 2019 14:05:39.5462 (UTC)
+X-Ms-Exchange-Crosstenant-Rms-Persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-Ms-Exchange-Eopdirect: true
+X-Ms-Exchange-Organization-Authas: Anonymous
+X-Ms-Exchange-Organization-Authsource: AM5EUR02FT049.eop-EUR02.prod.protection.outlook.com
+X-Ms-Exchange-Organization-Expirationinterval: 1:00:00:00.0000000
+X-Ms-Exchange-Organization-Expirationintervalreason: OriginalSubmit
+X-Ms-Exchange-Organization-Expirationstarttime: 28 Sep 2019 14:05:39.6553 (UTC)
+X-Ms-Exchange-Organization-Expirationstarttimereason: OriginalSubmit
+X-Ms-Exchange-Organization-Messagedirectionality: Incoming
+X-Ms-Exchange-Organization-Network-Message-Id: a8df28c6-db2a-4608-b945-08d7441cf16e
+X-Ms-Exchange-Organization-Pcl: 2
+X-Ms-Exchange-Processed-By-Bccfoldering: 15.20.2305.000
+X-Ms-Exchange-Purlcount: 9
+X-Ms-Exchange-Safelinks-Url-Keyver: 1
+X-Ms-Exchange-Safelinks-Url-Keyver: 1
+X-Ms-Exchange-Safelinks-Url-Keyver: 1
+X-Ms-Exchange-Transport-Crosstenantheadersstamped: AM5EUR02HT024
+X-Ms-Exchange-Transport-Endtoendlatency: 00:00:00.7145781
+X-Ms-Office365-Filtering-Correlation-Id: a8df28c6-db2a-4608-b945-08d7441cf16e
+X-Ms-Publictraffictype: Email
+X-Ms-Traffictypediagnostic: AM5EUR02HT024:
+X-Ms-Userlastlogontime: 9/28/2019 2:03:58 PM
+X-No-Auto-Attachment: 1
+X-Original-To: maraltez@validmax.tech
+X-Originatororg: outlook.com
+X-Pm-Content-Encryption: on-delivery
+X-Pm-Conversationid-Id: YCPYN8_HbIieAm47qGgKhpnP61aaySQ4DfXBWleO9uQtZlsv3HPgudh3U-r6qz02HYagbHGCKqirJaRlfA6qSQ==
+X-Pm-Date: Sat, 28 Sep 2019 16:05:38 +0200
+X-Pm-External-Id: <0000000000004a1fc405939d7f6e@google.com>
+X-Pm-Internal-Id: __Bqi-BE4RsBM0aQqqfwBke0mtaFtgY9PMrq3QrpvOnyxhw-ME8icobHApoE1xFxbBG9P7hU-Ntmw0NXdOQcsw==
+X-Pm-Origin: import
+X-Pm-Spam-Action: dunno
+X-Pm-Spamscore: 0
+X-Received: by 2002:a81:6c8:: with SMTP id 191mr6520886ywg.181.1569679538578; Sat, 28 Sep 2019 07:05:38 -0700 (PDT)
+X-Received: by 2002:a81:7044:: with SMTP id l65mr6940833ywc.384.1569679538403; Sat, 28 Sep 2019 07:05:38 -0700 (PDT)
+X-Received: by 2002:a25:cdc6:: with SMTP id d189mr9068974ybf.315.1569679538265; Sat, 28 Sep 2019 07:05:38 -0700 (PDT)
+X-Sender-Ip: 209.85.219.199
+X-Sid-Pra: NOREPLY@YOUTUBE.COM
+X-Sid-Result: PASS
+
+
+--4b183bbec5be0fcff5c5a54ecaa0c8ac90da7c4ac4b23c33b4bfa4e9dc2ede82
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+
+<html lang=3D"de"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>
+DiePixelHelden hat gerade ein Video hochgeladen
+</title>
+<style type=3D"text/css">
+* {
+font-family: arial, Arial, sans-serif;
+}
+@media only screen and (max-device-width: 480px) {
+body.suppress-border-on-mobile {
+margin: 0 !important;
+border: 0 !important;
+padding: 0 !important;
+}
+table.suppress-on-mobile, td.suppress-on-mobile, div.suppress-on-mobile, im=
+g.suppress-on-mobile, span.suppress-on-mobile {
+display: none !important;
+width: 0px !important;
+height: 0px !important;
+line-height: 0px !important;
+margin: 0 !important;
+border: 0 !important;
+padding: 0 !important;
+}
+table.outer-container-width, td.outer-container-width {
+width: 640px !important;
+}
+td.outer-container-padding-width {
+width: 20px !important;
+}
+table.inner-container-width, td.inner-container-width {
+width: 600px !important;
+}
+table.header-container-width {
+width: 600px !important;
+height: 100px !important;
+}
+td.header_left_padding_width {
+width: 25px !important;
+}
+td.logo_container_size {
+width: 575px !important;
+height: 100px !important;
+}
+img.header_logo_size {
+height: 47px !important;
+}
+table.footer-padding-width, td.footer-padding-width {
+width: 30px !important;
+}
+table.footer-width, td.footer-width {
+width: 540px !important;
+}
+td.footer-font, div.footer-font {
+font-size: 20px !important;
+line-height: 30px !important;
+}
+table.footer-content-padding-height, td.footer-content-padding-height {
+height: 30px !important;
+}
+table.large-section-padding-height, td.large-section-padding-height {
+height: 16px !important;
+}
+table.small-section-padding-height, td.small-section-padding-height {
+height: 20px !important;
+}
+table.content-container-padding-width, td.content-container-padding-width {
+width: 30px !important;
+}
+table.content-container-padding-height, td.content-container-padding-height=
+ {
+height: 30px !important;
+}
+table.content-container-width, td.content-container-width {
+width: 540px !important;
+}
+span.video-title-font-class, td.video-title-font-class, div.greeting-font, =
+td.greeting-font {
+font-size: 24px !important;
+line-height: 30px !important;
+}
+a.video-link-font-class, div.video-link-font-class, td.video-link-font-clas=
+s {
+font-size: 20px !important;
+line-height: 30px !important;
+}
+span.meta-data-font, div.meta-data-font, a.meta-data-font, td.meta-data-fon=
+t {
+display: block !important;
+font-size: 20px !important;
+line-height: 36px !important;
+}
+td.small-meta-data-font {
+font-size: 25px !important;
+line-height: 30px !important;
+}
+table.video-content-padding-height, td.video-content-padding-height {
+height: 45px !important;
+}
+td.avatar-size, img.avatar-size {
+width: 54px !important;
+height: 54px !important;
+}
+img.large-avatar-size {
+height: 32px !important;
+}
+img.channel-avatar-size {
+width: 80px !important;
+height: 80px !important;
+}
+img.thumbnail-size-class, td.thumbnail-size-class{
+width: 100px !important;
+height: 56px !important;
+}
+table.more-videos-size {
+height: 100px !important;
+}
+div.more-videos-font, td.more-videos-font {
+font-size: 24px !important;
+line-height: 27px !important;
+}
+table.more-videos-button-size {
+width: 230px !important;
+height: 60px !important;
+}
+td.more-videos-button-width {
+width: 250px !important;
+}
+td.more-videos-text-width {
+width: 270px !important;
+}
+table.video-spotlight-width {
+width:600px !important;
+height:332px !important;
+}
+td.video-spotlight-size, img.video-spotlight-size {
+width:600px !important;
+height:332px !important;
+}
+table.regular-button-height {
+height:60px !important;
+}
+td.regular-button-padding-width {
+width:20px !important;
+}
+td.regular-button-font {
+font-size:27.5px !important;
+line-height:27.5px !important;
+}
+img.play-button-img-size {
+width:20px !important;
+height:20px !important;
+}
+table.large-button-size {
+width:600px !important;
+height:70px !important;
+}
+table.video-2col-size {
+width:600px !important;
+}
+table.video-2col-width, td.video-2col-width {
+width:600px !important;
+}
+img.video-2col-thumb-size {
+width:600px !important;
+height:332px !important;
+}
+table.video-2col-outer-container-size, td.video-2col-outer-container-size {
+width: 600px !important;
+}
+table.video-2col-inner-container-size, td.video-2col-inner-container-size {
+width: 540px !important;
+}
+table.video-2col-inner-container-width, td.video-2col-inner-container-width=
+ {
+width: 540px !important;
+}
+div.section-title-font, td.section-title-font {
+font-size: 30px !important;
+line-height: 35px !important;
+}
+div.section-subtitle-font, td.section-subtitle-font {
+font-size: 25px !important;
+line-height: 25px !important;
+}
+table.video-3col-padding-height, td.video-3col-padding-height {
+height: 55px !important;
+}
+img.video-3col-thumb-size, table.video-3col-thumb-size {
+width: 600px !important;
+height: 332px !important;
+}
+table.video-3col-width, td.video-3col-width {
+width: 600px !important;
+}
+table.inner-3col-content-container-width, td.inner-3col-content-container-w=
+idth {
+width: 600px !important;
+}
+td.small-pad-width {
+width: 20px !important;
+}
+img.channel-avatar-size {
+width: 80px !important;
+height: 80px !important;
+}
+span.follow-and-subs-font {
+display: block !important;
+font-size: 24px !important;
+line-height: 27px !important;
+max-height:30px !important;
+}
+td.social-logo-padding-width {
+width: 32px !important;
+}
+table.channel-owner-block-content-width, td.channel-owner-block-content-wid=
+th {
+width: 420px !important;
+}
+td.show-only-on-mobile {
+display: block !important;
+width: 100% !important;
+max-height: 100% !important;
+overflow: visible !important;
+}
+td.show-not-on-mobile, tr.show-not-on-mobile {
+display: none !important;
+visibility: hidden !important;
+}
+}
+</style>
+<style type=3D"text/css">
+* {
+font-family: arial, Arial, sans-serif;
+}
+@media only screen and (max-device-width: 480px) {
+body[class=3Dsuppress-border-on-mobile] {
+margin: 0 !important;
+border: 0 !important;
+padding: 0 !important;
+}
+table[class=3Dsuppress-on-mobile], td[class=3Dsuppress-on-mobile], div[clas=
+s=3Dsuppress-on-mobile], img[class=3Dsuppress-on-mobile], span[class=3Dsupp=
+ress-on-mobile] {
+display: none !important;
+width: 0px !important;
+height: 0px !important;
+line-height: 0px !important;
+margin: 0 !important;
+border: 0 !important;
+padding: 0 !important;
+}
+table[class=3Douter-container-width], td[class=3Douter-container-width] {
+width: 640px !important;
+}
+td[class=3Douter-container-padding-width] {
+width: 20px !important;
+}
+table[class=3Dinner-container-width], td[class=3Dinner-container-width] {
+width: 600px !important;
+}
+table[class=3Dheader-container-width] {
+width: 600px !important;
+height: 100px !important;
+}
+td[class=3Dheader_left_padding_width] {
+width: 25px !important;
+}
+td[class=3Dlogo_container_size] {
+width: 575px !important;
+height: 100px !important;
+}
+img[class=3Dheader_logo_size] {
+height: 47px !important;
+}
+table[class=3Dfooter-padding-width], td[class=3Dfooter-padding-width] {
+width: 30px !important;
+}
+table[class=3Dfooter-width], td[class=3Dfooter-width] {
+width: 540px !important;
+}
+td[class=3Dfooter-font], div[class=3Dfooter-font] {
+font-size: 20px !important;
+line-height: 30px !important;
+}
+table[class=3Dfooter-content-padding-height], td[class=3Dfooter-content-pad=
+ding-height] {
+height: 30px !important;
+}
+table[class=3Dlarge-section-padding-height], td[class=3Dlarge-section-paddi=
+ng-height] {
+height: 16px !important;
+}
+table[class=3Dsmall-section-padding-height], td[class=3Dsmall-section-paddi=
+ng-height] {
+height: 20px !important;
+}
+table[class=3Dcontent-container-padding-width], td[class=3Dcontent-containe=
+r-padding-width] {
+width: 30px !important;
+}
+table[class=3Dcontent-container-padding-height], td[class=3Dcontent-contain=
+er-padding-height] {
+height: 30px !important;
+}
+table[class=3Dcontent-container-width], td[class=3Dcontent-container-width]=
+ {
+width: 540px !important;
+}
+span[class=3Dvideo-title-font-class], td[class=3Dvideo-title-font-class], d=
+iv[class=3Dgreeting-font], td[class=3Dgreeting-font] {
+font-size: 24px !important;
+line-height: 30px !important;
+}
+a[class=3Dvideo-link-font-class], div[class=3Dvideo-link-font-class], td[cl=
+ass=3Dvideo-link-font-class] {
+font-size: 20px !important;
+line-height: 30px !important;
+}
+span[class=3Dmeta-data-font], div[class=3Dmeta-data-font], a[class=3Dmeta-d=
+ata-font], td[class=3Dmeta-data-font] {
+display: block !important;
+font-size: 20px !important;
+line-height: 36px !important;
+}
+td[class=3Dsmall-meta-data-font] {
+font-size: 25px !important;
+line-height: 30px !important;
+}
+table[class=3Dvideo-content-padding-height], td[class=3Dvideo-content-paddi=
+ng-height] {
+height: 45px !important;
+}
+td[class=3Davatar-size], img[class=3Davatar-size] {
+width: 54px !important;
+height: 54px !important;
+}
+img[class=3Dlarge-avatar-size] {
+width: 32px !important;
+}
+img[class=3Dchannel-avatar-size] {
+width: 80px !important;
+height: 80px !important;
+}
+table[class=3Dmore-videos-size] {
+height: 100px !important;
+}
+div[class=3Dmore-videos-font], td[class=3Dmore-videos-font] {
+font-size: 24px !important;
+line-height: 27px !important;
+}
+table[class=3Dmore-videos-button-size] {
+width: 230px !important;
+height: 60px !important;
+}
+td[class=3Dmore-videos-button-width] {
+width: 250px !important;
+}
+td[class=3Dmore-videos-text-width] {
+width: 270px !important;
+}
+table[class=3Dvideo-spotlight-width] {
+width:600px !important;
+height:332px !important;
+}
+td[class=3Dvideo-spotlight-size], img[class=3Dvideo-spotlight-size] {
+width:600px !important;
+height:332px !important;
+}
+table[class=3Dregular-button-height] {
+height:60px !important;
+}
+td[class=3Dregular-button-padding-width] {
+width:20px !important;
+}
+td[class=3Dregular-button-font] {
+font-size:27.5px !important;
+line-height:27.5px !important;
+}
+img[class=3Dplay-button-img-size] {
+width:20px !important;
+height:20px !important;
+}
+table[class=3Dlarge-button-size] {
+width:600px !important;
+height:70px !important;
+}
+table[class=3Dvideo-2col-size] {
+width:600px !important;
+}
+table[class=3Dvideo-2col-width], td[class=3Dvideo-2col-width] {
+width:600px !important;
+}
+img[class=3Dvideo-2col-thumb-size] {
+width:600px !important;
+height:332px !important;
+}
+table[class=3Dvideo-2col-outer-container-size], td[class=3Dvideo-2col-outer=
+-container-size] {
+width: 600px !important;
+}
+table[class=3Dvideo-2col-inner-container-size], td[class=3Dvideo-2col-inner=
+-container-size] {
+width: 540px !important;
+}
+table[class=3Dvideo-2col-inner-container-width], td[class=3Dvideo-2col-inne=
+r-container-width] {
+width: 540px !important;
+}
+div[class=3Dsection-title-font], td[class=3Dsection-title-font] {
+font-size: 30px !important;
+line-height: 35px !important;
+}
+div[class=3Dsection-subtitle-font], td[class=3Dsection-subtitle-font] {
+font-size: 25px !important;
+line-height: 25px !important;
+}
+table[class=3Dvideo-3col-padding-height], td[class=3Dvideo-3col-padding-hei=
+ght] {
+height: 55px !important;
+}
+img[class=3Dvideo-3col-thumb-size], table[class=3Dvideo-3col-thumb-size] {
+width: 600px !important;
+height: 332px !important;
+}
+table[class=3Dvideo-3col-width], td[class=3Dvideo-3col-width] {
+width: 600px !important;
+}
+table[class=3Dinner-3col-content-container-width], td[class=3Dinner-3col-co=
+ntent-container-width] {
+width: 600px !important;
+}
+td[class=3Dsmall-pad-width] {
+width: 20px !important;
+}
+img[class=3Dchannel-avatar-size] {
+width: 80px !important;
+height: 80px !important;
+}
+img[class=3Dthumbnail-size-class], td[class=3Dthumbnail-size-class] {
+width: 80px !important;
+height: 44px !important;
+}
+span[class=3Dfollow-and-subs-font] {
+display: block !important;
+font-size: 24px !important;
+line-height: 27px !important;
+max-height:30px !important;
+}
+td[class=3Dsocial-logo-padding-width] {
+width: 32px !important;
+}
+table[class=3Dchannel-owner-block-content-width], td[class=3Dchannel-owner-=
+block-content-width] {
+width: 420px !important;
+}
+td[class=3Dshow-only-on-mobile] {
+display: block !important;
+width: 100% !important;
+max-height: 100% !important;
+overflow: visible !important;
+}
+td[class=3Dshow-not-on-mobile], tr[class=3Dshow-not-on-mobile]{
+display: none !important;
+visibility: hidden !important;
+}
+table., td. {
+width: 500px !important;
+}
+}
+</style>
+
+</head>
+<body class=3D"suppress-border-on-mobile">
+<span style=3D"display: none !important; visibility: hidden; width: 0; heig=
+ht: 0; opacity: 0; color: transparent;mso-hide:all"><a href=3D"https://eur0=
+2.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.youtube.com%2Fa=
+ttribution_link%3Fa%3DcQinCESb9fMAoHTL%26u%3D%2Fuser%2FDiePixelHelden%253Ff=
+eature%253Dem-uploademail&amp;data=3D02%7C01%7C%7Ca8df28c6db2a4608b94508d74=
+41cf16e%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637052763401624330&amp=
+;sdata=3DVRooGQ6m9eWXiIDlxxOAME1ueQK1w3cIooS1fvMnPIE%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://www.youtube.com/attribution_link?a=3DcQinCESb9fMAoHTL=
+&amp;u=3D/user/DiePixelHelden%3Ffeature%3Dem-uploademail" shash=3D"mP9R/6wZ=
+QzRktO4LL7j9qq1AH&#43;klNrDeGE&#43;VOAIViz0pQX5ihLZJQMsG4jScCgPzma7mzJI&#43=
+;J5Aax3fQTR7cevFKCBSDFAlcXD4iW1h6ED8i9qh&#43;cWA6cxuQ2PKtulUZMUBGZTly6Lx3Pv=
+p8auty8NndSWm0R5Mfk30oMkZ/VuI=3D" style=3D"text-decoration:none; color:#468=
+ACA;">DiePixelHelden</a> hat <a href=3D"https://eur02.safelinks.protection.=
+outlook.com/?url=3Dhttps%3A%2F%2Fwww.youtube.com%2Fattribution_link%3Fa%3Dc=
+QinCESb9fMAoHTL%26u%3D%2Fwatch%253Fv%253DYySKprsMtEs%2526feature%253Dem-upl=
+oademail&amp;data=3D02%7C01%7C%7Ca8df28c6db2a4608b94508d7441cf16e%7C84df9e7=
+fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637052763401634341&amp;sdata=3Dnyou1UHO=
+EtPcXgByQB5f76cs7VdJuz%2BuRTgQHkPDj8s%3D&amp;reserved=3D0" originalsrc=3D"h=
+ttps://www.youtube.com/attribution_link?a=3DcQinCESb9fMAoHTL&amp;u=3D/watch=
+%3Fv%3DYySKprsMtEs%26feature%3Dem-uploademail" shash=3D"DZ0ScQ1aJGWnqlydikC=
+Lewp8dMAFWnL61AtC7FvXrLY6rubiGg3ikrolJ9yDElZFM4KFN4yJyZqNSC8io9FJSSM3Sv&#43=
+;ASgyNZ4Tia1pQ9rau/o1qUvRLhl7vVz8umGkKxQs4ToP3sbHeHnr8eE5TM9C8cBh&#43;BRnM/=
+hiO1R6Me9I=3D" style=3D"text-decoration:none; color:#468ACA;">BORDERLANDS 3=
+ #10 - Waffen, Waffen, Waffen - Borderlands 3 [3-Spieler-Koop]</a> hochgela=
+den. =E2=96=BA In dieser Folge von BORDE...</span>
+<table class=3D"outer-container-width" width=3D"680" bgcolor=3D"transparent=
+" align=3D"center" valign=3D"top" cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0">
+<tr>
+<td class=3D"outer-container-padding-width" width=3D"40"></td>
+<td class=3D"inner-container-width" width=3D"600">
+<table class=3D"inner-container-width" width=3D"600" align=3D"center" cells=
+pacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tr>
+<td>
+<table class=3D"header-container-width" width=3D"600" align=3D"left" valign=
+=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tr>
+<td class=3D"logo_container_size" width=3D"584" valign=3D"center">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.youtube.com%2Fattribution_link%3Fa%3DcQinCESb9fMAoHTL%26u%3D%2F&amp=
+;data=3D02%7C01%7C%7Ca8df28c6db2a4608b94508d7441cf16e%7C84df9e7fe9f640afb43=
+5aaaaaaaaaaaa%7C1%7C0%7C637052763401644346&amp;sdata=3Dd5dWxaIlBChIlYm2P6ty=
+5%2FoW%2BU5qFAHSfvGFmd%2BEmfA%3D&amp;reserved=3D0" originalsrc=3D"https://w=
+ww.youtube.com/attribution_link?a=3DcQinCESb9fMAoHTL&amp;u=3D/" shash=3D"TP=
+FLxaMhhwpg0Iane0MdOoAr0/b1r90vWBHwCPPMsCQnd7TCA0mJcG8DDeZjKG0dUlZIsku3Zgcji=
+Pnw8PJpza5yxLhCL6KHDcd9IJquRTIf4LW&#43;4Onfdamv1k/rRCIzHdkHVaGcVzGleJDy4zTO=
+8r5o/x1gIxyvN5fn5NF/YB0=3D"><img alt=3D"Youtube Logo" class=3D"header_logo_=
+size" height=3D"30" src=3D"http://www.gstatic.com/youtube/img/branding/yout=
+ubelogo/1x/youtubelogo_60.png" border=3D"0" style=3D"display:block;"></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td style=3D"max-height:0px; font-size:0; display:none;"><hr class=3D"i=
+nner-container-width" width=3D"600" style=3D"height:0px; border:none; borde=
+r-color:transparent; padding:0px; margin:0px;"></td></tr>
+<tr><td class=3D"large-section-padding-height" height=3D"20"></td></tr>
+<tr>
+<td>
+<table class=3D"inner-container-width" width=3D"600" align=3D"center" valig=
+n=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tr>
+<td>
+<table class=3D"video-spotlight-width" width=3D"600" align=3D"center" cells=
+pacing=3D"0" cellpadding=3D"0" border=3D"0">
+<!--[if gte mso 9]>
+<tr>
+<td class=3D"video-spotlight-size" width=3D"516" height=3D"290" align=3D"ce=
+nter">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fwww.youtube.com%2Fwatch%3Fv%3DYySKprsMtEs%26feature%3Dem-uploademail&amp=
+;data=3D02%7C01%7C%7Ca8df28c6db2a4608b94508d7441cf16e%7C84df9e7fe9f640afb43=
+5aaaaaaaaaaaa%7C1%7C0%7C637052763401654351&amp;sdata=3DsU2DJT1bTdE%2FEuX6dr=
+nsjHRvqfOXergkdM8cgNiZ6JE%3D&amp;reserved=3D0" originalSrc=3D"http://www.yo=
+utube.com/watch?v=3DYySKprsMtEs&feature=3Dem-uploademail" shash=3D"AmbILLOo=
+q5/VHetUjp9415rlAhYuOe4Sdv5ClUgmHkl/GbgvL/VNM0cotaSl45Q2yrlzN3yXwCwJIA8h3dq=
+46O5NRYoDvGm5M2vnjbo89y6KCfiIIVSEayLCvE/sUHYgoGewQsYRszGTzpM2k9Lxh1WKGO4N96=
+1RvRBQdmyPtjE=3D" style=3D"text-decoration:none; display:block;" class=3D"n=
+onplayable">
+<img class=3D"video-spotlight-size" src=3D"http://i.ytimg.com/vi/YySKprsMtE=
+s/maxresdefault.jpg?sqp=3D-oaymwEGCIAKENAF&rs=3DAMzJL3ncjRG9vHHrm7aqKI9en1n=
+tdtUiSA&feature=3Dem-uploademail" width=3D"516" height=3D"290" border=3D"0"=
+>
+</a>
+</td>
+</tr>
+<![endif]-->
+<!--[if !mso]><!-- -->
+<tr style=3D"mso-hide:all">
+<td colspan=3D"3">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.youtube.com%2Fattribution_link%3Fa%3DcQinCESb9fMAoHTL%26u%3D%2Fwatc=
+h%253Fv%253DYySKprsMtEs%2526feature%253Dem-uploademail&amp;data=3D02%7C01%7=
+C%7Ca8df28c6db2a4608b94508d7441cf16e%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1=
+%7C0%7C637052763401664355&amp;sdata=3D68W%2BNn4TrsLM1mcMXHrC3Rw0LbsLIIxerD%=
+2B1jj%2FiHCs%3D&amp;reserved=3D0" originalsrc=3D"https://www.youtube.com/at=
+tribution_link?a=3DcQinCESb9fMAoHTL&amp;u=3D/watch%3Fv%3DYySKprsMtEs%26feat=
+ure%3Dem-uploademail" shash=3D"dSKftfLwsaBNgJLX8G9PAKA6kTfdI4ofgbQXmXSR/5RL=
+d3BLpawCxPD8nD52kOIwcT6HLs1xu/SVhQDcBwJqQBrcrH3&#43;tZNpK3pQ4kwRac8hCxoeTpD=
+FV2s1RkJYAFdw&#43;wyGR9kGIG0yBpdHS0V7&#43;Fo35/GoraY9IMesqfnWjKE=3D" style=
+=3D"text-decoration:none; display:block;" class=3D"nonplayable">
+<table aria-label=3D"BORDERLANDS 3 #10 - Waffen, Waffen, Waffen - Borderlan=
+ds 3 [3-Spiel..." class=3D"video-spotlight-width" width=3D"600" align=3D"ce=
+nter" background=3D"http://i.ytimg.com/vi/YySKprsMtEs/maxresdefault.jpg?sqp=
+=3D-oaymwEGCIAKENAF&amp;rs=3DAMzJL3ncjRG9vHHrm7aqKI9en1ntdtUiSA&amp;feature=
+=3Dem-uploademail" style=3D"background-repeat:no-repeat;background-size:cov=
+er;background-position:center;mso-hide:all" height=3D"338" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0">
+<tr style=3D"mso-hide:all"><td aria-label=3D"BORDERLANDS 3 #10 - Waffen, Wa=
+ffen, Waffen - Borderlands 3 [3-Spiel...">
+<img src=3D"https://www.gstatic.com/youtube/img/email/transparent_pixel.png=
+" alt=3D"BORDERLANDS 3 #10 - Waffen, Waffen, Waffen - Borderlands 3 [3-Spie=
+l..." width=3D"600" style=3D"max-height: 300px;">
+</td></tr>
+<tr aria-label=3D"BORDERLANDS 3 #10 - Waffen, Waffen, Waffen - Borderlands =
+3 [3-Spiel..." scope=3D"row" style=3D"mso-hide:all">
+<td aria-label=3D"BORDERLANDS 3 #10 - Waffen, Waffen, Waffen - Borderlands =
+3 [3-Spiel..." class=3D"footer-font" style=3D"color:#fff; text-align:right;=
+ font-size: 12px;" valign=3D"bottom" width=3D"600">
+<div style=3D"margin-bottom:8px; margin-right:8px; border-radius:2px; backg=
+round-color: #212121; padding:2px 4px; display:inline-block;">24:54</div>
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+<!--<![endif]-->
+<tr><td>
+<table class=3D"large-section-padding-height" height=3D"16" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0">
+<tr>
+<td class=3D"large-section-padding-height" height=3D"16"></td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td>
+<table class=3D"content-container-width" width=3D"560" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" style=3D"table-layout:fixed;">
+<tr>
+<td class=3D"avatar-size" width=3D"32" style=3D"vertical-align:top;">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.youtube.com%2Fattribution_link%3Fa%3DcQinCESb9fMAoHTL%26u%3D%2Fuser=
+%2FDiePixelHelden%253Ffeature%253Dem-uploademail&amp;data=3D02%7C01%7C%7Ca8=
+df28c6db2a4608b94508d7441cf16e%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7=
+C637052763401674366&amp;sdata=3DDee37mpEnirV%2Bs2xKvHGpi5PA9yABI9xk3oeVYhG5=
+0Y%3D&amp;reserved=3D0" originalsrc=3D"https://www.youtube.com/attribution_=
+link?a=3DcQinCESb9fMAoHTL&amp;u=3D/user/DiePixelHelden%3Ffeature%3Dem-uploa=
+demail" shash=3D"YcTmmMwKp67EEgEOV2LUyHsqEyyHjRuA1If223lNXRhWo/mOO9cl0Yh0rn=
+6exnop3lGwcdnJVeGl9igSWd&#43;XcFLowOv7dG86mZRsH2I/yiVMYr/4ypTWhyBltZ6TLbADJ=
+9oJcfxNFx0AXTDRNoXY4O5QewqaNL5BgdzdfRiwq5k=3D">
+<img class=3D"avatar-size" src=3D"https://lh3.googleusercontent.com/-Mvoxwx=
+XJuNs/AAAAAAAAAAI/AAAAAAAAAAA/L7-lo9wBrH0/s50-mo/photo.jpg" width=3D"32" st=
+yle=3D"display:block; border-radius: 50%;" border=3D"0">
+</a>
+</td>
+<td class=3D"small-pad-width" width=3D"16"></td>
+<td>
+<table class=3D"content-container-width" width=3D"540" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" style=3D"table-layout:fixed;">
+<td valign=3D"center">
+<table class=3D"content-container-width" cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0" style=3D"table-layout:fixed;">
+<tr>
+<td style=3D"padding-bottom:4px">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.youtube.com%2Fattribution_link%3Fa%3DcQinCESb9fMAoHTL%26u%3D%2Fwatc=
+h%253Fv%253DYySKprsMtEs%2526feature%253Dem-uploademail&amp;data=3D02%7C01%7=
+C%7Ca8df28c6db2a4608b94508d7441cf16e%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1=
+%7C0%7C637052763401684377&amp;sdata=3Du0mPB7Jw%2BQCGsGAKwu66XJuQFj5fkCWp6Ak=
+vQ8KWuFo%3D&amp;reserved=3D0" originalsrc=3D"https://www.youtube.com/attrib=
+ution_link?a=3DcQinCESb9fMAoHTL&amp;u=3D/watch%3Fv%3DYySKprsMtEs%26feature%=
+3Dem-uploademail" shash=3D"rpj5ba3v/L7gzBOopvBkbIOTBuNVXtGvj&#43;8j2Iw21p1T=
+YCu8TEB6ciyE0UlVuxbN4G5e4UoDQPYRa8IWXW58xk369ZKl/EH6wybWJT9ySdMDnA8Ip&#43;m=
+/wBTPtakeYte7ecbGrvYUjDDEQMtcfqrcWNw0A5ULZrZBlyGurNVjvOc=3D" style=3D"text-=
+decoration:none;">
+<span class=3D"video-title-font-class" valign=3D"center" style=3D"font-fami=
+ly:Roboto,sans-serif; font-size:14px; color:#212121; line-height:20px; -web=
+kit-text-size-adjust:none;">
+BORDERLANDS 3 #10 - Waffen, Waffen, Waffen - Borderlands 3 [3-Spiel...
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class=3D"video-link-font-class" href=3D"https://eur02.safelinks.protecti=
+on.outlook.com/?url=3Dhttps%3A%2F%2Fwww.youtube.com%2Fattribution_link%3Fa%=
+3DcQinCESb9fMAoHTL%26u%3D%2Fuser%2FDiePixelHelden%253Ffeature%253Dem-upload=
+email&amp;data=3D02%7C01%7C%7Ca8df28c6db2a4608b94508d7441cf16e%7C84df9e7fe9=
+f640afb435aaaaaaaaaaaa%7C1%7C0%7C637052763401694388&amp;sdata=3DlIAA91%2FA3=
+iEWTrFajQeLMFZKL0MClwM0v3cYJPVcj9U%3D&amp;reserved=3D0" originalsrc=3D"http=
+s://www.youtube.com/attribution_link?a=3DcQinCESb9fMAoHTL&amp;u=3D/user/Die=
+PixelHelden%3Ffeature%3Dem-uploademail" shash=3D"bVFX26hlPGYh9lvGYeP0vPxsUD=
+rA0d4f2HIOMwV5mxbvN9TWk87ti2xhViI5HP3wTaDIJRlE8qtZBu/Jd0cG836sC2Jj86gpfPi/n=
+OBkd0KUh9LKV4btwceZy65JK0faMjx8GrzRmbzeXsiCcP1dkIz4pB&#43;63r7wiaHbECzaGHU=
+=3D" style=3D"font-family:Roboto,sans-serif;font-size:12px; color: #757575;=
+; line-height:16px; letter-spacing:0px; -webkit-text-size-adjust:none; text=
+-decoration:none;">
+DiePixelHelden
+</a>
+</td>
+</tr>
+</table>
+</td>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td>
+<table class=3D"large-section-padding-height" height=3D"16" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0">
+<tr>
+<td class=3D"large-section-padding-height" height=3D"16"></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<hr style=3D"display: block;height: 1px;border: 0;border-top: 1px solid #ea=
+eaea;margin-bottom: 16px;padding: 0;"><!-- </hr> -->
+<tr>
+<td>
+<table class=3D"inner-container-width" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0">
+<tr>
+<td class=3D"footer-font" style=3D"color: #757575; font-size:12px; line-hei=
+ght:16px; font-family:Roboto, sans-serif; letter-spacing:0px; -webkit-text-=
+size-adjust:none; word-wrap:break-word;">
+Du hast diese E-Mail erhalten, weil du =C3=BCber Neuigkeiten zu <a href=3D"=
+https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.you=
+tube.com%2Fattribution_link%3Fa%3DcQinCESb9fMAoHTL%26u%3D%2Fuser%2FDiePixel=
+Helden%253Ffeature%253Dem-uploademail&amp;data=3D02%7C01%7C%7Ca8df28c6db2a4=
+608b94508d7441cf16e%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6370527634=
+01704399&amp;sdata=3DCCg9wvQtXFOCALM6%2B%2FVSya%2BtGzU7Wf2XhpfiSFpaPm0%3D&a=
+mp;reserved=3D0" originalsrc=3D"https://www.youtube.com/attribution_link?a=
+=3DcQinCESb9fMAoHTL&amp;u=3D/user/DiePixelHelden%3Ffeature%3Dem-uploademail=
+" shash=3D"AHZwd944q/5JYOhyDnDh26j/&#43;miqg6zXTH6Ad&#43;K1qn13I/xr3XVgZE3c=
+8QnMAH3WyUwMk1LjaJUv/oiNSFwoB6VMeZdJpDhP5CJmYq11No0VHgp7Ho7joB/WamrgVsRwq8p=
+cpibsRXRuGPB0nY3M9Q1Q0sITQqPk5u0bARpS29w=3D" style=3D"text-decoration:none;=
+ color:#065FD4;">DiePixelHelden</a> auf dem Laufenden bleiben wolltest. Wen=
+n du diese Benachrichtigungen nicht mehr erhalten m=C3=B6chtest, kannst du =
+sie <a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fwww.youtube.com%2Fattribution_link%3Fnoapp%3D1%26a%3DcQinCESb9fMAoH=
+TL%26u%3D%2Fchannel_updates_unsubscribe%253Fuid%253DDeDpSxjwB0Vni3_OWZws2A%=
+2526channel_id%253DUCoYWXymL7cz7rRpQxmDQySQ%2526token%253DrY4JmhP9M2BZV9zV8=
+S--TxnWqeh8MTU2OTY3OTMzNEAxNTY5Njc5MzM0%2526feature%253Dem-uploademail&amp;=
+data=3D02%7C01%7C%7Ca8df28c6db2a4608b94508d7441cf16e%7C84df9e7fe9f640afb435=
+aaaaaaaaaaaa%7C1%7C0%7C637052763401714398&amp;sdata=3DdXIE%2FxHAUFOMyx8zAd%=
+2BPM3VO2FdTRGKF2MHWtpTmGWQ%3D&amp;reserved=3D0" originalsrc=3D"https://www.=
+youtube.com/attribution_link?noapp=3D1&amp;a=3DcQinCESb9fMAoHTL&amp;u=3D/ch=
+annel_updates_unsubscribe%3Fuid%3DDeDpSxjwB0Vni3_OWZws2A%26channel_id%3DUCo=
+YWXymL7cz7rRpQxmDQySQ%26token%3DrY4JmhP9M2BZV9zV8S--TxnWqeh8MTU2OTY3OTMzNEA=
+xNTY5Njc5MzM0%26feature%3Dem-uploademail" shash=3D"vHMPcQInWgsI54wumSuG2NiE=
+pGaPaVSgct6eppq&#43;70hrPvAI26ND2CmnEopDJ1BM1Ik7frhDzwV8QFkaVH&#43;&#43;6ju=
+&#43;4chLJfbuz42Eq&#43;yCPcTGU69lUE45LvN/VYqszgPj084/Zp6qPHwEFh98PVJyNy056X=
+nqICB2k3CJqeMytDo=3D" style=3D"text-decoration:none; color:#065FD4;">hier a=
+bbestellen</a>.
+</td>
+</tr>
+<tr><td>
+<table class=3D"footer-content-padding-height" height=3D"16" cellspacing=3D=
+"0" cellpadding=3D"0" border=3D"0">
+<tr>
+<td class=3D"footer-content-padding-height" height=3D"16"></td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td class=3D"footer-font" style=3D"color: #757575; font-size:12px; line-hei=
+ght:16px; font-family:Roboto, sans-serif; letter-spacing:0px; text-decorati=
+on:none; -webkit-text-size-adjust:none;">
+=C2=A9 2019 YouTube, LLC 901 Cherry Ave, San Bruno, CA 94066
+</td>
+</tr>
+<tr><td>
+<table class=3D"footer-content-padding-height" height=3D"16" cellspacing=3D=
+"0" cellpadding=3D"0" border=3D"0">
+<tr>
+<td class=3D"footer-content-padding-height" height=3D"16"></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td class=3D"outer-container-padding-width" width=3D"40"></td>
+</tr>
+<tr>
+<td colspan=3D"3">
+<table class=3D"content-container-width" width=3D"600" height=3D"18" align=
+=3D"left" style=3D"background-repeat:no-repeat; background-size:100% 100%;"=
+ height=3D"332" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tr>
+<td class=3D"outer-container-padding-width" width=3D"40"></td>
+<td width=3D"20" aria-label=3D"YouTube Link">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.youtube.com%2Fattribution_link%3Fa%3DcQinCESb9fMAoHTL%26u%3D%2Fyout=
+ube&amp;data=3D02%7C01%7C%7Ca8df28c6db2a4608b94508d7441cf16e%7C84df9e7fe9f6=
+40afb435aaaaaaaaaaaa%7C1%7C0%7C637052763401724409&amp;sdata=3DMvEtU30du6jJm=
+%2FEcKBltBirZGSmoDEqO%2F7v9%2B7nGro0%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://www.youtube.com/attribution_link?a=3DcQinCESb9fMAoHTL&amp;u=3D/youtub=
+e" shash=3D"QAa2f6lCzG2GHyveBD&#43;yzV5wvqdo4d9kKFFFHGQFYQw&#43;VyBUkizXuhp=
+bgAvv91IujC1m5vDHiFFn5OiN/332ItWeOxuFOX4XKrYUpRhPplEsGYq2ysdY/WEbVkcZOuhLwa=
+vULda1VTjCaF3yylmSAiy&#43;K3yZ9cthsDUI8&#43;ca7k0=3D" target=3D"_blank">
+<img alt=3D"YouTube" class=3D"large-avatar-size" src=3D"https://www.gstatic=
+.com/youtube/img/email/youtube_email_icon_grey.png" height=3D"18" border=3D=
+"0">
+</a>
+</td>
+<td class=3D"social-logo-padding-width" width=3D"16"></td>
+<td aria-label=3D"Twitter Link">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Ftwitter.com%2FYouTube&amp;data=3D02%7C01%7C%7Ca8df28c6db2a4608b94508d74=
+41cf16e%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637052763401734420&amp=
+;sdata=3DxkYCqylWBFgFjTGqZy%2FlgoTzxQrGAuhUKsJymLjPCqU%3D&amp;reserved=3D0"=
+ originalsrc=3D"https://twitter.com/YouTube" shash=3D"PhtALq55n5Gbs1bIc3Wjp=
+STJRS2gGY5ABtdA0x&#43;gd4dBXx4tFTVx3xNA8PtkiogjL3H7IhWSly/9QBjLFYgH8x&#43;d=
+7DSUjByTwvKU94NhW4JBhAzxg831wF6HZebvrd3fo3idAMehlsncqR3/N8LcKhgywqYxnoVZbTU=
+&#43;dBDw8nQ=3D" target=3D"_blank">
+<img alt=3D"Twitter" class=3D"large-avatar-size" src=3D"https://www.gstatic=
+.com/youtube/img/email/twitter_email_icon_grey.png" height=3D"18" border=3D=
+"0">
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+<img class=3D"open_tracking_img" src=3D"https://www.youtube.com/attribution=
+_link?a=3DcQinCESb9fMAoHTL&amp;u=3D/gen_204%3Fa%3Dem-uploademail" width=3D"=
+1" height=3D"1" style=3D"display:none !important; visibility: hidden; width=
+: 0; height: 0; opacity: 0; color: transparent;">
+
+--4b183bbec5be0fcff5c5a54ecaa0c8ac90da7c4ac4b23c33b4bfa4e9dc2ede82--
